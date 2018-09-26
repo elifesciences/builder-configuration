@@ -18,7 +18,7 @@ elife_xpub:
         base_url: https://ci--xpub.elifesciences.org
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
-    deployment_target: test
+    deployment_target: ci # still on port 3000
 
 elife:
     aws:
