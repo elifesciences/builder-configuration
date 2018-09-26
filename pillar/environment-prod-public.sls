@@ -8,4 +8,4 @@ elife_xpub:
         base_url: https://xpub.elifesciences.org
     s3:
         bucket: prod-elife-xpub
-    deployment_target: production
+    deployment_target: prod
