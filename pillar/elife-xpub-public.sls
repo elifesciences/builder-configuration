@@ -11,6 +11,7 @@ elife_xpub:
         # password: 
         endpoint: http://54.157.211.94:3000
     orcid:
+        sandbox: true
         client_id: fake_client_id # overwritten by environment
         client_secret: fake_client_secret # overwritten by environment
     pubsweet:
