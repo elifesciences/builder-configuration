@@ -1,6 +1,17 @@
 # builder-configuration
 Contains non-sensitive Salt formulas configuration
 
+## Environments
+
+`pillar/environment-*-public.sls` correspond to environments.
+
+| Environment name | Other projects | External organizations | Tests | Runtime
+| ---------------- |:--------------:|:----------------------:|:-----:|:-------:|
+| `ci` | no | no | automated | only during test runs
+| `end2end` | yes | no | automated | only during test runs
+| `continuumtest` (deprecated), `staging` | yes | sandboxes only | manual, exploratory | always
+| `demo` | dummies | no | manual, demonstrative | always
+| `prod` | yes | yes | smoke only | always
 
 ## Naming convention
 
