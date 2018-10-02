@@ -1,3 +1,6 @@
+elife:
+    env: demo
+
 elife_xpub:
     api:
         endpoint: https://demo--xpub.elifesciences.org

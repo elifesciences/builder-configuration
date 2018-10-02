@@ -1,3 +1,6 @@
+elife:
+    env: prod
+
 elife_xpub:
     api:
         endpoint: https://xpub.elifesciences.org
