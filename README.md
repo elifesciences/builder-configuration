@@ -32,6 +32,7 @@ Commented-out values such as
 ```
 my_project:
     database:
+        host: localhost
         # user: 
         # password: 
 ```
@@ -47,3 +48,14 @@ my_project:
 ```
 
 will be overridden by `builder-private` for certain environments (like `prod`) with real values.
+
+In case a dictionary does not have any public values to include here, it's safer to make the schema of the data consistent with an empty `{}`:
+
+```
+my_project:
+    database: {}
+        # user: 
+        # password: 
+```
+
+Pillar merging will normally overwrite the `None` value with a dictionary, but a `None` will overwrite a dictionary coming from a file that gets included earlier like `elife.sls`.
