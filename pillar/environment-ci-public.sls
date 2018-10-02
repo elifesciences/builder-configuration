@@ -1,0 +1,2 @@
+elife:
+    env: ci

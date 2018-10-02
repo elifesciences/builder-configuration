@@ -1,3 +1,6 @@
+elife:
+    env: staging
+
 elife_xpub:
     api:
         endpoint: https://staging--xpub.elifesciences.org
