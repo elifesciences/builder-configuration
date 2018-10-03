@@ -4,7 +4,7 @@ elife:
 elife_xpub:
     api:
         endpoint: https://staging--xpub.elifesciences.org
-    orcid:
+    orcid: {}
         # sandbox.orcid.org credentials
         # client_id:
         # client_secret:
