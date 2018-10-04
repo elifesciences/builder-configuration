@@ -16,4 +16,5 @@ elife_xpub:
 
 journal:
     feature_xpub: false
-    submit_url: https://xpub.elifesciences.org/login
+    submit_url: http://submit.elifesciences.org/
+    #submit_url: https://xpub.elifesciences.org/login
