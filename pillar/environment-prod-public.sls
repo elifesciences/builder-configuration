@@ -13,3 +13,7 @@ elife_xpub:
     s3:
         bucket: prod-elife-xpub
     deployment_target: prod
+
+journal:
+    feature_xpub: false
+    submit_url: https://xpub.elifesciences.org/login
