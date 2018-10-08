@@ -23,7 +23,7 @@ elife_xpub:
                 port: 22
                 username: ''
                 password: ''
-        remote_path: '' 
+            remote_path: '' 
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
     deployment_target: ci # still on port 3000
