@@ -16,6 +16,14 @@ elife_xpub:
         client_secret: fake_client_secret # overwritten by environment
     pubsweet:
         base_url: https://ci--xpub.elifesciences.org
+    meca:
+		sftp:
+            connection:
+                host: ''
+                port: 22
+                # username: 
+                # password:
+		remote_path: '' 
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
     deployment_target: ci # still on port 3000
