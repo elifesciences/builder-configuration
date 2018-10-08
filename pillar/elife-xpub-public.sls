@@ -21,8 +21,8 @@ elife_xpub:
             connection:
                 host: ''
                 port: 22
-                # username: 
-                # password:
+                username: ''
+                password: ''
         remote_path: '' 
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
