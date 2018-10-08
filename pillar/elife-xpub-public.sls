@@ -17,13 +17,13 @@ elife_xpub:
     pubsweet:
         base_url: https://ci--xpub.elifesciences.org
     meca:
-		sftp:
+        sftp:
             connection:
                 host: ''
                 port: 22
                 # username: 
                 # password:
-		remote_path: '' 
+        remote_path: '' 
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
     deployment_target: ci # still on port 3000

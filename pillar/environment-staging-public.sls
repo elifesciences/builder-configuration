@@ -11,10 +11,10 @@ elife_xpub:
     pubsweet:
         base_url: https://staging--xpub.elifesciences.org
     meca:
-		sftp:
+        sftp:
             connection:
                 host: sftp.ejpress.com
-				# EJP sandbox credentials
+                # EJP sandbox credentials
                 # username: 
                 # password:
     s3:
