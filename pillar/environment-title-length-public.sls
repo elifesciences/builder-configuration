@@ -1,5 +1,5 @@
 elife:
-    env: title-length
+    env: continuumtest
 
 journal:
     api_url: http://prod--gateway.elife.internal
