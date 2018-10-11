@@ -16,6 +16,15 @@ elife:
 {% set digests_url = 'http://end2end--digests.elife.internal' %}
 {% set iiif_url = 'https://end2end--cdn-iiif.elifesciences.org' %}
 
+elife_xpub:
+    api:
+        endpoint: https://end2end--xpub.elifesciences.org
+    pubsweet:
+        base_url: https://end2end--xpub.elifesciences.org
+    s3:
+        bucket: end2end-elife-xpub
+    deployment_target: end2end
+
 journal:
     feature_xpub: true
     # not existing yet:
