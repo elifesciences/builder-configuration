@@ -37,4 +37,5 @@ journal_cms:
         articles_endpoint: {{ gateway_url_internal }}/articles/%s/versions
         metrics_endpoint: {{ gateway_url_internal }}/metrics/article/%s/%s
         all_articles_endpoint: {{ gateway_url_internal }}/articles
+        all_digests_endpoint: {{ gateway_url_internal }}/digests
         article_fragment_images_endpoint: {{ gateway_url_internal }}/articles/%s/fragments/image
