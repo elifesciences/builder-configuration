@@ -8,3 +8,8 @@ elife:
         #    username: ubuntu
         #    home: /home/ubuntu
         #    private_key: salt://elife/ssh-credentials/sample.id_rsa
+
+    docker:
+        # username:
+        # password:
+        prune_days: 14
