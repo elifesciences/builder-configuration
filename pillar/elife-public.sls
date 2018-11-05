@@ -18,6 +18,10 @@ elife:
         chris: AAAAB3NzaC1yc2EAAAADAQABAAACAQDCTjHMk8wDBM4CGiFgpmOMFkNG+ST2Sms61n2j/KK7ZZglcEp3AKBYHQnTpiP2LI64a2YcsCPFWkuHbY13DruubbYeUDnHuDMwPAzHU7DPBOTcCBVMjNOVE4oqjFKQftJQHucxD1RYDvsrIXZdT345k1fyyFYj0ho00SvgLWAUV0AhBq0IG7251yIrrC46+NOgd8U40HWD/z2eIpagglHKYSoTcqJlmvaSqPHyNep9N6R5xfEfqsxeVQp1i/+s7BBlHD0y8AWAtCRwPvTUqOLfkCag0WztonWOBSN/1PGS4TtNaFkfmlbcRivcwoTDKSNKUotDfKZCwg/iDDIJTZoEiTsIww1Z2na8DaVtUW9VyO3dVqh1wuquF/eagZzXZCctO9laaw604/jpLZvp82/4U9rSC8wcQ26fq7+ndQsTFIbQZ+h0yCvJxw1UlV1eQeTZMPLwTOri9TEWZ7XYtzaykQCXqAui3R2ERc8uib8ZJfygyZvo/1CSl2lcbOSlYYyi/yM7kDvy2eRSGTSHhWj//0UTADyl7DI0WrR3Oi3PYamONyR9hp9qGzIkRg2af7jkd7XLN2VhpVNUw/uZoDTAF0hPuCqXq14TdrzLOvE65K6J/gCAVNeQSrqIuvyTS2cPlZ/JWnlsFbY9uknzu2Ep7mAB43CXZyZXJRzm7jp1xw==
         # machine users
         alfred: AAAAB3NzaC1yc2EAAAADAQABAAABAQDPQG8kvfZjvw0MNz3PO7+MtuY/qRCDt/UZSJsJl5fm/ucSAgytpnowIGcgPDxfYf+4o5Ao6RXWrdjVfMzFGGXcgsnTu5er4KGYuQQ2/bHs5L/KaklXyyuGsDmCk1hsX5DqtHf8zmBaeTBCcIZZQ9+reNsLlcgk2zfmrTQxiTc+d96Ns3xaOqQOTD4WrypG2cTXHhBijOZBcaMAvjRxZKXDNWaddnxtnIoNQdqRovCZkxAgcqg3TqhyxyoPvKZZt/Hyhhe6EeGFfA+Rv0zSQZDOLVdI4AsSEPs3jd8e/UExlOYrjgHxo3/OpXeeCr3Msz6qXcuQkOfanGyTFOeGX7u1
+        # data science
+        daniel: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDWFJUAffNlNGh+NRr9pNRJ0QKBDgHxi/JNpgL856Er1SzPfaO3MshHOm4TC5l2orqgYjga9mzHL88oPSZN70xQA2OmNnhqHYVmNts26gyLuBxq69808o7eTELBf2oOCA0Ywh540wEEBnkmQ4FybohV5tRCFP7vuw3reqbMlshry6cjwawTCqYRZvWp8XCMrpKsJcHOLs/on7IPniUEB5yfcfsDCjFww1ToYA06B46pOOxeTq4fpcaL33VsVfWPxOypzxImSLyYpr+3gPOKNpCYJQspc4hLQ27dLUc447y1y0t950MOFZiu171ik1cZ0LVG1uC5ZxxqwEb0M/sNI5bScygvzUMYritgp0CjP0LO5UnbYTy6WfiL4uLq1P9RICaCkKC9SDK178nmlszfxIk6mYN7hEyquffAxxEl4BrSO2R12COtAJuwSVjNtKJV/W1J24ygfDOMgKplen0HaaYhlszDzaFsIQWaRj9+APNsi1QClYiI7NKioYNQAlt9haaNF0wD6g1wzE8DK4vS8P3pHzQfs+lHq2VQgCUKdjWQOL1SsaUmmHwSVuDgCsKFrS4ciOOrWXVBCosn1GvDaDVtbCEKuBO4P2V8giDsa5uzMxc2d1P2Lrbv665mSjDlPFBIjUYx5iuWXMchdEy7OQFSLr7BWUy0Vm9wKbosrQmzXQ==
+        daniel_inspiron: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCWl11U9u+cF7+nKUt/dpc2ibYQ+0bIHXsgq9b3zCwiKsQ6diUDFm4E4hiXIXrxMmQjR5aZxL3Y9tpIJ6zMJp0mcOKM1vXAMZMF0aJvzm/gGUmB86Z/JHRARHCNsIYmwZpwMNSdt1WGLvC4yjvbTentATnABr5GDXzATWZdsbG9wX/T6vY563Z8lejX0HvE6gcqYgQ1CV9gOaHyHKPcuubgPTLrw6DIkK/MfYesifgJ719y9Hdp4gbNCDFQKiKOMrXeRvH6k7woHiffRKUSQcMUtSqV0mI6IFot7nheoY2k6bqxMEF1K+jxB1VyAazvuHiM5jlLVxTellzw3Y8UTuQAvE/I/n9py5AogVWfWBKwAWGUaZjKJMBEUqOAkgFgfQl3j5/nBNhnScgAGHCSBPPiB6doRCUa7qfN1anA76FeeN53JkZLUYjPWGKFuLX4FK+VPFC4tadoUDz27fDXuYhfbYRvea9y7nGOvgO0JbDR9o698BtdbaWo3s5xyzCHeOB68BheOGpV37lB4pGUZVrA6Dc9jRPR+EFcdkla802j8ABK1SZbh7i6LuIp+h8nYKU14mRW2qm5Y+nMYshx2YAfg9qMZWroXp5IojDtSjbxzVtDObTJCb9h86aWr0tbmeG6n95kHi62BqYhS0EAFzAWpTSyVgqCZbCkUsgSWZ5WJw==
+        daniel_xps: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvWbLNw1CY9vykHXXNyvH6qcG1wuVh0Pm5EAJXrr6zSd2OLFo6XednxwjlB1Y3+xkgW78zo69l0wnWEzosfcDKNtwJYZuBGJvNx5z0JJR/FP/5g4iyJmCJ5rh8f6GWR2t4LwO4TE7uoD/PmjmN6lUKrbIss+OuLbJ1bROmaD46KfDrCyImX8/DhIwM9yAMB7JPEIcmwVq6qJMtXqYGjCxpyBaM6rcJdntSl/4v/rrTaREc74ah5UhDpXSz6CZ9UaBepOWjmtY1LcfCtEmIQj4wtOySILbqcaHxt65qmxcX1FuLs/0thxeHgwJ6d3melJ75CEAzAEQ2uwOXNkyBPrLFLLy/1urPUf2BKb604WZWpw/k1sJZneVHLguc0zKKTE6Fzr+EVb45Udcpu0a06knQyhbyfWzewgdxlLucadK1VVWOq+la2q4VOtDuCRMAnAjSxWUSA19QraKb1m4Lj5DvMqoZqEk8oX9oPiuL9ro0/zAbVkD7AEfoKNjN+46Oth6TMk8SysyFSL6Bwdjxf92fHkVdSvaMLODIs6bUZzRWOJJzyBZ/QQ4n4tZEx7D94Zu7d2FzQ0LFo1CaNUXNiM+Prl6RfD0+dEU9jMtk3gAvhoG9P99njmGVM8R1KzqSw6YY5UWR9N4y17tQzr8CwBFSwfGxgRTheUy5tIA7FEpEhw==
         # xpub, mostly
         peterhooper: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaQaYnpDAaSNkDfuompmMmthxiuqmV8RcDLrfEzQQ8sXrrwxIJyUmO0bhijePxLoOHMZdSz8NcAl2FGYIqWU4bpWpWIhFFUjGBSlN/KjYAhd1eUI+O24JOPPAi5+eInyHS5OJKmqg0MKq6LMbU3zHSFFZdKEfrkECv058X7qtkoMgU7KMtjy9OQZrrA5mWePuTKFrSWV+5Vxhna2L3odURO0ApzqyqsT9jyyTrOl2MFl4c0mFPzdJhZqqa4gjX/eikp8y4cM8C5j3rPvdrxArdTiN2PIuzPDOVYN/2nt8X8tmzTFVfM2/PxdlKINjppjimQH+L0CnpEwhA9IVMBoEF
         hem: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7gyp8ERD/f3amztI4qVx5oMOU6CrutIhjNrBvXwf98wBOlHvb2bIV72wAplFqrxu8MRrXnNfh0NGT9LkjxQ4E+VKPdDF77jgOPBtrOOwwpGSjzrf/oOHa0bi+ma2Y0bWNQ1WadNPpGdc1L8MMdiB3Hzw3zbLc9AY0biimlHxeWL8T+IhpBmJkT/LKXoMBurOZX/ZbWPzUGkmvqLZrMgqMpM8eOF5JjYmjkwfCKwmBr72AMq4npEOGpgJjO4OlozlbN4yh0BL5CnFDBQrFvMczUbH9JXq5ap1eljYsVaP/bfaV8RzM1OFzORIigrfGGueQsJtuNq+YoEdw6o24SzL7
@@ -38,11 +42,43 @@ elife:
                 - chris
 
             # per-user, per-project access
+            containers:
+                - alfred
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+                - nlisgo
+            crm:
+                - graham_dev
+                - graham_ubuntu_vm
+                - alfred
+                - michael
+                - nlisgo # turning on instances for journal-cms testing
+                # temporary, Daniel needs to run once-off SQL
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+                - circle_interactive
             elife-xpub:
                 - alfred
                 - tamlyn
                 - hem
                 - peterhooper
+            peerscout:
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+                - alfred
+            sciencebeam-texture:
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+                - alfred
+            data-pipeline:
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+
 
     docker:
         # username:
