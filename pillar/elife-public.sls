@@ -84,3 +84,7 @@ elife:
         # username:
         # password:
         prune_days: 14
+
+    mockserver:
+        expectations: {}
+            #elife_bot: salt://elife-bot/config/mockserver.sh
