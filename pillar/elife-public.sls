@@ -80,6 +80,8 @@ elife:
                 - daniel
                 - daniel_inspiron
                 - daniel_xps
+            profiles:
+                - giancarlo
 
 
     docker:
