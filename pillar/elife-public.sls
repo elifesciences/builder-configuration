@@ -85,6 +85,8 @@ elife:
                 - daniel_xps
             profiles:
                 - giancarlo
+            bastion:
+                - hem
 
 
     docker:
