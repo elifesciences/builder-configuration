@@ -28,6 +28,7 @@ elife:
         tamlyn: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAmt3C4g/LHecU33xkMCeqzQf4f9VRjRcxCY/GDIl9jwHsJifaAFlfor9xt+i4zz9lCZc8jTcUOH5DikDc3lw0LL7R9cE9i6aedoSb+pWVTBOSSGJIBh6XBWMrnnYYqINIQJIAPGzUn6j9Lceks/2aBn7+U6H5TrwAcZIr8jnK2Is=
         # tech
         giancarlo: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkdTrEimhkRzfny0yGYwC6pi1SATH1I6Dt/0OzoV0rnbS44ALXLGS1+9Z/WKKrZxtgVh5io1umgN9ILadyvFeZQby0XroIXMj43rSYKtaJXYthkf2wL0tmmvrKJnbo11XZRxQY65rN+WfQSvObx0oSuiwiKZUHPFZQpVk18rGb63AdfRgZc09wqlY9qEkmeVv+H2mi73AxTW6V7HfStPJqpKcE1BZyoG3o/flroDdeJXK8yUgJ3HpChlLeCdHPPOjUGahUV5nMOfCo/UDcBligcf6yIxtg8Y3QcXfmYgNnKrrwCVy+KgMjJ20+BpI0ron1OXUHyqUsVqlKFmsp2TTb
+        david: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCqfGohXyqwJMD+3rQvoYo802OMTPQtit6mzhoZhCjDWNrg60G+wg79O1yF090K0M7laeaMKnQQ+cNB6v6fBJdT7Awpc9OO05BN4z/ThCu9d4WVP+k4159Qz7unVZ/cLceiCxZErdPh8QP5/tf7QDR+uH5YVvMndYYpKe3KLgIO+y+6YVRJheqKI2ZtETsZIHEfOEncKw7ac9iYrwgmIDS5EyFchc9I/ggnhsmwoNZiRHtoC1mYG3G+h/0ZmhtW/bLiDtYwWx6uZTDEymZzZPq3evg7PEK9umM5+1rRaV+4ojSF1YwmPeeU/qMw9Mr/Wrcg2RJTz5zq56aKi143qK6sGIwGAONTJYs6YnbfgUewkMb6c5HsqSxNNTV2YDDN5ttYkDDxFIBRkzdpbcS3+PzJQ1L4BcVFQlEPNlrgh4dY23OQ4nBF2awVZWZF+P09fcjAk0SDM1jG4bAytG5bnZKxvyxQ2R7355uSIIKFw/bn91DpdAv1XSPemM+hHZiQMq9BB/QXEC4NNPdAe7ZzeCj69l/yrcC1d2xX963rVm3rMPrzOCxJCv0JgKToS8fyNlpb4dxHQtO/V8N4fhgB681sP/GmLn+dwScxrxC6L6Mgh3ETvuz4IjHZtdvCEE3lUnWs1NXoj1ZvfslfNRFCRB7NEpQriDVC3tZplB4T+/Qew==
 
     # grants known users remote access to project systems
     ssh_access:
@@ -87,6 +88,7 @@ elife:
                 - giancarlo
             bastion:
                 - hem
+                - david
 
 
     docker:
