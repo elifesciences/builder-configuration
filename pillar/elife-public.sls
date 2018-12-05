@@ -66,6 +66,9 @@ elife:
                 - tamlyn
                 - hem
                 - peterhooper
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
             peerscout:
                 - daniel
                 - daniel_inspiron
