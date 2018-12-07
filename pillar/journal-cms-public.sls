@@ -42,6 +42,11 @@ journal_cms:
             # password: 
             role: administrator
 
+    consumer_groups_filter:
+        api_gateway:
+            username: api-gateway
+            # password:
+
     # backup to be restored on testing instances (end2end only)
     restore:
         files: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230509-archive-b47198f6.tar.gz
