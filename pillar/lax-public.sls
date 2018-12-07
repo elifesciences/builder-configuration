@@ -26,6 +26,7 @@ lax:
             - '52.22.158.139' # kriya live server IP address:
             - '52.1.30.155' # kriya live server IP address:
             - '34.225.34.128' # kriya test/integration server IP address:
+            - '185.160.182.46' # elife2.kriyadocs.com
             - '121.45.18.161' # LSH
             - '127.0.0.1' # internal
 
