@@ -88,6 +88,7 @@ elife:
             profiles:
                 - giancarlo
             bastion:
+                - javier
                 - hem
                 - david
 
