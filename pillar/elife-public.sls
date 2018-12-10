@@ -89,6 +89,7 @@ elife:
                 - giancarlo
             bastion:
                 - javier
+                - peterhooper
                 - hem
                 - david
 
