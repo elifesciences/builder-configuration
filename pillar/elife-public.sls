@@ -71,6 +71,7 @@ elife:
                 - daniel
                 - daniel_inspiron
                 - daniel_xps
+                - javier
             peerscout:
                 - daniel
                 - daniel_inspiron
