@@ -89,6 +89,7 @@ elife:
             bastion:
                 - hem
                 - david
+                - peterhooper
 
 
     docker:
