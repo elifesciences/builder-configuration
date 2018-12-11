@@ -1,4 +1,4 @@
-containers;
+containers:
     vault:
         addr: https://master-server.elifesciences.org:8200
 
