@@ -26,6 +26,12 @@ elife_xpub:
             remote_path: '' 
     s3:
         bucket: ci-elife-xpub # does not really exist, overwritten by environment
+    mailer:
+        # by default no mail can be sent
+        host:
+        port:
+        user:
+        pass:
     deployment_target: ci # still on port 3000
 
 elife:
