@@ -32,7 +32,7 @@ elife_xpub:
         port:
         user:
         pass:
-    deployment_target: ci # still on port 3000
+    deployment_target: formula # still on port 3000
 
 elife:
     aws:
