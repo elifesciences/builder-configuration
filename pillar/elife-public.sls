@@ -52,6 +52,7 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - nlisgo
+                - peterhooper
             crm:
                 - graham_dev
                 - graham_ubuntu_vm
