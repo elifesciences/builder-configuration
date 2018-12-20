@@ -205,6 +205,7 @@ api_gateway:
             - view-unpublished-content
         elife-xpub:
             - view-restricted-people
+            - view-restricted-profiles
 
     # api consumers who once existed but should not exist any longer
     absent_consumers:
