@@ -43,3 +43,4 @@ elife:
                 name: orcid-dummy
                 image: elifesciences/orcid-dummy
                 port: 8001
+                enabled: false
