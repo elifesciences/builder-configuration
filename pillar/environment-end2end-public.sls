@@ -21,6 +21,15 @@ elife_xpub:
         endpoint: https://end2end--xpub.elifesciences.org
     pubsweet:
         base_url: https://end2end--xpub.elifesciences.org
+    meca:
+        sftp:
+            connection:
+                host: end2end--xpub--1.elife.internal
+                port: 21
+                # fake FTP server credentials
+                # username:
+                # password:
+            remote_path: 'files/'
     s3:
         bucket: end2end-elife-xpub
     deployment_target: end2end
