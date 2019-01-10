@@ -51,4 +51,4 @@ elife:
                 ports:
                     # SSH/SFTP
                     - "2222:22"
-                enabled: true
+                enabled: false
