@@ -25,10 +25,11 @@ elife_xpub:
         sftp:
             connection:
                 host: end2end--xpub--1.elife.internal
+                port: 2222
                 # fake FTP server credentials
-                # username:
-                # password:
-            remote_path: 'files/'
+                username: ejpdummy
+                password: ejpdummy
+            remote_path: 'meca/'
     s3:
         bucket: end2end-elife-xpub
     deployment_target: end2end
