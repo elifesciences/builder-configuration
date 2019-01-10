@@ -25,7 +25,6 @@ elife_xpub:
         sftp:
             connection:
                 host: end2end--xpub--1.elife.internal
-                port: 21
                 # fake FTP server credentials
                 # username:
                 # password:
