@@ -101,6 +101,17 @@ elife:
         # password:
         prune_days: 14
 
+    sidecars:
+        # main image that will be used to extract labels 
+        # indicating metadata about the sidecars such as their own tags
+        # main: elifesciences/annotations_cli
+        containers: {}
+            #api_dummy:
+            #    image: elifesciences/api-dummy
+            #    name: api-dummy
+            #    port: 8001
+            #    enabled: True
+
     mockserver:
         expectations: {}
             #elife_bot: salt://elife-bot/config/mockserver.sh
