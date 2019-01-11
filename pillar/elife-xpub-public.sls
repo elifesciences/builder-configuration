@@ -40,3 +40,15 @@ elife:
         # access_key_id:
         # secret_access_key:
         region: us-east-1
+    # only used in testing environments
+    sidecars:
+        containers:
+            sftp:
+                name: sftp
+                image: elifesciences/sftp
+                tag: 20190110
+                command: ejpdummy:ejpdummy:::meca
+                ports:
+                    # SSH/SFTP
+                    - "2222:22"
+                enabled: false
