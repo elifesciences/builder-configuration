@@ -22,7 +22,7 @@ lax:
             - '212.44.25.140' # elife
             - '182.72.206.72/29' # exeter are 182.72.206.73 to 78
             - '115.160.252.46' # another exeter IP
-            - '88.202.224.171' # yet another exeter IP
+            - '88.202.224.171' # yet another exeter IP (2019-01-14: elife2.kriyadocs.com)
             - '52.22.158.139' # kriya live server IP address:
             - '52.1.30.155' # kriya live server IP address:
             - '34.225.34.128' # kriya test/integration server IP address:
