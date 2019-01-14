@@ -40,6 +40,8 @@ elife:
         # access_key_id:
         # secret_access_key:
         region: us-east-1
+    docker:
+        prune_days: 1
     # only used in testing environments
     sidecars:
         containers:
