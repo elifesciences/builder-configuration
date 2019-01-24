@@ -87,6 +87,7 @@ elife:
                 - daniel
                 - daniel_inspiron
                 - daniel_xps
+                - alfred
             profiles:
                 - giancarlo
             bastion:
