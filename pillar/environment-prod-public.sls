@@ -19,13 +19,13 @@ elife:
 
 elife_xpub:
     api:
-        endpoint: https://xpub.elifesciences.org
+        endpoint: https://reviewer.elifesciences.org
     orcid:
         sandbox: false
         # client_id:
         # client_secret:
     pubsweet:
-        base_url: https://xpub.elifesciences.org
+        base_url: https://reviewer.elifesciences.org
     meca:
         sftp:
             connection:
@@ -45,7 +45,7 @@ elife_xpub:
 
 journal:
     feature_xpub: true
-    submit_url: https://xpub.elifesciences.org/login
+    submit_url: https://reviewer.elifesciences.org/login
 
 journal_cms:
     aws:
