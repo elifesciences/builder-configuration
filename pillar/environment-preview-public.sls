@@ -3,4 +3,4 @@ elife:
 
 journal:
     feature_xpub: false
-    submit_url: https://xpub.elifesciences.org/login
+    submit_url: https://reviewer.elifesciences.org/login
