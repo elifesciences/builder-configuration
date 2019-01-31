@@ -26,6 +26,13 @@ elife_xpub:
         # client_secret:
     pubsweet:
         base_url: https://xpub.elifesciences.org
+    meca:
+        sftp:
+            connection:
+                host: sftp.ejpress.com
+                # EJP sandbox credentials
+                # username: 
+                # password:
     s3:
         bucket: prod-elife-xpub
     mailer:
