@@ -37,7 +37,7 @@ my_project:
         # password: 
 ```
 
-are sensitive, and are configured in [builder-private](https://github.com/elifesciences/builder-private/tree/master/pillar) or [Vault](https://master-server.elifesciences.org:8200/ui/) instead.
+are sensitive, and are configured in [builder-private](https://github.com/elifesciences/builder-private/tree/master/pillar) or [Vault](https://master-server.elifesciences.org:8200/ui/vault/secrets/secret/list/projects/) instead.
 
 Values clearly fake, tagged like
 
