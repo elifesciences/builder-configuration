@@ -36,11 +36,12 @@ elife_xpub:
     s3:
         bucket: prod-elife-xpub
     mailer:
-        # by default no mail can be sent
         host: email-smtp.us-east-1.amazonaws.com
         port: 587
-        # user: # see builder-private
-        # pass: # see builder-private
+        # `ses-smtp-user.elife-xpub` IAM user
+        # see https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html for explanations, but it's easier to create a new user than to derive its SMTP credentials from the AWS ones
+        # user:
+        # pass:
     deployment_target: prod
 
 journal:
