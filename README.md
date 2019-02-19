@@ -37,7 +37,7 @@ my_project:
         # password: 
 ```
 
-are sensitive, and are configured in [builder-private](https://github.com/elifesciences/builder-private/tree/master/pillar) instead.
+are sensitive, and are configured in [builder-private](https://github.com/elifesciences/builder-private/tree/master/pillar) or [Vault](https://master-server.elifesciences.org:8200/ui/) instead.
 
 Values clearly fake, tagged like
 
@@ -47,7 +47,7 @@ my_project:
         client_id: fake_client_id # overwritten by environment
 ```
 
-will be overridden by `builder-private` for certain environments (like `prod`) with real values.
+will be overridden by `builder-private` or Vault for certain environments (like `prod`) with real values.
 
 In case a dictionary does not have any public values to include here, it's safer to make the schema of the data consistent with an empty `{}`:
 
