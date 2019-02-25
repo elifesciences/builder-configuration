@@ -46,7 +46,7 @@ elife_xpub:
 
 journal:
     feature_xpub: true
-    submit_url: https://submit.elifesciences.org/
+    submit_url: https://reviewer.elifesciences.org/login
 
 journal_cms:
     aws:
