@@ -265,16 +265,16 @@ base:
         - elife.mercurial
         - elife.aws-cli
         - elife.external-volume
-        - elife.jenkins-node
-        - elife.jenkins-scripts
-        - elife-libraries
-        - elife.proofreader-php
         - elife.mysql57
         - elife.postgresql
+        - elife.jenkins-node
+        - elife.jenkins-scripts
+        - elife.proofreader-php
         - elife.hub
         - elife.docker
         - elife.docker-push
         - elife.pypi
+        - elife-libraries
 
     'elife-libraries--load--*':
         - elife.spectrum
