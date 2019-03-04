@@ -5,6 +5,7 @@ base:
 
     'heavybox--*':
         - heavybox-public
+        - pypi
 
     'master-server--*':
         - master-server
