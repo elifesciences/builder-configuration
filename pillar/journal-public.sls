@@ -4,7 +4,7 @@ journal:
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
     calls_to_action:
-      - path: ^(/$|/about$|/about/aims-scope|/for-the-press$|/for-the-press/5cc21558/)
+      - path: ^(/$|/about$|/about/|/for-the-press$|/for-the-press/5cc21558/)
         text: 'Hear more about Michael Eisen, our new Editor-in-Chief, and the latest developments at eLife'
         button:
             text: 'Sign up for eLife news'
