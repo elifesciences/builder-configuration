@@ -11,11 +11,11 @@ journal:
         image:
             alt: ''
             # placeholder, change with real image
-            uri: https://iiif.elifesciences.org/lax/09560%2Felife-09560-fig1-v1.tif
+            uri: https://iiif.elifesciences.org/lax/09560%%2Felife-09560-fig1-v1.tif
             source:
                 mediaType: image/jpg
                 # placeholder, change with real image
-                uri: https://iiif.elifesciences.org/lax/09560%2Felife-09560-fig1-v1.tif/full/full/0/default.jpg
+                uri: https://iiif.elifesciences.org/lax/09560%%2Felife-09560-fig1-v1.tif/full/full/0/default.jpg
                 filename: elife-09560-fig1-v1.jpg
             size:
                 # placeholder, change with real image dimensions
