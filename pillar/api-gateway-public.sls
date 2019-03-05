@@ -29,141 +29,141 @@ api_gateway:
     endpoints:
         labs:
             upstream_url: {{ journal_cms_url }}
-            request_path: /labs-posts
+            uris: /labs-posts
 
         subjects:
             upstream_url: {{ journal_cms_url }}
-            request_path: /subjects
+            uris: /subjects
 
         podcast_episodes:
             upstream_url: {{ journal_cms_url }}
-            request_path: /podcast-episodes
+            uris: /podcast-episodes
 
         people:
             upstream_url: {{ journal_cms_url }}
-            request_path: /people
+            uris: /people
 
         medium:
             upstream_url: {{ medium_url }}
-            request_path: /medium-articles
+            uris: /medium-articles
 
         search:
             upstream_url: {{ search_url }}
-            request_path: /search
+            uris: /search
 
         recommendations:
             upstream_url: {{ recommendations_url }}
-            request_path: /recommendations
+            uris: /recommendations
 
         articles:
             upstream_url: {{ lax_url }}/api/v2
-            request_path: /articles
+            uris: /articles
 
         blog_articles:
             upstream_url: {{ journal_cms_url }}
-            request_path: /blog-articles
+            uris: /blog-articles
 
         events:
             upstream_url: {{ journal_cms_url }}
-            request_path: /events
+            uris: /events
 
         interviews:
             upstream_url: {{ journal_cms_url }}
-            request_path: /interviews
+            uris: /interviews
 
         collections:
             upstream_url: {{ journal_cms_url }}
-            request_path: /collections
+            uris: /collections
 
         community:
             upstream_url: {{ journal_cms_url }}
-            request_path: /community
+            uris: /community
 
         covers:
             upstream_url: {{ journal_cms_url }}
-            request_path: /covers
+            uris: /covers
 
         press_packages:
             upstream_url: {{ journal_cms_url }}
-            request_path: /press-packages
+            uris: /press-packages
 
         job_adverts:
             upstream_url: {{ journal_cms_url }}
-            request_path: /job-adverts
+            uris: /job-adverts
 
         highlights:
             upstream_url: {{ journal_cms_url }}
-            request_path: /highlights
+            uris: /highlights
 
         annual_reports:
             upstream_url: {{ journal_cms_url }}
-            request_path: /annual-reports
+            uris: /annual-reports
 
         metrics:
             upstream_url: {{ metrics_url }}/api/v2
-            request_path: /metrics
-            strip_request_path: True
+            uris: /metrics
+            strip_uris: True
 
         oauth2:
             upstream_url: {{ profiles_url }}
-            request_path: /oauth2
+            uris: /oauth2
 
         profiles:
             upstream_url: {{ profiles_url }}
-            request_path: /profiles
+            uris: /profiles
 
         annotations:
             upstream_url: {{ annotations_url }}
-            request_path: /annotations
+            uris: /annotations
 
         digests:
             upstream_url: {{ digests_url }}
-            request_path: /digests
+            uris: /digests
 
         ping_annotations:
             upstream_url: {{ annotations_url }}/ping
-            request_path: /ping/annotations
-            strip_request_path: True
+            uris: /ping/annotations
+            strip_uris: True
 
         ping_digests:
             upstream_url: {{ digests_url }}/ping
-            request_path: /ping/digests
-            strip_request_path: True
+            uris: /ping/digests
+            strip_uris: True
 
         ping_journal_cms:
             upstream_url: {{ journal_cms_url }}/ping
-            request_path: /ping/journal-cms
-            strip_request_path: True
+            uris: /ping/journal-cms
+            strip_uris: True
 
         ping_lax:
             upstream_url: {{ lax_url }}/api/v2/ping
-            request_path: /ping/lax
-            strip_request_path: True
+            uris: /ping/lax
+            strip_uris: True
 
         ping_medium:
             upstream_url: {{ medium_url }}/ping
-            request_path: /ping/medium
-            strip_request_path: True
+            uris: /ping/medium
+            strip_uris: True
 
         ping_metrics:
             upstream_url: {{ metrics_url }}/api/v2/ping
-            request_path: /ping/metrics
-            strip_request_path: True
+            uris: /ping/metrics
+            strip_uris: True
 
         ping_profiles:
             upstream_url: {{ profiles_url }}/ping
-            request_path: /ping/profiles
-            strip_request_path: True
+            uris: /ping/profiles
+            strip_uris: True
 
         ping_recommendations:
             upstream_url: {{ recommendations_url }}/ping
-            request_path: /ping/recommendations
-            strip_request_path: True
+            uris: /ping/recommendations
+            strip_uris: True
 
         ping_search:
             upstream_url: {{ search_url }}/ping
-            request_path: /ping/search
-            strip_request_path: True
+            uris: /ping/search
+            strip_uris: True
 
     # APIs that once existed but should not exist any longer
     absent_endpoints:
