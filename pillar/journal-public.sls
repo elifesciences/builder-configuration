@@ -11,14 +11,11 @@ journal:
             path: https://crm.elifesciences.org/crm/elife-news
         image:
             alt: ''
-            # placeholder, change with real image
-            uri: https://iiif.elifesciences.org/lax/09560%%2Felife-09560-fig1-v1.tif
+            uri: https://iiif.elifesciences.org/journal-cms/person%2F2019-03%2Fmike.jpg
             source:
                 mediaType: image/jpg
-                # placeholder, change with real image
-                uri: https://iiif.elifesciences.org/lax/09560%%2Felife-09560-fig1-v1.tif/full/full/0/default.jpg
-                filename: elife-09560-fig1-v1.jpg
+                uri: https://iiif.elifesciences.org/journal-cms/person%2F2019-03%2Fmike.jpg/full/full/0/default.jpg
+                filename: mike.jpg
             size:
-                # placeholder, change with real image dimensions
-                width: 4194
-                height: 4714
+                width: 7360
+                height: 4912
