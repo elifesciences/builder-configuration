@@ -11,10 +11,10 @@ journal:
             path: https://crm.elifesciences.org/crm/elife-news
         image:
             alt: ''
-            uri: https://iiif.elifesciences.org/journal-cms/person%2F2019-03%2Fmike.jpg
+            uri: https://iiif.elifesciences.org/journal-cms/person%%2F2019-03%%2Fmike.jpg
             source:
                 mediaType: image/jpg
-                uri: https://iiif.elifesciences.org/journal-cms/person%2F2019-03%2Fmike.jpg/full/full/0/default.jpg
+                uri: https://iiif.elifesciences.org/journal-cms/person%%2F2019-03%%2Fmike.jpg/full/full/0/default.jpg
                 filename: mike.jpg
             size:
                 width: 7360
