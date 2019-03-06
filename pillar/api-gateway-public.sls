@@ -102,7 +102,7 @@ api_gateway:
         metrics:
             upstream_url: {{ metrics_url }}/api/v2
             uris: /metrics
-            strip_uris: True
+            strip_uri: True
 
         oauth2:
             upstream_url: {{ profiles_url }}
@@ -123,47 +123,47 @@ api_gateway:
         ping_annotations:
             upstream_url: {{ annotations_url }}/ping
             uris: /ping/annotations
-            strip_uris: True
+            strip_uri: True
 
         ping_digests:
             upstream_url: {{ digests_url }}/ping
             uris: /ping/digests
-            strip_uris: True
+            strip_uri: True
 
         ping_journal_cms:
             upstream_url: {{ journal_cms_url }}/ping
             uris: /ping/journal-cms
-            strip_uris: True
+            strip_uri: True
 
         ping_lax:
             upstream_url: {{ lax_url }}/api/v2/ping
             uris: /ping/lax
-            strip_uris: True
+            strip_uri: True
 
         ping_medium:
             upstream_url: {{ medium_url }}/ping
             uris: /ping/medium
-            strip_uris: True
+            strip_uri: True
 
         ping_metrics:
             upstream_url: {{ metrics_url }}/api/v2/ping
             uris: /ping/metrics
-            strip_uris: True
+            strip_uri: True
 
         ping_profiles:
             upstream_url: {{ profiles_url }}/ping
             uris: /ping/profiles
-            strip_uris: True
+            strip_uri: True
 
         ping_recommendations:
             upstream_url: {{ recommendations_url }}/ping
             uris: /ping/recommendations
-            strip_uris: True
+            strip_uri: True
 
         ping_search:
             upstream_url: {{ search_url }}/ping
             uris: /ping/search
-            strip_uris: True
+            strip_uri: True
 
     # APIs that once existed but should not exist any longer
     absent_endpoints:
