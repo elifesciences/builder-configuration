@@ -95,7 +95,9 @@ elife:
                 - peter
                 - hem
                 - david
-
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
 
     docker:
         # username:
