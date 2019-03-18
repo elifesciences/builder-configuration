@@ -27,6 +27,9 @@ elife:
         peter: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaQaYnpDAaSNkDfuompmMmthxiuqmV8RcDLrfEzQQ8sXrrwxIJyUmO0bhijePxLoOHMZdSz8NcAl2FGYIqWU4bpWpWIhFFUjGBSlN/KjYAhd1eUI+O24JOPPAi5+eInyHS5OJKmqg0MKq6LMbU3zHSFFZdKEfrkECv058X7qtkoMgU7KMtjy9OQZrrA5mWePuTKFrSWV+5Vxhna2L3odURO0ApzqyqsT9jyyTrOl2MFl4c0mFPzdJhZqqa4gjX/eikp8y4cM8C5j3rPvdrxArdTiN2PIuzPDOVYN/2nt8X8tmzTFVfM2/PxdlKINjppjimQH+L0CnpEwhA9IVMBoEF
         hem: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7gyp8ERD/f3amztI4qVx5oMOU6CrutIhjNrBvXwf98wBOlHvb2bIV72wAplFqrxu8MRrXnNfh0NGT9LkjxQ4E+VKPdDF77jgOPBtrOOwwpGSjzrf/oOHa0bi+ma2Y0bWNQ1WadNPpGdc1L8MMdiB3Hzw3zbLc9AY0biimlHxeWL8T+IhpBmJkT/LKXoMBurOZX/ZbWPzUGkmvqLZrMgqMpM8eOF5JjYmjkwfCKwmBr72AMq4npEOGpgJjO4OlozlbN4yh0BL5CnFDBQrFvMczUbH9JXq5ap1eljYsVaP/bfaV8RzM1OFzORIigrfGGueQsJtuNq+YoEdw6o24SzL7
         javier: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRQUA+0RacnvwithdJBJx2EFIP0UH44yfF4E1tdT/+9ECMmA9sIrRqB7YlBo92eO6UXjvYLbrtzX4OJzEzTzxnqcdRGK/ktpdDv/NsB8CYiU/DoM5dv9NbjCpBbz0+iejUQv+bltOP2hZP6WiHbJ7Be1YVE0X2Zx9I9cQR8GZ7sEhRaxSwOds3vc/bRK2+UGIQZfL8MQqTXmjidigNorMbhUFjbL8w1rxLq8KDHL3kUhEJshIc6yKenIMTdPLixARsQYdWAWaCosrTSk4LG71pvqjiTLkmJkvwdiW2VgbJ8zqeUpOZCZt3kScn+F5Z8c+CfadrkYzTF76+TN3FladZ
+        erez: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAo21EfMSblOPLzfkZOebYCGYYRmHxRp4TCS7CwcJyFb1F5xS+WYYvO1Iw1qLDsRhXX98BeDlN6dhiz1LKCsl3JbZdhf65N7GJFILHIct94/zjVjwehLWbI390Bv68LSi7qmgos1bvp7wbLxIawSEBbVSkQILibfylaDQp9RI+el0WRCvmg7HCeWSASmhA2CgnsI/odoGkPu6dq/KqHQxYNq8dHoISOtl/awkeiKiIga3m395rjwZzdBQKhVLc+jCELRp2juk109sls02UMqww+WgR7u+ibCTt3OhgBVgxV4+2FsrxWchD508VfDCLro1VxJJ2G/9luONEsToBsF39wQ==
+        will: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDKFrvEuKc/zscsleTHjmuG5YWFeJPoqlwEiLcERykZMmacX0hSVzaq32zGEOvnKMKS4ZT+y2Z/8GnrYge4m0ZosL7lnvp24jVcZEKKf8Gc07UArPSnm9JVeoCK6YSR8EnAbOhpoeLmUEq+PBn9/wZ2FEQrE6OJBFgVGDe14jQ1lbZdebCkp1jpQbt4f5g2qoG5gHHkqN8ggUaGJ6WP6Xs5cvq7NPin9w8oQalN2o1MZnAZUUALLI8BJTrrQzrnVvC9dOMlp4SkRMbNQvT/u598yjUVjmV3oIPGOn90fQWo7KR/brSU1pi/De+mvW7IDk5Uw4twaxtkBw62SSfZ0aRelI0VBvanB4zFjyCCTH4gBKAAnUulrm1HvfIIhsl/GQDM1CVf1gzUAKwbRv2QquF7wWTylsh8aAMga1VUHbnD0U7ecaHPvyQvzBw+9Fw6zdxshCIF7sKgJWWU5yeOyaNZb9JViG0ZRg5spRYfMBrauWrLTBTkxP6c0wBI1iCvyjEUVPuuQxCSL/ykZ/Md+3POTFYKGTO8HYU4K3bhp4PWgj7+/ercd6wo+hm4OIiqb8s6VB3GqbDttEHFIX/s4vC/2eXyFPTC4J4nn4RFCwnoOxPymXvgHHaHuHt9KvqpiiB+TpctwAWlp5Tza+dt4EeSoWweRHCzcCP2zNivT3dfZQ==
+
         # tech
         giancarlo: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDrzy0flvG4JFmoc3VWPvH0HZ9IJW+7JiNaAlj/EFMLcoqZQHI2BOqlGB8BRxJOXwpPujS1O7QbkwaoBnQFRVhHaxOYGjahQCb/yFCUNIi4dJUe75SKSGHwSLBf5z9gKqZLr0V9t0bYOmGi1wjybp5JWe1PTSTfzC6pmLVIDrsgAvnkkd6dDTc55d8DdSno3vVPuXuWxT8Q/qYj+iMjrHkJ4vJCr6gIHkl5yw6nU99T1SE0mmCmP6Bc0MuIMsimk5HCZs7Hyt8P32+MqkAupd+/idn86KYPdkh+lrC6om+ZbvNGk0+/dK5b3uaga9bv68uL2Oy0Sr+WscnppOZJPVtK3LUWRBNxTJ852PHBu46PBARd8fMw5/IRj2MQq8Y5plPhTik5ORLwxZrjZ9uXEsF9YbMGNwAwqyhl1c31eCgv4mAunMGXfxMUaMcp9MAJxaKwIwT4Tt06+UC9tAvzNl8ij0GD/jz2lgk7eTj/1Kia24p4Sx8hB6vR/bVe1VoT/w/zvmjV0V/2NK5rY3sSKPBaY9UPHlcX0vMpOBYCXnKoR73yir0A4aoCZN+CDl+vVozGqHdnWWoI3dhWVLReesgtmh3DzLelqZDdnSF6nHn8DJIQlw1iuVavLZ0RX8SW+OAXZo1VPLq9vr3/+NO7uitEBQvxHAc2elQM4Gn1G6wAgQ==
 
@@ -74,6 +77,8 @@ elife:
                 - daniel_xps
                 - javier
                 - hannah
+                - erez
+                - will
             peerscout:
                 - daniel
                 - daniel_inspiron
@@ -100,6 +105,8 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - hannah
+                - erez
+                - will
 
     docker:
         # username:
