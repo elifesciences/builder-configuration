@@ -29,6 +29,7 @@ base:
         - elife-bot-end2end
 
     'elife-alfred--*':
+        - elife-alfred-public
         - alfred
 
     'elife-libraries--*':
