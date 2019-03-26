@@ -473,6 +473,7 @@ base:
         - iiif.loris
 
     'redirects--*':
+        - elife.swapspace
         - elife.nginx
         - elife.nginx-error-pages
         - redirects
