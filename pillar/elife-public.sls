@@ -70,12 +70,10 @@ elife:
                 - circle_interactive
             elife-xpub:
                 - alfred
-                - hem
                 - peter
                 - daniel
                 - daniel_inspiron
                 - daniel_xps
-                - javier
                 - hannah
                 - erez
                 - will
@@ -97,9 +95,7 @@ elife:
             profiles:
                 - giancarlo
             bastion:
-                - javier
                 - peter
-                - hem
                 - david
                 - daniel
                 - daniel_inspiron
@@ -116,6 +112,12 @@ elife:
             # don't delete! leave commented as an example
             personalised-covers:
                 - scott
+            bastion:
+                - javier
+                - hem
+            elife-xpub:
+                - javier
+                - hem
 
     docker:
         # username:
