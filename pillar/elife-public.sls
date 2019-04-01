@@ -108,6 +108,15 @@ elife:
                 - erez
                 - will
 
+        # removes keys. happens *after* allowed
+        denied:
+            # per-user denied access to all instances
+            all: # []
+                - seanwiseman
+            # don't delete! leave commented as an example
+            personalised-covers:
+                - scott
+
     docker:
         # username:
         # password:
