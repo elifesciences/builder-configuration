@@ -135,6 +135,12 @@ elife:
             #    port: 8001
             #    enabled: True
 
+    eks:
+        clusters:
+            kubernetes-aws--test:
+                region: us-east-1
+                role: arn:aws:iam::512686554592:role/kubernetes-aws--test--AmazonEKSUserRole
+
     mockserver:
         expectations: {}
             #elife_bot: salt://elife-bot/config/mockserver.sh
