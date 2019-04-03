@@ -38,6 +38,7 @@ base:
         - elife.python3
         - elife.postgresql
         - elife.nginx
+        - elife.newrelic-python
         - elife.uwsgi
         - elife.no-more-daemon
         - elife-dashboard
