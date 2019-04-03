@@ -449,6 +449,10 @@ base:
         - api-dummy
         - elife.proofreader-php
         - personalised-covers.api-dummy
+        - elife.docker
+        - elife.aws-cli
+        - elife.sidecars
+        - personalised-covers.localstack
 
     'peerscout--*':
         - elife.nginx
