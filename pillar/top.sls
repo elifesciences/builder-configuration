@@ -106,6 +106,10 @@ base:
     'personalised-covers--*':
         - personalised-covers
 
+    'personalised-covers--ci--*':
+    'personalised-covers--pr-*':
+        - personalised-covers-ci-public
+
     'peerscout--*':
         - peerscout
 
