@@ -456,7 +456,7 @@ base:
 
     'peerscout--*':
         - elife.nginx
-        - elife.nodejs6
+        - elife.nodejs8
         - elife.python3
         - elife.postgresql
         - elife.aws-cli
