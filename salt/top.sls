@@ -352,22 +352,7 @@ base:
     'medium--ci--*':
         - elife.proofreader-php
 
-    'search--*--1':
-        - elife.php7
-        - elife.composer
-        - elife.nginx
-        - elife.nginx-php7
-        - elife.postgresql
-        - elife.gearman
-        - elife.newrelic-php
-        - elife.aws-credentials
-        - elife.aws-cli
-        - elife.java8
-        - search.elasticsearch
-        - search.gearman-persistence
-        - search
-
-    # follower nodes
+    # 'follower' because it may not have elasticsearch installed
     'search--*':
         - elife.php7
         - elife.composer
@@ -377,6 +362,15 @@ base:
         - elife.aws-credentials
         - elife.aws-cli
         - search
+
+    # 'leader' because it has elasticsearch installed
+    'search--*--1':
+        - elife.postgresql
+        - elife.gearman
+        - elife.newrelic-php
+        - elife.java8
+        - search.elasticsearch
+        - search.gearman-persistence
 
     'search--ci--*':
         - api-dummy
