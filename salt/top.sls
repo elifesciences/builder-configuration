@@ -372,7 +372,7 @@ base:
         - search.elasticsearch
         - search.gearman-persistence
 
-    'search--ci--*':
+    'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
         - api-dummy
         - search.api-dummy
         - elife.proofreader-php
