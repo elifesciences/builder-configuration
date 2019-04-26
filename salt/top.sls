@@ -368,7 +368,7 @@ base:
         - elife.postgresql
         - elife.gearman
         - elife.newrelic-php
-        - elife.java8
+        - elife.openjdk8
         - search.elasticsearch
         - search.gearman-persistence
 
