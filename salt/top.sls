@@ -372,6 +372,9 @@ base:
         - search.elasticsearch
         - search.gearman-persistence
 
+    # https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
+    # you can test this on the salt-master with:
+    # $ salt -C 'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*' --preview-target
     'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
         - api-dummy
         - search.api-dummy
