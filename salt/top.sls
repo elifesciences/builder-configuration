@@ -371,6 +371,7 @@ base:
         - elife.openjdk8
         - search.elasticsearch
         - search.gearman-persistence
+        - search.leader
 
     # https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
     # you can test this on the salt-master with:
