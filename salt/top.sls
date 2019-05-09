@@ -393,15 +393,10 @@ base:
         - search.processes
 
     'recommendations--*':
-        - elife.php7
-        - elife.composer
         - elife.nginx
-        - elife.nginx-php7
+        - elife.docker
         - elife.newrelic-php
         - recommendations
-
-    'recommendations--ci*':
-        - elife.proofreader-php
 
     'jats4r-validator--*':
         - elife.java8
