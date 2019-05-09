@@ -395,7 +395,6 @@ base:
     'recommendations--*':
         - elife.nginx
         - elife.docker
-        - elife.newrelic-php
         - recommendations
 
     'jats4r-validator--*':
