@@ -384,12 +384,15 @@ base:
         - elife.goaws
 
     'search--end2end--1':
+        - elife.multiservice
         - search.processes
 
     'search--continuumtest--1':
+        - elife.multiservice
         - search.processes
 
     'search--prod--1':
+        - elife.multiservice
         - search.processes
 
     'recommendations--*':
