@@ -103,6 +103,10 @@ elife:
                 - hannah
                 - erez
                 - will
+            microsimulation-demo:
+                - alfred
+                - graham_dev
+                - graham_ubuntu_vm
 
         # removes keys. happens *after* allowed
         denied:
