@@ -154,6 +154,9 @@ base:
         - data-pipeline-public
         - data-pipeline
 
+    'microsimulation-demo--*':
+        - microsimulation-demo-public
+
     # environment overrides; this have to be at the end of this file
 
     '*--ci':
