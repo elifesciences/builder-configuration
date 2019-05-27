@@ -201,14 +201,17 @@ base:
 
     'journal-cms--end2end*':
         - journal-cms.cron
+        - elife.multiservice
         - journal-cms.processes
 
     'journal-cms--continuumtest*':
         - journal-cms.cron
+        - elife.multiservice
         - journal-cms.processes
 
     'journal-cms--prod--*':
         - journal-cms.cron
+        - elife.multiservice
         - journal-cms.processes
         - elife.postfix # queues then sends via AWS SES
         - elife.postfix-ses
