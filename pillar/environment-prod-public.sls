@@ -20,10 +20,6 @@ elife:
 elife_xpub:
     api:
         endpoint: https://reviewer.elifesciences.org
-    orcid:
-        sandbox: false
-        # client_id:
-        # client_secret:
     pubsweet:
         base_url: https://reviewer.elifesciences.org
     meca:
