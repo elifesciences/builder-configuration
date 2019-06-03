@@ -30,74 +30,92 @@ api_gateway:
         labs:
             upstream_url: {{ journal_cms_url }}
             uris: /labs-posts
+            strip_uri: False
 
         subjects:
             upstream_url: {{ journal_cms_url }}
             uris: /subjects
+            strip_uri: False
 
         podcast_episodes:
             upstream_url: {{ journal_cms_url }}
             uris: /podcast-episodes
+            strip_uri: False
 
         people:
             upstream_url: {{ journal_cms_url }}
             uris: /people
+            strip_uri: False
 
         medium:
             upstream_url: {{ medium_url }}
             uris: /medium-articles
+            strip_uri: False
 
         search:
             upstream_url: {{ search_url }}
             uris: /search
+            strip_uri: False
 
         recommendations:
             upstream_url: {{ recommendations_url }}
             uris: /recommendations
+            strip_uri: False
 
         articles:
             upstream_url: {{ lax_url }}/api/v2
             uris: /articles
+            strip_uri: False
 
         blog_articles:
             upstream_url: {{ journal_cms_url }}
             uris: /blog-articles
+            strip_uri: False
 
         events:
             upstream_url: {{ journal_cms_url }}
             uris: /events
+            strip_uri: False
 
         interviews:
             upstream_url: {{ journal_cms_url }}
             uris: /interviews
+            strip_uri: False
 
         collections:
             upstream_url: {{ journal_cms_url }}
             uris: /collections
+            strip_uri: False
 
         community:
             upstream_url: {{ journal_cms_url }}
             uris: /community
+            strip_uri: False
 
         covers:
             upstream_url: {{ journal_cms_url }}
             uris: /covers
+            strip_uri: False
 
         press_packages:
             upstream_url: {{ journal_cms_url }}
             uris: /press-packages
+            strip_uri: False
 
         job_adverts:
             upstream_url: {{ journal_cms_url }}
             uris: /job-adverts
+            strip_uri: False
 
         highlights:
             upstream_url: {{ journal_cms_url }}
             uris: /highlights
+            strip_uri: False
 
         annual_reports:
             upstream_url: {{ journal_cms_url }}
             uris: /annual-reports
+            strip_uri: False
 
         metrics:
             upstream_url: {{ metrics_url }}/api/v2
@@ -107,18 +125,22 @@ api_gateway:
         oauth2:
             upstream_url: {{ profiles_url }}
             uris: /oauth2
+            strip_uri: False
 
         profiles:
             upstream_url: {{ profiles_url }}
             uris: /profiles
+            strip_uri: False
 
         annotations:
             upstream_url: {{ annotations_url }}
             uris: /annotations
+            strip_uri: False
 
         digests:
             upstream_url: {{ digests_url }}
             uris: /digests
+            strip_uri: False
 
         ping_annotations:
             upstream_url: {{ annotations_url }}/ping
