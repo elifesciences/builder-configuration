@@ -127,51 +127,10 @@ base:
         - elife-reporting.cron
 
     'journal--*':
-        - elife.php7
-        - elife.composer
+        - elife.docker
         - elife.nginx
-        - elife.nginx-php7
         - elife.nginx-error-pages
-        - elife.nodejs6
-        - elife.newrelic-php
-        - journal.curl-7-36
         - journal
-
-    'journal--prod--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
-
-    'journal--demo--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
-
-    'journal--end2end--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
-
-    'journal--continuumtest--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
-
-    'journal--continuumtestpreview--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
-
-    'journal--preview--*':
-        - elife.redis-server
-        - api-dummy
-        - journal.local-demo
-        - journal.critical-css
 
     'pattern-library--*':
         - elife.docker
