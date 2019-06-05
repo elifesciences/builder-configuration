@@ -116,6 +116,7 @@ base:
         - peerscout
 
     'iiif--*':
+        - iiif-public
         - iiif
 
     'redirects--*':
