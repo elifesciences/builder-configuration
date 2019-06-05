@@ -1,6 +1,9 @@
 elife:
     answer: 42
 
+    uwsgi:
+        username: www-data
+
     ssh_credentials: {}
         # populate for single projects, `private_key` references must point
         # to files in builder-private
