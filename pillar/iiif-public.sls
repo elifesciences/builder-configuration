@@ -1,0 +1,3 @@
+elife:
+    uwsgi:
+        username: loris
