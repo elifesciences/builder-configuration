@@ -76,16 +76,19 @@ base:
         - elife.nginx
         - elife.vsftpd
         - elife.vsftpd-nginx
+        - elife.multiservice
         - elife-bot.processes
         - elife.sidecars
         - elife.mockserver
         # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
     'elife-bot--continuumtest*':
+        - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
 
     'elife-bot--prod*':
+        - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
 
