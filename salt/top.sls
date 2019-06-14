@@ -543,3 +543,11 @@ base:
         - elife.nginx
         - elife.docker
         - microsimulation-demo
+
+    'bioprotocol--*':
+        - elife.nginx
+        - elife.postgresql
+        - elife.postgresql-appdb
+        - elife.uwsgi
+        - bioprotocol
+
