@@ -158,6 +158,9 @@ base:
     'microsimulation-demo--*':
         - microsimulation-demo-public
 
+    'bioprotocol--*':
+        - bioprotocol
+
     # environment overrides; this have to be at the end of this file
 
     '*--ci':
