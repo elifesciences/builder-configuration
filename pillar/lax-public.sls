@@ -57,6 +57,13 @@ elife:
             impl: loris.resolver.SimpleHTTPResolver
             source_prefix: https://publishing-cdn.elifesciences.org/
 
+    uwsgi:
+        services:
+            lax:
+                folder: /srv/lax
+            bot-lax-adaptor:
+                folder: /opt/bot-lax-adaptor
+
     newrelic_python:
         application_folder: /srv/lax
         service: uwsgi-lax
