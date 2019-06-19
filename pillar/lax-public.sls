@@ -64,6 +64,12 @@ elife:
             bot-lax-adaptor:
                 folder: /opt/bot-lax-adaptor
 
+    multiservice:
+        services:
+            bot-lax-adaptor:
+                service_template: bot-lax-adaptor-service
+                num_processes: 1
+
     newrelic_python:
         application_folder: /srv/lax
         service: uwsgi-lax
