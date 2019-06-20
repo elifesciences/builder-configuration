@@ -157,3 +157,6 @@ elife:
             #elife_bot: salt://elife-bot/config/mockserver.sh
 
     nginx_public_folders: []
+
+    helm:
+        username: elife

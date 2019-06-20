@@ -7,3 +7,7 @@ alfred:
         # see builder-private:
         #role_id:
         #secret_id: 
+
+elife:
+    helm:
+        username: jenkins
