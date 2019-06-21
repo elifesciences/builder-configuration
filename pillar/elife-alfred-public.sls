@@ -11,3 +11,5 @@ alfred:
 elife:
     helm:
         username: jenkins
+    kubectl:
+        username: jenkins
