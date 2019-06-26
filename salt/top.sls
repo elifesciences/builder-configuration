@@ -552,5 +552,6 @@ base:
         - elife.postgresql
         - elife.postgresql-appdb
         - elife.uwsgi
+        - elife.newrelic-python
         - bioprotocol
 
