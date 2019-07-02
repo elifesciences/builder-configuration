@@ -61,17 +61,6 @@ elife:
                 - daniel_xps
                 - nlisgo
                 - peter
-            crm:
-                - graham_dev
-                - graham_ubuntu_vm
-                - alfred
-                - michael
-                - nlisgo # turning on instances for journal-cms testing
-                # temporary, Daniel needs to run once-off SQL
-                - daniel
-                - daniel_inspiron
-                - daniel_xps
-                - circle_interactive
             elife-xpub:
                 - alfred
                 - peter
