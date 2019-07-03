@@ -204,6 +204,9 @@ base:
         - elife.newrelic-python
         - elife-metrics
         - elife-metrics.uwsgi
+        
+    'elife-metrics--prod--*':
+        - elife.external-volume
 
     'elife-alfred--*':
         - elife.swapspace
