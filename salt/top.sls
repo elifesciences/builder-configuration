@@ -117,12 +117,15 @@ base:
         - lax.adaptors
 
     'lax--end2end*':
+        - elife.multiservice
         - lax.processes
 
     'lax--continuumtest*':
+        - elife.multiservice
         - lax.processes
 
     'lax--prod*':
+        - elife.multiservice
         - lax.processes
 
     'lax--prod--1':
