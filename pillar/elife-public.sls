@@ -52,6 +52,7 @@ elife:
                 - luke_desktop
                 - giorgio
                 - chris
+                - peter
 
             # per-user, per-project access
             containers:
