@@ -52,6 +52,7 @@ elife:
                 - luke_desktop
                 - giorgio
                 - chris
+                - peter
 
             # per-user, per-project access
             containers:
@@ -60,10 +61,8 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - nlisgo
-                - peter
             elife-xpub:
                 - alfred
-                - peter
                 - daniel
                 - daniel_inspiron
                 - daniel_xps
@@ -90,7 +89,6 @@ elife:
             profiles:
                 - giancarlo
             bastion:
-                - peter
                 - david
                 - daniel
                 - daniel_inspiron
@@ -107,9 +105,8 @@ elife:
         # removes keys. happens *after* allowed
         denied:
             # per-user denied access to all instances
-            all: # []
+            all:
                 - seanwiseman
-            # don't delete! leave commented as an example
             personalised-covers:
                 - scott
             bastion:
