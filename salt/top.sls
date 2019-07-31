@@ -525,6 +525,7 @@ base:
         - elife-ink.nginx
 
     'sciencebeam-texture--*':
+        - elife.external-volume
         - elife.docker
         - elife.nginx
         - sciencebeam-texture
