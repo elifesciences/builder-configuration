@@ -11,6 +11,8 @@
 {% set profiles_url = 'http://continuumtest--profiles.elife.internal' %}
 {% set annotations_url = 'http://continuumtest--annotations.elife.internal' %}
 {% set digests_url = 'http://continuumtest--digests.elife.internal' %}
+# TODO: substitute with `staging` if available
+{% set bioprotocol_url = 'http://ci--bp.elife.internal' %}
 
 api_gateway:
 
@@ -142,6 +144,11 @@ api_gateway:
             uris: /digests
             strip_uri: False
 
+        bioprotocol:
+            upstream_url: {{ bioprotocol_url }}
+            uris: /bioprotocol
+            strip_uri: False
+
         ping_annotations:
             upstream_url: {{ annotations_url }}/ping
             uris: /ping/annotations
@@ -150,6 +157,11 @@ api_gateway:
         ping_digests:
             upstream_url: {{ digests_url }}/ping
             uris: /ping/digests
+            strip_uri: True
+
+        ping_bioprotocol:
+            upstream_url: {{ bioprotocol_url }}/ping
+            uris: /ping/bioprotocol
             strip_uri: True
 
         ping_journal_cms:
