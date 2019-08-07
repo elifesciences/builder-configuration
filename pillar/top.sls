@@ -10,6 +10,7 @@ base:
 
     'master-server--*':
         - master-server
+        - environment-prod-public # exception to the rule. keep last
         - environment-prod # exception to the rule. keep last
 
     'api-gateway--*':
