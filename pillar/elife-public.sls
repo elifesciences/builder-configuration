@@ -103,6 +103,9 @@ elife:
                 - graham_ubuntu_vm
             bioprotocol:
                 - alfred
+            personalised-covers:
+                - graham_dev
+                - graham_ubuntu_vm
 
         # removes keys. happens *after* allowed
         denied:
