@@ -420,6 +420,15 @@ base:
         - elife.sidecars
         - personalised-covers.localstack
 
+    'personalised-covers--pr-*':
+        - api-dummy
+        - elife.proofreader-php
+        - personalised-covers.api-dummy
+        - elife.docker
+        - elife.aws-cli
+        - elife.sidecars
+        - personalised-covers.localstack
+
     'peerscout--*':
         - elife.nginx
         - elife.nodejs8
