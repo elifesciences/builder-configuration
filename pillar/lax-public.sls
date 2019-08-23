@@ -76,9 +76,6 @@ elife:
             - end2end
             - continuumtest
 
-    newrelic:
-        enabled: True
-
     newrelic_python:
         application_folder: /srv/lax
         service: uwsgi-lax
