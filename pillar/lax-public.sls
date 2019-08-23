@@ -70,6 +70,15 @@ elife:
                 service_template: bot-lax-adaptor-service
                 num_processes: 1
 
+    glencoe:
+        skip_requests_cache_by_env: 
+            - prod
+            - end2end
+            - continuumtest
+
+    newrelic:
+        enabled: True
+
     newrelic_python:
         application_folder: /srv/lax
         service: uwsgi-lax
