@@ -29,6 +29,9 @@ lax:
             - '185.160.182.46' # elife2.kriyadocs.com
             - '127.0.0.1' # internal
 
+    glencoe:
+        cache_requests: True # default behaviour is to cache requests
+
     aws:
         # access_key_id:
         # secret_access_key:
@@ -69,9 +72,6 @@ elife:
             bot-lax-adaptor:
                 service_template: bot-lax-adaptor-service
                 num_processes: 1
-
-    glencoe:
-        cache_requests: True # default behaviour is to cache requests
 
     newrelic_python:
         application_folder: /srv/lax
