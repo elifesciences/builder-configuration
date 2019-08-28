@@ -70,6 +70,9 @@ elife:
                 service_template: bot-lax-adaptor-service
                 num_processes: 1
 
+    glencoe:
+        cache_requests: True # default behaviour is to cache requests
+
     newrelic_python:
         application_folder: /srv/lax
         service: uwsgi-lax

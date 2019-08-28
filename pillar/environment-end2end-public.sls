@@ -55,3 +55,7 @@ journal_cms:
         all_articles_endpoint: {{ gateway_url_internal }}/articles
         all_digests_endpoint: {{ gateway_url_internal }}/digests
         article_fragment_images_endpoint: {{ gateway_url_internal }}/articles/%s/fragments/image
+
+lax:
+    glencoe:
+        cache_requests: False
