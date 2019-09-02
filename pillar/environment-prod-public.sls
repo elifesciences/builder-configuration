@@ -17,6 +17,10 @@ elife:
 {% set digests_url = 'http://prod--digests.elife.internal' %}
 {% set iiif_url = 'https://iiif.elifesciences.org' %}
 
+{% set hypothesis_api = 'https://hypothes.is/api/' %}
+{% set hypothesis_authority = 'elifesciences.org' %}
+
+
 elife_xpub:
     api:
         endpoint: https://reviewer.elifesciences.org
@@ -41,6 +45,33 @@ elife_xpub:
     deployment_target: prod
 
 journal:
+    api_url: {{ gateway_url_internal }}
+    api_url_public: {{ gateway_url_public }}
+    side_by_side_view_url: https://lens.elifesciences.org
+    observer_url: http://prod--observer.elife.internal
+    default_host: elifesciences.org
+    # gtm_id: # see builder-private
+    cookie_consent: true
+    oauth2_client_id: journal--prod
+    status_checks:
+        Annotations: ping/annotations
+        Digests: ping/digests
+        Journal CMS: ping/journal-cms
+        Lax: ping/lax
+        Metrics: ping/metrics
+        Profiles: ping/profiles
+        Recommendations: ping/recommendations
+        Search: ping/search
+    critical_css: True
+    redis_cache: true # ElastiCache
+    redis_sessions: true # ElastiCache
+    hypothesis_api: {{ hypothesis_api }}
+    hypothesis_authority: {{ hypothesis_authority }}
+    hypothesis_client_id: af8e486c-d495-11e7-8c9b-7ba603c19e52
+    # hypothesis_client_secret: # see builder-private
+    xpub_client_id: journal--prod
+    # xpub_client_secret: # see builder-private
+    cache_control: public, max-age={{ 60 * 30 }}, s-maxage={{ 60 * 62 }}, stale-while-revalidate={{ 60 * 60 * 12 }}, stale-if-error={{ 60 * 60 * 24 }}
     feature_xpub: true
     submit_url: https://reviewer.elifesciences.org/login
 

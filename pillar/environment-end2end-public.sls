@@ -16,6 +16,9 @@ elife:
 {% set digests_url = 'http://end2end--digests.elife.internal' %}
 {% set iiif_url = 'https://end2end--cdn-iiif.elifesciences.org' %}
 
+{% set hypothesis_api = 'http://end2end--annotations.elife.internal:8003/' %}
+{% set hypothesis_authority = 'end2end.elifesciences.org' %}
+
 elife_xpub:
     api:
         endpoint: https://end2end--xpub.elifesciences.org
@@ -35,6 +38,32 @@ elife_xpub:
     deployment_target: end2end
 
 journal:
+    api_url: {{ gateway_url_internal }}
+    api_url_public: {{ gateway_url_public }}
+    # not yet active
+    side_by_side_view_url: https://end2end--lens.elifesciences.org
+    observer_url: http://end2end--observer.elife.internal
+    default_host: end2end--cdn-journal.elifesciences.org
+    redis_cache: true # ElastiCache
+    redis_sessions: true # ElastiCache
+    oauth2_client_id: journal--end2end
+    status_checks:
+        Annotations: ping/annotations
+        Digests: ping/digests
+        Journal CMS: ping/journal-cms
+        Lax: ping/lax
+        Metrics: ping/metrics
+        Profiles: ping/profiles
+        Recommendations: ping/recommendations
+        Search: ping/search
+    critical_css: True
+    hypothesis_api: {{ hypothesis_api }}
+    hypothesis_authority: {{ hypothesis_authority }}
+    hypothesis_client_id: foo
+    # hypothesis_client_secret: # see builder-private
+    xpub_client_id: journal--end2end
+    # xpub_client_secret: # see builder-private
+    cache_control: public, max-age={{ 60 * 30 }}, s-maxage={{ 60 * 62 }}, stale-while-revalidate={{ 60 * 60 * 12 }}, stale-if-error={{ 60 * 60 * 24 }}
     feature_xpub: true
     submit_url: https://end2end--xpub.elifesciences.org/login
 

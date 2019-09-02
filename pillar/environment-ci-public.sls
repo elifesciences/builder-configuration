@@ -1,6 +1,10 @@
 elife:
     env: ci
 
+journal:
+    status_checks:
+        API Dummy: ping
+
 journal_cms:
     {% set dummy_url = 'http://localhost:8080' %}
     api:
