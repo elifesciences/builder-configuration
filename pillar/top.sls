@@ -225,4 +225,5 @@ base:
 
     # temporary
     'journal--pr-*--*':
+        - environment-continuumtest
         - journal-pr-public
