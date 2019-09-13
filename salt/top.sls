@@ -571,3 +571,6 @@ base:
         - elife.newrelic-python
         - bioprotocol
 
+    'large-repo-wrangler--*':
+        - large-repo-wrangler
+
