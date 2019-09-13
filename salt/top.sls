@@ -572,5 +572,6 @@ base:
         - bioprotocol
 
     'large-repo-wrangler--*':
+        - elife.external-volume
         - large-repo-wrangler
 
