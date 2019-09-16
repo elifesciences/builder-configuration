@@ -571,3 +571,7 @@ base:
         - elife.newrelic-python
         - bioprotocol
 
+    'large-repo-wrangler--*':
+        - elife.external-volume
+        - large-repo-wrangler
+
