@@ -4,7 +4,6 @@ elife:
 {% set journal_url = 'https://elifesciences.org' %}
 {% set journal_preview_url = 'https://preview--journal.elifesciences.org' %}
 {% set journal_cms_url = 'https://prod--journal-cms.elifesciences.org' %}
-{% set medium_url = 'http://prod--medium.elife.internal' %}
 {% set search_url = 'http://prod--search.elife.internal' %}
 {% set recommendations_url = 'http://prod--recommendations.elife.internal' %}
 {% set lax_url = 'https://prod--lax.elifesciences.org' %}
