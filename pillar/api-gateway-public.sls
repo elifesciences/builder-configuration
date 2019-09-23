@@ -3,7 +3,6 @@
 # - CI instances shouldn't be accessed by another project
 # - Continuumtest should let the ad-hoc instance gateway serve test requests without hampering production
 {% set journal_cms_url = 'http://continuumtest--journal-cms.elife.internal' %}
-{% set medium_url = 'http://continuumtest--medium.elife.internal' %}
 {% set search_url = 'http://continuumtest--search.elife.internal' %}
 {% set recommendations_url = 'http://continuumtest--recommendations.elife.internal' %}
 {% set lax_url = 'https://continuumtest--lax.elifesciences.org' %}
@@ -47,11 +46,6 @@ api_gateway:
         people:
             upstream_url: {{ journal_cms_url }}
             uris: /people
-            strip_uri: False
-
-        medium:
-            upstream_url: {{ medium_url }}
-            uris: /medium-articles
             strip_uri: False
 
         search:
@@ -172,11 +166,6 @@ api_gateway:
         ping_lax:
             upstream_url: {{ lax_url }}/api/v2/ping
             uris: /ping/lax
-            strip_uri: True
-
-        ping_medium:
-            upstream_url: {{ medium_url }}/ping
-            uris: /ping/medium
             strip_uri: True
 
         ping_metrics:
