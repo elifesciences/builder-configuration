@@ -310,19 +310,6 @@ base:
         - anonymous
         - elife.aws-cli
 
-    'medium--*':
-        - elife.php7
-        - elife.composer
-        - elife.nginx
-        - elife.nginx-php7
-        - elife.mysql-server
-        - elife.mysql-client
-        - elife.newrelic-php
-        - medium
-
-    'medium--ci--*':
-        - elife.proofreader-php
-
     # 'follower' because it may not have elasticsearch installed
     'search--*':
         - elife.php7

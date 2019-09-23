@@ -90,9 +90,6 @@ base:
     'anonymous--*':
         - anonymous
 
-    'medium--*':
-        - medium
-
     'search--*':
         - search
 

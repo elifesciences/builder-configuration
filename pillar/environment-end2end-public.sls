@@ -3,7 +3,6 @@ elife:
 
 {% set journal_cms_url = 'https://end2end--journal-cms.elifesciences.org' %}
 {% set journal_url = 'https://end2end--journal.elifesciences.org' %}
-{% set medium_url = 'http://end2end--medium.elife.internal' %}
 {% set search_url = 'http://end2end--search.elife.internal' %}
 {% set recommendations_url = 'http://end2end--recommendations.elife.internal' %}
 {% set gateway_url_public = 'https://end2end--cdn-gateway.elifesciences.org' %}
