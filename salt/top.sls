@@ -36,7 +36,7 @@ base:
 
     'elife-dashboard--*':
         - elife.python3
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
