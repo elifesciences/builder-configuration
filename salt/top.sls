@@ -202,7 +202,7 @@ base:
         - elife.python3
         - elife.nginx
         - elife.uwsgi
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.postgresql-appdb
         - elife.newrelic-python
         - elife-metrics
