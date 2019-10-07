@@ -377,7 +377,7 @@ base:
         - elife.python3
         - elife.java8
         - elife.nginx
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.postgresql-appdb
         - elife.newrelic-python
         - observer
