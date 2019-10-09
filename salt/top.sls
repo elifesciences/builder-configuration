@@ -420,7 +420,7 @@ base:
         - elife.nginx
         - elife.nodejs8
         - elife.python3
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.aws-cli
         - elife.external-volume
         - elife.external-volume-srv
