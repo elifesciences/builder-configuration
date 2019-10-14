@@ -127,7 +127,7 @@ elife:
         prune_days: 14
 
     docker_postgresql:
-        image_version: 9.4.16
+        image_tag: 9.4.16
 
     sidecars:
         # main image that will be used to extract labels 
