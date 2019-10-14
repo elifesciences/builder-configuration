@@ -44,3 +44,6 @@ elife:
                 image: elifesciences/orcid-dummy
                 port: 8001
                 enabled: false
+
+    docker_postgresql:
+        image_tag: 11
