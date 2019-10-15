@@ -454,7 +454,6 @@ base:
 
     'profiles--continuumtest--*':
         - elife.postgresql-container
-        - elife.postgresql-client
 
     'profiles--*':
         - elife.python3
