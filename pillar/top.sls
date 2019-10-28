@@ -111,9 +111,6 @@ base:
     'personalised-covers--pr-*':
         - personalised-covers-ci-public
 
-    'peerscout--*':
-        - peerscout
-
     'iiif--*':
         - iiif-public
         - iiif
