@@ -416,21 +416,6 @@ base:
         - elife.sidecars
         - personalised-covers.localstack
 
-    'peerscout--*':
-        - elife.nginx
-        - elife.nodejs8
-        - elife.python3
-        - elife.postgresql-11
-        - elife.aws-cli
-        - elife.external-volume
-        - elife.external-volume-srv
-        - elife.newrelic-python
-        - peerscout.postgres
-        - peerscout
-    
-    'peerscout--prod--*':
-        - peerscout.cron
-
     'iiif--*':
         - elife.nginx
         - elife.uwsgi

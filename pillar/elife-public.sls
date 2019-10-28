@@ -70,11 +70,6 @@ elife:
                 - erez
                 - will
                 - cory
-            peerscout:
-                - daniel
-                - daniel_inspiron
-                - daniel_xps
-                - alfred
             sciencebeam-texture:
                 - daniel
                 - daniel_inspiron
