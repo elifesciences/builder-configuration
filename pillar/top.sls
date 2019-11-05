@@ -24,6 +24,7 @@ base:
         - civiapi
 
     'elife-bot--*':
+        - elife-bot-public
         - elife-bot
         - bitbucket
 
