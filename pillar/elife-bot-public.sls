@@ -1,3 +1,4 @@
 elife_bot:
-    gcp: {}
-        # credentials_json: 
+    gcp:
+        # will be overridden in Vault
+        credentials_json: ''
