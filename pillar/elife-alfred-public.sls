@@ -9,6 +9,8 @@ alfred:
         #secret_id: 
 
 elife:
+    swap:
+        path: /ext/swap.1
     helm:
         username: jenkins
     kubectl:
