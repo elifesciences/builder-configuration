@@ -96,3 +96,7 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
+
+data_pipeline:
+    bigquery_views:
+        materialize_arguments: '--disable-view-name-mapping'
