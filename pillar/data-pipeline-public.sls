@@ -22,7 +22,7 @@ data_pipeline:
 
     bigquery_views:
         revision: latest
-        materialize_arguments: ''
+        materialize_arguments: '--disable-view-name-mapping'
 
 elife:
     swap:

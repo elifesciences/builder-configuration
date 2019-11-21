@@ -99,4 +99,4 @@ lax:
 
 data_pipeline:
     bigquery_views:
-        materialize_arguments: '--disable-view-name-mapping'
+        materialize_arguments: ''
