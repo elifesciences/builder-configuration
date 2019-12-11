@@ -15,6 +15,21 @@ journal:
 
     web_users: {}
 
+    robots:
+        - |
+            User-Agent: *
+            Disallow: $robots_disallow
+            Disallow: /download/
+        - | 
+            User-agent: Amazonbot
+            Disallow: /search/
+        - | 
+            User-agent: turnitinbot
+            Disallow: /search/
+        - | 
+            User-agent: bingbot
+            Disallow: /search/
+
     redis_cache: null
     redis_sessions: null
 
