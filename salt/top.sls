@@ -92,14 +92,6 @@ base:
         - elife-bot.processes
         - elife-bot.cron
 
-    'elife-api--*':
-        - elife.nginx
-        - elife.uwsgi
-        - elife-api
-        - elife-api.uwsgi
-        - elife-api.syslog-conf
-
-
     'lax--*':
         - elife.python3
         - elife.nginx

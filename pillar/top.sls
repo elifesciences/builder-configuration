@@ -76,9 +76,6 @@ base:
     'api-dummy--*':
         - api-dummy
 
-    'elife-api--*':
-        - elife-api
-
     'elife-metrics--*':
         - elife-metrics
 
