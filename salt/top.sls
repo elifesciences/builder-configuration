@@ -151,7 +151,8 @@ base:
         - elife.composer
         - elife.nginx
         - elife.nginx-php7
-        - elife.mysql57
+        - elife.mysql-client
+        - elife.mysql-server
         - elife.redis-server
         - elife.newrelic-php
         - elife.aws-cli
@@ -238,7 +239,8 @@ base:
         - elife.mercurial
         - elife.aws-cli
         - elife.external-volume
-        - elife.mysql57
+        - elife.mysql-client
+        - elife.mysql-server
         - elife.postgresql
         - elife.jenkins-node
         - elife.jenkins-scripts
