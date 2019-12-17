@@ -35,7 +35,7 @@ base:
         - api-gateway
 
     'elife-dashboard--*':
-        - elife.python3
+        - elife.python
         - elife.postgresql-11
         - elife.nginx
         - elife.newrelic-python
@@ -93,7 +93,7 @@ base:
         - elife-bot.cron
 
     'lax--*':
-        - elife.python3
+        - elife.python
         - elife.nginx
         - elife.uwsgi
         - elife.postgresql-11
@@ -192,7 +192,7 @@ base:
 
     'elife-metrics--*':
         - elife.no-more-daemon
-        - elife.python3
+        - elife.python
         - elife.nginx
         - elife.uwsgi
         - elife.postgresql-11
@@ -218,7 +218,7 @@ base:
         - elife-alfred
         - elife-alfred.postfix
         - elife.hub
-        - elife.python3
+        - elife.python
         - elife.kubectl
         - elife.helm
 
@@ -227,7 +227,7 @@ base:
         - elife.php7
         - elife.composer
         - elife.nodejs6
-        - elife.python3
+        - elife.python
         - elife.mercurial
         - elife.aws-cli
         - elife.external-volume
@@ -368,7 +368,7 @@ base:
 
     'observer--*':
         - elife.uwsgi
-        - elife.python3
+        - elife.python
         - elife.java8
         - elife.nginx
         - elife.postgresql-11
@@ -435,7 +435,7 @@ base:
         - elife.postgresql-container
 
     'profiles--*':
-        - elife.python3
+        - elife.python
         - elife.uwsgi
         - elife.nginx
         - elife.aws-credentials
