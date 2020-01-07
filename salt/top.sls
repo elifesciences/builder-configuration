@@ -407,7 +407,6 @@ base:
     'iiif--*':
         - elife.nginx
         - elife.uwsgi
-        - elife.nginx-upgrade-http
         - elife.external-volume
         - elife.newrelic-python
         - iiif
