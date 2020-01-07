@@ -258,6 +258,8 @@ base:
         - elife.ssh-credentials
         - elife.vault-client
         - containers
+        - elife.kubectl
+        - elife.helm
         - elife.pypi
 
     'crm--*':

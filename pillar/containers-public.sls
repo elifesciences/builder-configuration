@@ -15,3 +15,7 @@ elife:
             username: ubuntu
             home: /home/ubuntu
             private_key: salt://elife/ssh-credentials/elife-alfred-user.id_rsa
+    kubectl:
+        username: ubuntu
+    helm:
+        username: ubuntu
