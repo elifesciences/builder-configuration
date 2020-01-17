@@ -68,6 +68,13 @@ journal:
 
     rds_articles:
         '30274': https://repro.elifesciences.org/example.html
+    dismissible_info_bars:
+        aging:
+            id: aging-special-issue
+            text: '<a href="https://elifesciences.org/inside-elife/4f706531/special-issue-call-for-papers-in-aging-geroscience-and-longevity">Read the call for papers</a> for the eLife Special Issue on Aging, Geroscience and Longevity'
+            article_ids:
+                - '00065'
+
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
     calls_to_action: []
