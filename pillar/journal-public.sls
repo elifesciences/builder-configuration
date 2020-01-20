@@ -180,6 +180,10 @@ journal:
                 - '48240'
                 - '49132'
                 - '49874'
+                - '48498'
+                - '49298'
+                - '49455'
+                - '50778'
 
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
