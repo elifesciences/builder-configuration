@@ -44,12 +44,6 @@ base:
         - containers
         - pypi
 
-    'crm--*':
-        - crm
-
-    'crm--ci*':
-        - crm-ci
-
     'lax--*':
         - lax-public
         - lax
