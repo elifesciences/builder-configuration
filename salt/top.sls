@@ -262,25 +262,6 @@ base:
         - elife.helm
         - elife.pypi
 
-    'crm--*':
-        - elife.external-volume
-        - elife.postfix # queues then sends via AWS SES
-        - elife.postfix-ses
-        - elife.mysql-client
-        - elife.mysql-server
-        - elife.php7
-        - elife.composer
-        - elife.drush
-        - elife.newrelic-php
-        - elife.apache
-        - elife.apache-php7
-        - elife.nodejs6
-        - crm
-        - crm.syslog-conf
-        - crm.civinky
-        - crm.civinky-processes
-
-
     'elife-civiapi--*':
         - elife.ssmtp
         - elife-civiapi
