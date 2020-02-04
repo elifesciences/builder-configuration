@@ -66,6 +66,9 @@ journal:
 
     subject_rewrites: []
 
+    example_rds_articles:
+        '30274': https://repro.elifesciences.org/example.html
+    # deprecated, remove to make room for https://github.com/elifesciences/journal/pull/1220
     rds_articles:
         '30274': https://repro.elifesciences.org/example.html
     dismissible_info_bars:
