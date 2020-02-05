@@ -126,9 +126,6 @@ base:
     'digests--*':
         - digests
 
-    'schematron-validator--*':
-        - schematron-validator
-
     'elife-xpub--*':
         - elife-xpub-public
         - elife-xpub

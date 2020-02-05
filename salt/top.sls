@@ -443,18 +443,6 @@ base:
     'digests--* and not digests--end2end--* and not digests--continuumtest--* and not digests--prod--*':
         - elife.postgresql-container
 
-    'schematron-validator--*':
-        - elife
-        - elife.php7
-        - elife.composer
-        - elife.nginx
-        - elife.nginx-php7
-        - elife.java8
-        - schematron-validator
-
-    'schematron-validator--ci--*':
-        - elife.proofreader-php
-
     'elife-xpub--*':
         - elife.external-volume
         - elife.docker
