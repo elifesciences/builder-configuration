@@ -66,6 +66,9 @@ journal:
 
     subject_rewrites: []
 
+    feature_rds: false
+    rds_articles: {}
+
     example_rds_articles:
         '30274': https://repro.elifesciences.org/example.html
     dismissible_info_bars:
