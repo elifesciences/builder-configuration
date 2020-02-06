@@ -18,6 +18,8 @@ journal:
         Recommendations: ping/recommendations
         Search: ping/search
 
+    feature_rds: true
+
     # web_users: # see builder-private
     feature_xpub: false
     submit_url: https://reviewer.elifesciences.org/login

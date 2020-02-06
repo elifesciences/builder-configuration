@@ -66,6 +66,11 @@ journal:
 
     subject_rewrites: []
 
+    feature_rds: false
+    rds_articles:
+        '30274':
+            display: https://hub.stenci.la/elife/30274/main/
+
     example_rds_articles:
         '30274': https://repro.elifesciences.org/example.html
     dismissible_info_bars:
