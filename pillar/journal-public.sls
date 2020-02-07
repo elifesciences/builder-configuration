@@ -69,7 +69,7 @@ journal:
     feature_rds: false
     rds_articles:
         '30274':
-            display: https://hub.stenci.la/elife/30274/main/
+            display: https://hub.stenci.la/elife/30274/main/?elife
 
     example_rds_articles:
         '30274': https://repro.elifesciences.org/example.html
