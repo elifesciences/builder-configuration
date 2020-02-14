@@ -1,10 +1,25 @@
 search:
+    api:
+        requests_batch: 10
+
+    elasticsearch:
+        servers: http://localhost:9200 
+        logging: false
+        force_sync: false
+
     gearman:
+        servers: 127.0.0.1
         # deprecated and is now found in elife.gearman.db
         db:
             name: gearman
             #username:
             #password:
+
+    debug: false
+    validate: false
+    ttl: 300
+    rate_limit_minimum_page: 2
+
 
 elife:
     gearman:
