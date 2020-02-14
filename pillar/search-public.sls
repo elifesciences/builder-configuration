@@ -1,6 +1,7 @@
 search:
     api:
         requests_batch: 10
+        url: ''
 
     elasticsearch:
         servers: http://localhost:9200 
