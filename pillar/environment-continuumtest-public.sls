@@ -79,3 +79,14 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
+
+search:
+    api:
+        url: http://continuumtest--gateway.elife.internal
+        requests_batch: 20
+
+    elasticsearch:
+        servers: http://end2end--search--1.elife.internal:9200
+        logging: true
+
+    rate_limit_minimum_page: 21
