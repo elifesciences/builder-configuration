@@ -83,6 +83,7 @@ base:
         - anonymous
 
     'search--*':
+        - search-public
         - search
 
     'recommendations--*':
