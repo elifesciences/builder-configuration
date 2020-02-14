@@ -100,3 +100,16 @@ lax:
 data_pipeline:
     bigquery_views:
         materialize_arguments: ''
+
+search:
+    api:
+        url: http://prod--gateway.elife.internal
+        requests_batch: 20
+
+    elasticsearch:
+        servers: http://prod--search--1.elife.internal:9200
+
+    gearman:
+        servers: prod--search--1.elife.internal
+
+    rate_limit_minimum_page: 21
