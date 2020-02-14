@@ -1,7 +1,10 @@
 search:
     api:
-        requests_batch: 10
         url: ''
+        requests_batch: 10
+
+    aws:
+        endpoint: null
 
     elasticsearch:
         servers: http://localhost:9200 
