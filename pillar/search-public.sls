@@ -12,7 +12,7 @@ search:
         force_sync: false
 
     gearman:
-        servers: 127.0.0.1
+        servers: localhost
         # deprecated and is now found in elife.gearman.db
         db:
             name: gearman
