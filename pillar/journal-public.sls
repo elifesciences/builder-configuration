@@ -67,11 +67,8 @@ journal:
     subject_rewrites: []
 
     feature_rds: false
-    rds_articles:
-        '30274':
-            date: '2030-01-01T00:00:00Z'
-            display: https://hub.stenci.la/elife/30274/main/?elife
-            download: https://hub.stenci.la/elife/30274/files/download/article-30274.md
+    {% import_yaml "rds-articles.yaml" as rds_articles %}
+    rds_articles: {{ rds_articles }}
 
     example_rds_articles:
         '30274': https://repro.elifesciences.org/example.html
