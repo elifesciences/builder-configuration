@@ -68,7 +68,7 @@ journal:
 
     feature_rds: false
     {% import_yaml "rds-articles.yaml" as rds_articles %}
-    rds_articles: {{ rds_articles }}
+    rds_articles: {{ rds_articles|yaml }}
 
     example_rds_articles:
         '30274': https://repro.elifesciences.org/example.html
