@@ -190,7 +190,11 @@ journal:
                 - '50140'
                 - '50523'
                 - '50778'
+                - '51089'
+                - '51507'
+                - '52283'
                 - '54296'
+                - '54969'
 
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
