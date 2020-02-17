@@ -93,3 +93,5 @@ search:
         logging: true
 
     rate_limit_minimum_page: 21
+
+    feature_rds: true
