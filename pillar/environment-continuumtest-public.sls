@@ -54,6 +54,9 @@ journal:
     # xpub_client_secret: # see builder-private
     # turned on temporarily to reproduce production environment in Fastly shield debugging
     cache_control: public, max-age={{ 60 * 30 }}, s-maxage={{ 60 * 62 }}, stale-while-revalidate={{ 60 * 60 * 12 }}, stale-if-error={{ 60 * 60 * 24 }}
+
+    feature_rds: true
+
     feature_xpub: true
     submit_url: https://libero-reviewer--staging.elifesciences.org/auth-redirect
 
