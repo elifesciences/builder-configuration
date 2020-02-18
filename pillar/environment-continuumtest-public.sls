@@ -89,7 +89,7 @@ search:
         requests_batch: 20
 
     elasticsearch:
-        servers: http://end2end--search--1.elife.internal:9200
+        servers: http://continuumtest--search.elife.internal:9200
         logging: true
 
     rate_limit_minimum_page: 21
