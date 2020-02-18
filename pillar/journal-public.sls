@@ -20,15 +20,18 @@ journal:
             User-Agent: *
             Disallow: $robots_disallow
             Disallow: /download/
+        # regarding trailing slashes:
+        # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
+        # it shouldn't make a difference but turnitinbot thinks it does
         - | 
             User-agent: Amazonbot
-            Disallow: /search/
+            Disallow: /search
         - | 
             User-agent: turnitinbot
-            Disallow: /search/
+            Disallow: /search
         - | 
             User-agent: bingbot
-            Disallow: /search/
+            Disallow: /search
 
     redis_cache: null
     redis_sessions: null
