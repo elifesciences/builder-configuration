@@ -40,10 +40,10 @@ elife:
         services:
             search-gearman-worker:
                 service_template: search-gearman-worker-service
-                num_processes: 3
+                num_processes: 1
             search-queue-watch:
                 service_template: search-queue-watch-service
-                num_processes: 3
+                num_processes: 1
 
 api_dummy:
     standalone: False
