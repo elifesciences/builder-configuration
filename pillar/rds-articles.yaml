@@ -1,3 +1,7 @@
+# After modifying this file, run:
+# https://alfred.elifesciences.org/job/process/job/process-rds-publishing/
+# to publish the newly added RDS companion articles.
+#
 # format:
 # id of article:
 #     date: date of publication of the RDS companion, that will be compared with POA and VOR articles
