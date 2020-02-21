@@ -15,14 +15,13 @@ journal:
 
     web_users: {}
 
+    # robots.txt guidelines:
+    # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
     robots:
         - |
             User-Agent: *
             Disallow: $robots_disallow
             Disallow: /download/
-        # regarding trailing slashes:
-        # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
-        # it shouldn't make a difference but turnitinbot thinks it does
         - | 
             User-agent: Amazonbot
             Disallow: /search
