@@ -15,6 +15,8 @@ journal:
 
     web_users: {}
 
+    # robots.txt guidelines:
+    # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
     robots:
         - |
             User-Agent: *
@@ -22,13 +24,13 @@ journal:
             Disallow: /download/
         - | 
             User-agent: Amazonbot
-            Disallow: /search/
+            Disallow: /search
         - | 
             User-agent: turnitinbot
-            Disallow: /search/
+            Disallow: /search
         - | 
             User-agent: bingbot
-            Disallow: /search/
+            Disallow: /search
 
     redis_cache: null
     redis_sessions: null
