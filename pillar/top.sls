@@ -9,6 +9,7 @@ base:
         - pypi
 
     'master-server--*':
+        - master-server-public
         - master-server
         - environment-prod-public # exception to the rule. keep last
         - environment-prod # exception to the rule. keep last
