@@ -92,10 +92,6 @@ elife:
                 - erez
                 - will
                 - cory
-            microsimulation-demo:
-                - alfred
-                - graham_dev
-                - graham_ubuntu_vm
             bioprotocol:
                 - alfred
             personalised-covers:
