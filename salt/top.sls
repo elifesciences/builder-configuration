@@ -486,11 +486,6 @@ base:
     'bastion--*':
         - bastion
 
-    'microsimulation-demo--*':
-        - elife.nginx
-        - elife.docker
-        - microsimulation-demo
-
     'bioprotocol--*':
         - elife.nginx
         - elife.postgresql

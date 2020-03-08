@@ -142,9 +142,6 @@ base:
         - data-pipeline-public
         - data-pipeline
 
-    'microsimulation-demo--*':
-        - microsimulation-demo-public
-
     'bioprotocol--*':
         - bioprotocol
 
