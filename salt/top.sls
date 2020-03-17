@@ -392,8 +392,10 @@ base:
         - elife.uwsgi
         - elife.external-volume
         - elife.newrelic-python
+        - iiif.loris-removal
         - iiif
-        - iiif.loris
+        #- iiif.loris # 2020-03: disabled in favour of init.sls and containers
+        - iiif.loris-maintenance
 
     'redirects--*':
         - elife.swapspace
