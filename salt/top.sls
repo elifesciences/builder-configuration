@@ -389,11 +389,19 @@ base:
 
     'iiif--*':
         - elife.nginx
-        - elife.uwsgi
         - elife.external-volume
         - elife.newrelic-python
-        - iiif
+
+    'iiif--prod--*':
+        - elife.uwsgi
         - iiif.loris
+
+    # all iiif instances *except* prod
+    'iiif--* and not iiif--prod--*':
+        #- iiif.loris # 2020-03: disabled in favour of init.sls and containers
+        - iiif.loris-removal
+        - iiif
+        - iiif.loris-maintenance
 
     'redirects--*':
         - elife.swapspace
