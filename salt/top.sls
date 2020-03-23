@@ -398,6 +398,7 @@ base:
 
     # all iiif instances *except* prod
     'iiif--* and not iiif--prod--*':
+        - elife.docker
         #- iiif.loris # 2020-03: disabled in favour of init.sls and containers
         - iiif.loris-removal
         - iiif
