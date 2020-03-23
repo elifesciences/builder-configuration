@@ -389,11 +389,11 @@ base:
 
     'iiif--*':
         - elife.nginx
-        - elife.uwsgi
         - elife.external-volume
         - elife.newrelic-python
 
     'iiif--prod--*':
+        - elife.uwsgi
         - iiif.loris
 
     # all iiif instances *except* prod
