@@ -187,7 +187,9 @@ journal:
                 - '49298'
                 - '49455'
                 - '49874'
+                - '49917'
                 - '50140'
+                - '50240'
                 - '50523'
                 - '50778'
                 - '51089'
@@ -195,6 +197,7 @@ journal:
                 - '52283'
                 - '54296'
                 - '54969'
+                - '55220'
 
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
