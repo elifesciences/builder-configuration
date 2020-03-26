@@ -392,12 +392,12 @@ base:
         - elife.external-volume
         - elife.newrelic-python
 
-    'iiif--prod--[1,2]':
+    'iiif--prod--1':
         - elife.uwsgi
         - iiif.loris
 
     # all iiif instances *except* prod nodes 1 and 2 (leaving just node 3)
-    'iiif--* and not iiif--prod--[1,2]':
+    'iiif--* and not iiif--prod--1':
         - elife.docker
         #- iiif.loris # 2020-03: disabled in favour of init.sls and containers
         - iiif.loris-removal
