@@ -55,11 +55,6 @@ base:
     'elife-dashboard--prod*':
         - elife-dashboard.processes
 
-    'elife-arges--*':
-        - elife.java8
-        - elife.nginx
-        - elife.elasticsearch
-
     'elife-bot--*':
         - elife.redis-server
         - elife.docker
