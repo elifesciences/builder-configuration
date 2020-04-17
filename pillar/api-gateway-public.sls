@@ -83,6 +83,11 @@ api_gateway:
             uris: /collections
             strip_uri: False
 
+        promotional_collections:
+            upstream_url: {{ journal_cms_url }}
+            uris: /promotional-collections
+            strip_uri: False
+
         community:
             upstream_url: {{ journal_cms_url }}
             uris: /community
