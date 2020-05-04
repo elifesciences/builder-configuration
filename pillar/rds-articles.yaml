@@ -13,4 +13,4 @@
     date: '2030-01-01T00:00:00Z'
     display: https://hub.stenci.la/api/projects/176/snapshots/1/article-30274.md
     # temporarily linking to Markdown version due to lack of a generated DAR
-    download: https://hub.stenci.la/api/projects/176/snapshots/1/article-30274.md?raw
+    download: https://hub.stenci.la/api/projects/176/snapshots/1?format=tar.gz
