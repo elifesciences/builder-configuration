@@ -325,11 +325,6 @@ base:
         - elife.docker
         - recommendations
 
-    'jats4r-validator--*':
-        - elife.java8
-        - elife.nginx
-        - jats4r-validator
-
     'statusbase--*':
         - elife.php7
         - elife.composer
