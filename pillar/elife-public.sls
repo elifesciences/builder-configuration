@@ -39,6 +39,8 @@ elife:
 
         david: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCqfGohXyqwJMD+3rQvoYo802OMTPQtit6mzhoZhCjDWNrg60G+wg79O1yF090K0M7laeaMKnQQ+cNB6v6fBJdT7Awpc9OO05BN4z/ThCu9d4WVP+k4159Qz7unVZ/cLceiCxZErdPh8QP5/tf7QDR+uH5YVvMndYYpKe3KLgIO+y+6YVRJheqKI2ZtETsZIHEfOEncKw7ac9iYrwgmIDS5EyFchc9I/ggnhsmwoNZiRHtoC1mYG3G+h/0ZmhtW/bLiDtYwWx6uZTDEymZzZPq3evg7PEK9umM5+1rRaV+4ojSF1YwmPeeU/qMw9Mr/Wrcg2RJTz5zq56aKi143qK6sGIwGAONTJYs6YnbfgUewkMb6c5HsqSxNNTV2YDDN5ttYkDDxFIBRkzdpbcS3+PzJQ1L4BcVFQlEPNlrgh4dY23OQ4nBF2awVZWZF+P09fcjAk0SDM1jG4bAytG5bnZKxvyxQ2R7355uSIIKFw/bn91DpdAv1XSPemM+hHZiQMq9BB/QXEC4NNPdAe7ZzeCj69l/yrcC1d2xX963rVm3rMPrzOCxJCv0JgKToS8fyNlpb4dxHQtO/V8N4fhgB681sP/GmLn+dwScxrxC6L6Mgh3ETvuz4IjHZtdvCEE3lUnWs1NXoj1ZvfslfNRFCRB7NEpQriDVC3tZplB4T+/Qew==
 
+        joel: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCiyovgu5aRMJP5WiGfPhCq8hmUSgtt3GLaUBj1syoO2jJdKonE5soOmnrLtso22Eb/M++ZD8+JjpwAk//4aKQ+GSyNBi0uoqT2Di4NyMl33HTlTRAfFMaF7/y7cCYVR4cMlNv029h2hhI787Qg5FezHdD+ZHXI+dQ9NfYFPo/xs1HE0pAjOZTcLVRmkkprd+Odmr6YTktA5utfAFm5ZBQsOKrF3vbsdjKoI/BFznE9OsS/E2PHA/hqZ5Rrl8zBoaxRq26UxU5X5p0YlEjC9PtSXo18A8RDA7MQYE5cyXmF1tZQauaUWpmI4NQHNVBXCNvPtR7q0FfA9nCD39TW46vkjpZZm2uyRK1z4rskzoMmCiSL/lCxmGsVnZJNCw/W9kkRZicr1rDKm87/bxmV5ZgDLDqHXNjmelCD/fR6QnpFPwEMgg1WxOHdGSV/RIZgeEvKsDTrh67dHPtl0wFKWcEv6SFoKOsWJ9lK4ZrZoDf+DLOqsKQKp/fjrAzUAsXpg5aGo7hNxQnvDyHFBFg7Y8m+Et3Lu4+EItW9cNvuAxP/PkD8uxqXgr1xUfuUY7TwlGbEQU1s2bq6oB45HORhPvFru4qRcd4DzRgdY9i+ijNOCcqmCFdbx1kG3yqbKQyOOwuD2Ln/Cjq9OPKVgBPgH4OEtsm1atmM1nCMyske0vaR5w==
+
     # grants known users remote access to project systems
     ssh_access:
         # ssh access is granted to the vagrant/ubuntu (bootstrap user) as well as 
@@ -53,6 +55,7 @@ elife:
                 - giorgio
                 - chris
                 - peter
+                - joel
 
             # per-user, per-project access
             containers:
