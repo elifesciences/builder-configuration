@@ -84,8 +84,6 @@ elife:
                 - daniel_xps
                 - alfred
                 - owonibi
-            profiles:
-                - giancarlo
             bastion:
                 - david
                 - daniel
@@ -101,7 +99,7 @@ elife:
                 - graham_dev
                 - graham_ubuntu_vm
 
-        # removes keys. happens *after* allowed
+        # removes keys. happens *after* 'allowed'
         denied:
             # per-user denied access to all instances
             all:
@@ -114,6 +112,8 @@ elife:
             elife-xpub:
                 - javier
                 - hem
+            profiles:
+                - giancarlo
 
     docker:
         # username:
