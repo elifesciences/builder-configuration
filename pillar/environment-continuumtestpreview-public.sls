@@ -22,4 +22,5 @@ journal:
 
     feature_xpub: true
     submit_url: https://staging--xpub.elifesciences.org/login
-
+    submit_url_redirects:
+        - .*\.elifesciences.org$
