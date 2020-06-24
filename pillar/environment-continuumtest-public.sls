@@ -62,6 +62,11 @@ journal:
     submit_url_redirects:
         - .*\.elifesciences.org$
 
+    subject_rewrites:
+        - from_id: medicine
+          to_id: human-biology-medicine
+          to_name: Human Biology and Medicine
+
 journal_cms:
     aws:
         queue: journal-cms--continuumtest
