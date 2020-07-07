@@ -386,6 +386,7 @@ base:
         - iiif.loris-removal
         - iiif
         - iiif.loris-maintenance
+        - iiif.deviation-checker
 
     'redirects--*':
         - elife.swapspace
