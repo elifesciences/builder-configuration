@@ -454,12 +454,6 @@ base:
         - elife-ink
         - elife-ink.nginx
 
-    'sciencebeam-texture--*':
-        - elife.external-volume
-        - elife.docker
-        - elife.nginx
-        - sciencebeam-texture
-
     'data-pipeline--*':
         - elife
         - elife.java8
