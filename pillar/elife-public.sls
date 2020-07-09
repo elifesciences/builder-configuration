@@ -73,11 +73,6 @@ elife:
                 - erez
                 - will
                 - cory
-            sciencebeam-texture:
-                - daniel
-                - daniel_inspiron
-                - daniel_xps
-                - alfred
             data-pipeline:
                 - daniel
                 - daniel_inspiron
