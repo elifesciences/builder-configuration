@@ -28,11 +28,13 @@ base:
         # put common big and slow deps in here
 
     'api-gateway--*':
+        - elife.docker
         - elife.postgresql
         - elife.nginx
         - elife.nginx-error-pages
         - elife.certificates
         - api-gateway
+        - api-gateway.kong
 
     'elife-dashboard--*':
         - elife.postgresql-11
