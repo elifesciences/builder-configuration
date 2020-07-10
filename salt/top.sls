@@ -33,7 +33,10 @@ base:
         - elife.nginx
         - elife.nginx-error-pages
         - elife.certificates
-        - api-gateway
+        # lsh@2020-07, note to self:
+        # disable .proxy and .kong and re-enabled api-gateway to revert
+        #- api-gateway
+        - api-gateway.proxy
         - api-gateway.kong
 
     'elife-dashboard--*':
