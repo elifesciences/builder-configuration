@@ -17,9 +17,8 @@ api_gateway:
 
     admin: http://localhost:8001
 
-    api_gateway:
-        kong_container:
-            image_tag: latest
+    kong_container:
+        image_tag: latest
 
     db:
         engine: postgres
