@@ -73,6 +73,7 @@ elife:
                 - erez
                 - will
                 - cory
+                - daniel_haarhoff
             data-pipeline:
                 - daniel
                 - daniel_inspiron
@@ -88,6 +89,7 @@ elife:
                 - erez
                 - will
                 - cory
+                - daniel_haarhoff
             bioprotocol:
                 - alfred
             personalised-covers:
