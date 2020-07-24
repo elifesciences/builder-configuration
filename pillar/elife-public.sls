@@ -70,7 +70,6 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - hannah
-                - erez
                 - will
                 - cory
                 - daniel_haarhoff
@@ -86,7 +85,6 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - hannah
-                - erez
                 - will
                 - cory
                 - daniel_haarhoff
@@ -110,8 +108,11 @@ elife:
             elife-xpub:
                 - javier
                 - hem
+                - erez
             profiles:
                 - giancarlo
+            bastion:
+                - erez
 
     docker:
         # username:
