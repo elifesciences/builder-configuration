@@ -387,10 +387,12 @@ base:
         - elife.external-volume
         - elife.newrelic-python
         - elife.docker
-        #- iiif.loris # 2020-03: disabled in favour of init.sls and containers
         - iiif.loris-removal
         - iiif
         - iiif.loris-maintenance
+
+    'iiif--devchk*':
+        - elife.java8
         - iiif.deviation-checker
 
     'redirects--*':
