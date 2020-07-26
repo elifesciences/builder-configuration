@@ -105,14 +105,13 @@ elife:
             bastion:
                 - javier
                 - hem
+                - erez
             elife-xpub:
                 - javier
                 - hem
                 - erez
             profiles:
                 - giancarlo
-            bastion:
-                - erez
 
     docker:
         # username:
