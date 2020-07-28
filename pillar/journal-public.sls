@@ -19,16 +19,20 @@ journal:
     # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
     robots:
         - |
-            User-Agent: *
+            User-agent: *
             Disallow: $robots_disallow
             Disallow: /download/
-        - | 
+        - |
+            User-agent: Googlebot
+            Disallow: /*.ris
+            Disallow: /*.bib
+        - |
             User-agent: Amazonbot
             Disallow: /search
-        - | 
+        - |
             User-agent: turnitinbot
             Disallow: /search
-        - | 
+        - |
             User-agent: bingbot
             Disallow: /search
 
