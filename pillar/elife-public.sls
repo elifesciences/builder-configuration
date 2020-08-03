@@ -64,6 +64,7 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - nlisgo
+                - daniel_haarhoff
             elife-xpub:
                 - alfred
                 - daniel
