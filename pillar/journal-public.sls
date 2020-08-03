@@ -22,6 +22,8 @@ journal:
             User-agent: *
             Disallow: $robots_disallow
             Disallow: /download/
+        # probably unnecessary:
+        # https://github.com/elifesciences/issues/issues/5860
         - |
             User-agent: Googlebot
             Disallow: /*.ris
