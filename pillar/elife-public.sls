@@ -25,6 +25,7 @@ elife:
         daniel: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDWFJUAffNlNGh+NRr9pNRJ0QKBDgHxi/JNpgL856Er1SzPfaO3MshHOm4TC5l2orqgYjga9mzHL88oPSZN70xQA2OmNnhqHYVmNts26gyLuBxq69808o7eTELBf2oOCA0Ywh540wEEBnkmQ4FybohV5tRCFP7vuw3reqbMlshry6cjwawTCqYRZvWp8XCMrpKsJcHOLs/on7IPniUEB5yfcfsDCjFww1ToYA06B46pOOxeTq4fpcaL33VsVfWPxOypzxImSLyYpr+3gPOKNpCYJQspc4hLQ27dLUc447y1y0t950MOFZiu171ik1cZ0LVG1uC5ZxxqwEb0M/sNI5bScygvzUMYritgp0CjP0LO5UnbYTy6WfiL4uLq1P9RICaCkKC9SDK178nmlszfxIk6mYN7hEyquffAxxEl4BrSO2R12COtAJuwSVjNtKJV/W1J24ygfDOMgKplen0HaaYhlszDzaFsIQWaRj9+APNsi1QClYiI7NKioYNQAlt9haaNF0wD6g1wzE8DK4vS8P3pHzQfs+lHq2VQgCUKdjWQOL1SsaUmmHwSVuDgCsKFrS4ciOOrWXVBCosn1GvDaDVtbCEKuBO4P2V8giDsa5uzMxc2d1P2Lrbv665mSjDlPFBIjUYx5iuWXMchdEy7OQFSLr7BWUy0Vm9wKbosrQmzXQ==
         daniel_inspiron: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCWl11U9u+cF7+nKUt/dpc2ibYQ+0bIHXsgq9b3zCwiKsQ6diUDFm4E4hiXIXrxMmQjR5aZxL3Y9tpIJ6zMJp0mcOKM1vXAMZMF0aJvzm/gGUmB86Z/JHRARHCNsIYmwZpwMNSdt1WGLvC4yjvbTentATnABr5GDXzATWZdsbG9wX/T6vY563Z8lejX0HvE6gcqYgQ1CV9gOaHyHKPcuubgPTLrw6DIkK/MfYesifgJ719y9Hdp4gbNCDFQKiKOMrXeRvH6k7woHiffRKUSQcMUtSqV0mI6IFot7nheoY2k6bqxMEF1K+jxB1VyAazvuHiM5jlLVxTellzw3Y8UTuQAvE/I/n9py5AogVWfWBKwAWGUaZjKJMBEUqOAkgFgfQl3j5/nBNhnScgAGHCSBPPiB6doRCUa7qfN1anA76FeeN53JkZLUYjPWGKFuLX4FK+VPFC4tadoUDz27fDXuYhfbYRvea9y7nGOvgO0JbDR9o698BtdbaWo3s5xyzCHeOB68BheOGpV37lB4pGUZVrA6Dc9jRPR+EFcdkla802j8ABK1SZbh7i6LuIp+h8nYKU14mRW2qm5Y+nMYshx2YAfg9qMZWroXp5IojDtSjbxzVtDObTJCb9h86aWr0tbmeG6n95kHi62BqYhS0EAFzAWpTSyVgqCZbCkUsgSWZ5WJw==
         daniel_xps: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvWbLNw1CY9vykHXXNyvH6qcG1wuVh0Pm5EAJXrr6zSd2OLFo6XednxwjlB1Y3+xkgW78zo69l0wnWEzosfcDKNtwJYZuBGJvNx5z0JJR/FP/5g4iyJmCJ5rh8f6GWR2t4LwO4TE7uoD/PmjmN6lUKrbIss+OuLbJ1bROmaD46KfDrCyImX8/DhIwM9yAMB7JPEIcmwVq6qJMtXqYGjCxpyBaM6rcJdntSl/4v/rrTaREc74ah5UhDpXSz6CZ9UaBepOWjmtY1LcfCtEmIQj4wtOySILbqcaHxt65qmxcX1FuLs/0thxeHgwJ6d3melJ75CEAzAEQ2uwOXNkyBPrLFLLy/1urPUf2BKb604WZWpw/k1sJZneVHLguc0zKKTE6Fzr+EVb45Udcpu0a06knQyhbyfWzewgdxlLucadK1VVWOq+la2q4VOtDuCRMAnAjSxWUSA19QraKb1m4Lj5DvMqoZqEk8oX9oPiuL9ro0/zAbVkD7AEfoKNjN+46Oth6TMk8SysyFSL6Bwdjxf92fHkVdSvaMLODIs6bUZzRWOJJzyBZ/QQ4n4tZEx7D94Zu7d2FzQ0LFo1CaNUXNiM+Prl6RfD0+dEU9jMtk3gAvhoG9P99njmGVM8R1KzqSw6YY5UWR9N4y17tQzr8CwBFSwfGxgRTheUy5tIA7FEpEhw==
+        # michael owonibi
         owonibi: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKY6ybjwczuseR9XadPWtJODft2QYK0jIjejh9kKmznRMFU4g4msVeuB39DLN5Sd79qLWNrKZ84cRTUp1TxHYbIQoh/mV/cJ5KQxAGAg1HJEuYWeNh9At1oje9coH2LmuTLHovuAArc/Vg9YZng1e07kZSIQBUm/AvzsCnpDDNvLE7IFekyVC5J7DziSv96AZH8UFc82Ul5iflc7h5fjHfSNd423Za3+9dypc2PPasuINcH6oujMqL1bgECQj5ExXSPIfiS70dk1o8AuG5we5fInMFbdCwx+RusOxL/c/zFylbBim2F1WOGtXetSt3hTiskEHRJMy0l6CsAe5dARvT
         # xpub, mostly
         daniel_haarhoff: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb5LxJZiUCW+/i8Fcwyp5+A/drbDJajxgl22NvujpHrdoDU/l3I9Rs/6+vwJGeVo2sooDtrELboT1CjSaJ3v1pQdaOLbrtCbTEEbyHcQSJQBioTqm5PudS//Z97gv1mLNQ5opl1uCSkDkUrIhQOP+e9KcSsMe7Gjr8Tv2NpBE/qO3WHNDISV38P2z4/XEK+bKNljHkl4vFggdBUvzKK4IyittDx9pOoQ6wsaqPgR7+LT4dOEWpXR26s6qldb4+lrFEpuQv5L3IeCK8ebUZxdXGMtM9eM7hj8TK+XXLj5fRgZiaa9Hn6pXaI5Y7NE0zHEqCaWjHaHMIKpoVgK9yS2XX
@@ -79,7 +80,6 @@ elife:
                 - daniel_inspiron
                 - daniel_xps
                 - alfred
-                - owonibi
             bastion:
                 - david
                 - daniel
@@ -113,6 +113,8 @@ elife:
                 - erez
             profiles:
                 - giancarlo
+            data-pipeline:
+                - owonibi
 
     docker:
         # username:
