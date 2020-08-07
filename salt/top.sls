@@ -247,6 +247,7 @@ base:
         - elife.spectrum
 
     'containers--*--*':
+        - elife.java8
         - elife.external-volume
         - elife.jenkins-scripts
         - elife.docker
