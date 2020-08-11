@@ -58,7 +58,7 @@ journal:
     feature_rds: true
 
     feature_xpub: true
-    submit_url: https://libero-reviewer--staging.elifesciences.org/auth-redirect
+    submit_url: https://libero-reviewer--staging.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
 
