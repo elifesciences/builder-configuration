@@ -78,9 +78,9 @@ journal:
     feature_xpub: true
     submit_url: https://reviewer.elifesciences.org/login
     subject_rewrites:
-        - from_id: medicine
-          to_id: human-biology-medicine
-          to_name: Human Biology and Medicine
+        - from_id: human-biology-medicine
+          to_id: medicine
+          to_name: Medicine
 
 journal_cms:
     aws:
