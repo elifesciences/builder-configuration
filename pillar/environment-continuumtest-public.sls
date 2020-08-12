@@ -63,9 +63,9 @@ journal:
         - .*\.elifesciences.org$
 
     subject_rewrites:
-        - from_id: medicine
-          to_id: human-biology-medicine
-          to_name: Human Biology and Medicine
+        - from_id: human-biology-medicine
+          to_id: medicine
+          to_name: Medicine
 
 journal_cms:
     aws:
