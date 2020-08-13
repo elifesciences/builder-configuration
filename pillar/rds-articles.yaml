@@ -11,6 +11,12 @@
 
 '30274':
     date: '2030-01-01T00:00:00Z'
-    display: https://hub.stenci.la/api/projects/176/snapshots/2/article-30274.md
-    # temporarily linking to Markdown version due to lack of a generated DAR
-    download: https://hub.stenci.la/api/projects/176/snapshots/2?format=tar.gz
+    display: https://elife.stencila.io/article-30274/
+    # snapshot number missing just for launch
+    download: https://hub.stenci.la/api/projects/518/snapshots/9/archive
+    
+'30274':
+    date: '2030-01-01T00:00:00Z'
+    display: https://elife.stencila.io/article-52258/
+    # snapshot number missing just for launch
+    download: https://hub.stenci.la/api/projects/583/snapshots/4/archive
