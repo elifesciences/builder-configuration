@@ -1,22 +1,21 @@
 # After modifying this file, run:
 # https://alfred.elifesciences.org/job/process/job/process-rds-publishing/
-# to publish the newly added RDS companion articles.
+# to publish the newly added ERA companion articles.
 #
 # format:
 # id of article:
-#     date: date of publication of the RDS companion, that will be compared with POA and VOR articles
-#           to determine the placement in article listings
+#     date: date of publication of the ERA companion, that will be compared with POA and VOR articles to determine the placement in article listings
 #     display: Link to Stencila Hub HTML page to include in the iframe
-#     download: Link to Stencila Hub DAR download
+#     download: Link to Stencila Hub ZIP download
 
 '30274':
-    date: '2030-01-01T00:00:00Z'
+    date: '2020-08-17T13:00:00Z'
     display: https://elife.stencila.io/article-30274/
     # snapshot number missing just for launch
-    download: https://hub.stenci.la/api/projects/518/snapshots/9/archive
+    download: https://hub.stenci.la/api/projects/518/snapshots/14/archive
     
 '52258':
-    date: '2030-01-01T00:00:00Z'
+    date: '2020-08-17T13:00:00Z'
     display: https://elife.stencila.io/article-52258/
     # snapshot number missing just for launch
-    download: https://hub.stenci.la/api/projects/583/snapshots/4/archive
+    download: https://hub.stenci.la/api/projects/583/snapshots/11/archive
