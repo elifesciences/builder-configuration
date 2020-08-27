@@ -12,10 +12,10 @@
     date: '2020-08-24T13:30:00Z'
     display: https://elife.stencila.io/article-30274/
     # snapshot number missing just for launch
-    download: https://hub.stenci.la/api/projects/518/snapshots/14/archive
+    download: https://hub.stenci.la/api/projects/518/snapshots/15/archive
     
 '52258':
     date: '2020-08-24T13:30:00Z'
     display: https://elife.stencila.io/article-52258/
     # snapshot number missing just for launch
-    download: https://hub.stenci.la/api/projects/583/snapshots/11/archive
+    download: https://hub.stenci.la/api/projects/583/snapshots/13/archive
