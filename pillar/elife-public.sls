@@ -94,6 +94,9 @@ elife:
             personalised-covers:
                 - graham_dev
                 - graham_ubuntu_vm
+            search:
+                - graham_dev
+                - graham_ubuntu_vm
 
         # removes keys. happens *after* 'allowed'
         denied:
