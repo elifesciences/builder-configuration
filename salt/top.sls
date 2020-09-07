@@ -462,22 +462,6 @@ base:
         - elife-ink
         - elife-ink.nginx
 
-    'data-pipeline--*':
-        - elife
-        - elife.java8
-        - elife.nginx
-        - elife.external-volume
-        - elife.docker
-        - elife.docker-push
-        - data-pipeline.nifi
-        - data-pipeline.nifi-registry
-        - data-pipeline.ejp-to-json-converter
-        - data-pipeline.bigquery-views
-        - data-pipeline
-
-    'data-pipeline--prod*':
-        - elife.swapspace
-
     'bastion--*':
         - bastion
 

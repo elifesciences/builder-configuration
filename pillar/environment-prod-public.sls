@@ -101,10 +101,6 @@ lax:
     glencoe:
         cache_requests: False
 
-data_pipeline:
-    bigquery_views:
-        materialize_arguments: ''
-
 search:
     api:
         url: http://prod--gateway.elife.internal

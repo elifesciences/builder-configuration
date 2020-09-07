@@ -1,10 +1,6 @@
 elife:
     env: staging
 
-data_pipeline:
-    bigquery_views:
-        revision: approved
-
 elife_xpub:
     api:
         endpoint: https://staging--xpub.elifesciences.org

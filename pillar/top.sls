@@ -138,10 +138,6 @@ base:
     'elife-ink--*':
         - elife-ink
 
-    'data-pipeline--*':
-        - data-pipeline-public
-        - data-pipeline
-
     'bioprotocol--*':
         - bioprotocol
 

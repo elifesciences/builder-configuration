@@ -75,11 +75,6 @@ elife:
                 - will
                 - cory
                 - daniel_haarhoff
-            data-pipeline:
-                - daniel
-                - daniel_inspiron
-                - daniel_xps
-                - alfred
             bastion:
                 - david
                 - daniel
@@ -113,8 +108,6 @@ elife:
                 - erez
             profiles:
                 - giancarlo
-            data-pipeline:
-                - owonibi
 
     docker:
         # username:
