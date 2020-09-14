@@ -74,7 +74,6 @@ journal:
 
     subject_rewrites: []
 
-    feature_rds: true
     {% import_yaml "rds-articles.yaml" as rds_articles %}
     rds_articles: {{ rds_articles|yaml }}
 
