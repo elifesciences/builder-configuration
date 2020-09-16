@@ -24,8 +24,9 @@ search:
     ttl: 300
     rate_limit_minimum_page: 2
 
-    {% import_yaml "rds-articles.yaml" as rds_articles %}
-    rds_articles: {{ rds_articles|yaml }}
+    {% import_yaml "era-articles.yaml" as era_articles %}
+    era_articles: {{ era_articles|yaml }}
+    rds_articles: {{ era_articles|yaml }}
 
 elife:
     gearman:
