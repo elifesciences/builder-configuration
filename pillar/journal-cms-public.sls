@@ -33,6 +33,7 @@ journal_cms:
         metrics_endpoint: null
         all_articles_endpoint: null
         all_digests_endpoint: null
+        article_fragments_endpoint: null
         article_fragment_images_endpoint: null
         # auth_unpublished: 
 
