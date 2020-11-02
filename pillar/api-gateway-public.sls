@@ -10,8 +10,7 @@
 {% set profiles_url = 'http://continuumtest--profiles.elife.internal' %}
 {% set annotations_url = 'http://continuumtest--annotations.elife.internal' %}
 {% set digests_url = 'http://continuumtest--digests.elife.internal' %}
-# TODO: substitute with `staging` if available
-{% set bioprotocol_url = 'http://ci--bp.elife.internal' %}
+{% set bioprotocol_url = 'http://continuumtest--bp.elife.internal' %}
 
 api_gateway:
 
