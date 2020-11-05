@@ -14,6 +14,7 @@ elife:
 {% set annotations_url = 'http://end2end--annotations.elife.internal' %}
 {% set digests_url = 'http://end2end--digests.elife.internal' %}
 {% set iiif_url = 'https://end2end--cdn-iiif.elifesciences.org' %}
+{% set bioprotocol_url = 'http://end2end--bp.elife.internal' %}
 
 {% set hypothesis_api = 'http://end2end--annotations.elife.internal:8003/' %}
 {% set hypothesis_authority = 'end2end.elifesciences.org' %}
