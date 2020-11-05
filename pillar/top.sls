@@ -18,12 +18,6 @@ base:
         - api-gateway-public
         - api-gateway
 
-    'lagotto--*':
-        - lagotto
-
-    'elife-civiapi--*':
-        - civiapi
-
     'elife-bot--*':
         - elife-bot-public
         - elife-bot
