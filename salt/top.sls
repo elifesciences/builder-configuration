@@ -263,10 +263,6 @@ base:
         - elife.helm
         - elife.pypi
 
-    'elife-civiapi--*':
-        - elife.ssmtp
-        - elife-civiapi
-
     'anonymous--*':
         - elife.base
         - elife.deploy-user
