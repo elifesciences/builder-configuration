@@ -52,10 +52,6 @@ journal_cms:
         files: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230509-archive-b47198f6.tar.gz
         db: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230506-elife_2_0-mysql.gz
 
-api_dummy:
-    standalone: False
-    pinned_revision_file: /srv/journal-cms/api-dummy.sha1
-
 elife:
     php:
         memory_limit: 128M

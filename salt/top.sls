@@ -149,8 +149,6 @@ base:
         - journal-cms
 
     'journal-cms--ci*':
-        - api-dummy
-        - journal-cms.api-dummy
         - elife.docker
         - elife.goaws
         - elife.swapspace
@@ -173,8 +171,6 @@ base:
         - elife.postfix-ses
     
     'journal-cms--ckeditor--*':
-        - api-dummy
-        - journal-cms.api-dummy
         - elife.docker
         - elife.goaws
         - elife.swapspace
