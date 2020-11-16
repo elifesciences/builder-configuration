@@ -1,7 +1,7 @@
 journal:
     api_url: ''
     api_url_public: ''
-    # api_key: # see builder-private 
+    # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
     default_host: null
@@ -17,11 +17,14 @@ journal:
 
     # robots.txt guidelines:
     # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
+    # 'crawl-delay' directive:
+    # - https://en.wikipedia.org/wiki/Robots_exclusion_standard#Crawl-delay_directive
     robots:
         - |
             User-agent: *
             Disallow: $robots_disallow
             Disallow: /download/
+            Crawl-delay: 10
         # probably unnecessary:
         # https://github.com/elifesciences/issues/issues/5860
         - |
@@ -37,11 +40,24 @@ journal:
         - |
             User-agent: bingbot
             Disallow: /search
+        # https://megaindex.com/crawler
+        - |
+            User-agent: MegaIndex.ru
+            Disallow: /search
+        - |
+            User-agent: megaindex.com
+            Disallow: /search
 
     redis_cache: null
     redis_sessions: null
 
     # mailer: see builder-private
+        # absolute hostname in real environments, reachable from any container
+        #host: localhost
+        #port: 25
+        #username: anonymous
+        #password: ""
+        #encryption: "null"
 
     #status_checks:
     #    Articles: articles
