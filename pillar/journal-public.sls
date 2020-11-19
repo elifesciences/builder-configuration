@@ -47,6 +47,10 @@ journal:
         - |
             User-agent: megaindex.com
             Disallow: /search
+        # https://www.semrush.com/bot/
+        - |
+            User-agent: SemrushBot
+            Disallow: /
 
     redis_cache: null
     redis_sessions: null
