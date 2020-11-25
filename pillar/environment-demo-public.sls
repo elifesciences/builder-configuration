@@ -6,6 +6,7 @@ journal:
     api_url_public: '%api_url%'
 
     # gtm_id: # see builder-private
+    # google_optimize_id: # see builder-private
 
     status_checks:
         API Dummy: ping
