@@ -54,6 +54,7 @@ journal:
     observer_url: http://prod--observer.elife.internal
     default_host: elifesciences.org
     # gtm_id: # see builder-private
+    # google_optimize_id: # see builder-private
     cookie_consent: true
     oauth2_client_id: journal--prod
     status_checks:
