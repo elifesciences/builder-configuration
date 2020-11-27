@@ -3,4 +3,3 @@ master_server:
         dependent_projects:
             - basebox
             - elife-bot
-            - elife-xpub

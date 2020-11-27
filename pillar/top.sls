@@ -122,13 +122,6 @@ base:
     'digests--*':
         - digests
 
-    'elife-xpub--*':
-        - elife-xpub-public
-        - elife-xpub
-
-    'elife-xpub--end2end--*':
-        - elife-xpub-end2end-public
-
     'elife-ink--*':
         - elife-ink
 
