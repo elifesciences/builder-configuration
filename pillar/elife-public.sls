@@ -27,6 +27,7 @@ elife:
         daniel_xps: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvWbLNw1CY9vykHXXNyvH6qcG1wuVh0Pm5EAJXrr6zSd2OLFo6XednxwjlB1Y3+xkgW78zo69l0wnWEzosfcDKNtwJYZuBGJvNx5z0JJR/FP/5g4iyJmCJ5rh8f6GWR2t4LwO4TE7uoD/PmjmN6lUKrbIss+OuLbJ1bROmaD46KfDrCyImX8/DhIwM9yAMB7JPEIcmwVq6qJMtXqYGjCxpyBaM6rcJdntSl/4v/rrTaREc74ah5UhDpXSz6CZ9UaBepOWjmtY1LcfCtEmIQj4wtOySILbqcaHxt65qmxcX1FuLs/0thxeHgwJ6d3melJ75CEAzAEQ2uwOXNkyBPrLFLLy/1urPUf2BKb604WZWpw/k1sJZneVHLguc0zKKTE6Fzr+EVb45Udcpu0a06knQyhbyfWzewgdxlLucadK1VVWOq+la2q4VOtDuCRMAnAjSxWUSA19QraKb1m4Lj5DvMqoZqEk8oX9oPiuL9ro0/zAbVkD7AEfoKNjN+46Oth6TMk8SysyFSL6Bwdjxf92fHkVdSvaMLODIs6bUZzRWOJJzyBZ/QQ4n4tZEx7D94Zu7d2FzQ0LFo1CaNUXNiM+Prl6RfD0+dEU9jMtk3gAvhoG9P99njmGVM8R1KzqSw6YY5UWR9N4y17tQzr8CwBFSwfGxgRTheUy5tIA7FEpEhw==
         # michael owonibi
         owonibi: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKY6ybjwczuseR9XadPWtJODft2QYK0jIjejh9kKmznRMFU4g4msVeuB39DLN5Sd79qLWNrKZ84cRTUp1TxHYbIQoh/mV/cJ5KQxAGAg1HJEuYWeNh9At1oje9coH2LmuTLHovuAArc/Vg9YZng1e07kZSIQBUm/AvzsCnpDDNvLE7IFekyVC5J7DziSv96AZH8UFc82Ul5iflc7h5fjHfSNd423Za3+9dypc2PPasuINcH6oujMqL1bgECQj5ExXSPIfiS70dk1o8AuG5we5fInMFbdCwx+RusOxL/c/zFylbBim2F1WOGtXetSt3hTiskEHRJMy0l6CsAe5dARvT
+        # xpub, mostly
         daniel_haarhoff: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDb5LxJZiUCW+/i8Fcwyp5+A/drbDJajxgl22NvujpHrdoDU/l3I9Rs/6+vwJGeVo2sooDtrELboT1CjSaJ3v1pQdaOLbrtCbTEEbyHcQSJQBioTqm5PudS//Z97gv1mLNQ5opl1uCSkDkUrIhQOP+e9KcSsMe7Gjr8Tv2NpBE/qO3WHNDISV38P2z4/XEK+bKNljHkl4vFggdBUvzKK4IyittDx9pOoQ6wsaqPgR7+LT4dOEWpXR26s6qldb4+lrFEpuQv5L3IeCK8ebUZxdXGMtM9eM7hj8TK+XXLj5fRgZiaa9Hn6pXaI5Y7NE0zHEqCaWjHaHMIKpoVgK9yS2XX
         hannah: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbo+kS5Cr1EbIiVaurxCgJZDR3MuYef8XZi+lx1ZbdME5k5ZqJvnhyQEuRTDJU2OM7qf1y0YTXpYhHNNVBwORqsoo9wStOWPZtBWFwZPvyn58ckESwr1BnGOZVgQxNBrtxnmRkocHYzt+eQvgtQaCf164QYKR4WThXJOJEEEvZYXr2WKb71OsuorGtSxJ1QIzh2IhOVIi0r/RJmo1tTca50qTMbmPYgUG3eLf3TERtKWfPRzTMVKqV4TlZsB3u6PZ3ijU42NsPhQmfK5ru0xjgNOc1Zrc4WOqdsaqS65FBtyr5hZZfNmsP4Cyes0VKJ5KDsMIKaMwN0YuLsefaI6FP
         peter: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaQaYnpDAaSNkDfuompmMmthxiuqmV8RcDLrfEzQQ8sXrrwxIJyUmO0bhijePxLoOHMZdSz8NcAl2FGYIqWU4bpWpWIhFFUjGBSlN/KjYAhd1eUI+O24JOPPAi5+eInyHS5OJKmqg0MKq6LMbU3zHSFFZdKEfrkECv058X7qtkoMgU7KMtjy9OQZrrA5mWePuTKFrSWV+5Vxhna2L3odURO0ApzqyqsT9jyyTrOl2MFl4c0mFPzdJhZqqa4gjX/eikp8y4cM8C5j3rPvdrxArdTiN2PIuzPDOVYN/2nt8X8tmzTFVfM2/PxdlKINjppjimQH+L0CnpEwhA9IVMBoEF
@@ -65,6 +66,15 @@ elife:
                 - daniel_xps
                 - nlisgo
                 - daniel_haarhoff
+            elife-xpub:
+                - alfred
+                - daniel
+                - daniel_inspiron
+                - daniel_xps
+                - hannah
+                - will
+                - cory
+                - daniel_haarhoff
             bastion:
                 - david
                 - daniel
@@ -89,6 +99,10 @@ elife:
             personalised-covers:
                 - scott
             bastion:
+                - javier
+                - hem
+                - erez
+            elife-xpub:
                 - javier
                 - hem
                 - erez

@@ -19,6 +19,24 @@ elife:
 {% set hypothesis_api = 'http://end2end--annotations.elife.internal:8003/' %}
 {% set hypothesis_authority = 'end2end.elifesciences.org' %}
 
+elife_xpub:
+    api:
+        endpoint: https://end2end--xpub.elifesciences.org
+    pubsweet:
+        base_url: https://end2end--xpub.elifesciences.org
+    meca:
+        sftp:
+            connection:
+                host: end2end--xpub--1.elife.internal
+                port: 2222
+                # fake FTP server credentials
+                username: ejpdummy
+                password: ejpdummy
+            remote_path: 'meca/'
+    s3:
+        bucket: end2end-elife-xpub
+    deployment_target: end2end
+
 journal:
     api_url: {{ gateway_url_internal }}
     api_url_public: {{ gateway_url_public }}
