@@ -205,7 +205,7 @@ api_gateway:
     consumers:
         # user: key
         anonymous: public
-        # elife-bot: secretkey
+        # elife-xpub: secretkey
 
     groups:
         anonymous:
@@ -233,6 +233,9 @@ api_gateway:
         elife-bot:
             - edit-digests
             - view-unpublished-content
+        elife-xpub:
+            - view-restricted-people
+            - view-restricted-profiles
 
     # api consumers who once existed but should not exist any longer
     absent_consumers:

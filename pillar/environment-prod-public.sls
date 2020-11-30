@@ -24,6 +24,29 @@ api_gateway:
         # 'latest' as of 2020-07-10
         image_tag: 41d168b2a7af9f0d570d1ebc6d1d8971bac3ee82
 
+elife_xpub:
+    api:
+        endpoint: https://reviewer.elifesciences.org
+    pubsweet:
+        base_url: https://reviewer.elifesciences.org
+    meca:
+        sftp:
+            connection:
+                host: sftp.ejpress.com
+                # EJP sandbox credentials
+                # username: 
+                # password:
+    s3:
+        bucket: prod-elife-xpub
+    mailer:
+        host: email-smtp.us-east-1.amazonaws.com
+        port: 587
+        # `ses-smtp-user.elife-xpub` IAM user
+        # see https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html for explanations, but it's easier to create a new user than to derive its SMTP credentials from the AWS ones
+        # user:
+        # pass:
+    deployment_target: prod
+
 journal:
     api_url: {{ gateway_url_internal }}
     api_url_public: {{ gateway_url_public }}

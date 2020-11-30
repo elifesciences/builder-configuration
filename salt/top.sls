@@ -436,6 +436,18 @@ base:
     'digests--* and not digests--end2end--* and not digests--continuumtest--* and not digests--prod--*':
         - elife.postgresql-container
 
+    'elife-xpub--*':
+        - elife.external-volume
+        - elife.docker
+        - elife.nginx
+        - elife.aws-cli
+        - elife.aws-credentials
+        - elife-xpub
+
+    'elife-xpub--end2end--1':
+        - elife.nginx-public-folders
+        - elife.sidecars
+
     'elife-ink--*':
         - elife.nginx
         - elife.docker
