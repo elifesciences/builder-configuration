@@ -52,6 +52,8 @@ journal:
         - |
             User-agent: SemrushBot
             Disallow: /
+        - |
+            Sitemap: https://elifesciences.org/sitemap.xml
 
     redis_cache: null
     redis_sessions: null
