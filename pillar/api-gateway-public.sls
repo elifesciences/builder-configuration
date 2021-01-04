@@ -207,9 +207,8 @@ api_gateway:
         anonymous: public
         # some-elife-app: secretkey
         # removing a consumer is a two-step process. 
-        # 1. consumer must be present in order to remove from groups. 'key' isn't used to do this.
+        # 1. consumer must be present in order to be removed from groups. consumer 'key' value isn't used.
         # 2. consumer can be removed
-        elife-xpub: placeholder
 
     groups:
         anonymous:
@@ -242,7 +241,7 @@ api_gateway:
     absent_consumers:
         - bottersnipe
         - website
-        #- elife-xpub
+        - elife-xpub
 
     absent_groups:
         journal-cms-unpublished-content:
