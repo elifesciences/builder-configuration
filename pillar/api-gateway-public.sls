@@ -207,7 +207,7 @@ api_gateway:
         anonymous: public
         # some-elife-app: secretkey
         # removing a consumer is a two-step process. 
-        # 1. consumer must be present in order to be remove from groups. 'key' value isn't necessary
+        # 1. consumer must be present in order to be removed from groups. consumer 'key' value isn't used.
         # 2. consumer can be removed
 
     groups:
