@@ -208,7 +208,8 @@ api_gateway:
         # some-elife-app: secretkey
         # removing a consumer is a two-step process. 
         # 1. consumer must be present in order to be removed from groups. consumer 'key' value isn't used.
-        # 2. consumer can be removed
+        # 2. remove from absent_groups
+        # 3. consumer can be removed
 
     groups:
         anonymous:
@@ -250,6 +251,3 @@ api_gateway:
             - admin
         alfred:
             - admin
-        elife-xpub:
-            - view-restricted-people
-            - view-restricted-profiles
