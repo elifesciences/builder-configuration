@@ -42,7 +42,6 @@ journal:
         # told to me during email correspondence with bingbot support.
         - |
             User-agent: bingbot
-            Disallow: $robots_disallow
             Disallow: /download/
             Disallow: /search
             Crawl-delay: 10
