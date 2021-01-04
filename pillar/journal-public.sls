@@ -38,9 +38,14 @@ journal:
         - |
             User-agent: turnitinbot
             Disallow: /search
+        # lsh@2020-01-04: bingbot ignores rules that apply to all bots (*) if it has a specific entry.
+        # told to me during email correspondence with bingbot support.
         - |
             User-agent: bingbot
+            Disallow: $robots_disallow
+            Disallow: /download/
             Disallow: /search
+            Crawl-delay: 10
         # https://megaindex.com/crawler
         - |
             User-agent: MegaIndex.ru
