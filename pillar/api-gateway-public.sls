@@ -237,6 +237,9 @@ api_gateway:
         elife-bot:
             - edit-digests
             - view-unpublished-content
+        libero-continuum-adaptor:
+            - view-restricted-people
+            - view-restricted-profiles
 
     # api consumers who once existed but should not exist any longer
     absent_consumers:
