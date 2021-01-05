@@ -316,7 +316,7 @@ base:
         - search.processes
 
     'search--prod--1':
-        - elife.external-volume
+        #- elife.external-volume
         - elife.multiservice
         - search.processes
 
