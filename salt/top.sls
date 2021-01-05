@@ -311,10 +311,12 @@ base:
         - search.processes
 
     'search--continuumtest--1':
+        - elife.external-volume
         - elife.multiservice
         - search.processes
 
     'search--prod--1':
+        #- elife.external-volume
         - elife.multiservice
         - search.processes
 
