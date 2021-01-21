@@ -78,6 +78,8 @@ journal_cms:
         article_fragments_endpoint: {{ gateway_url_internal }}/articles/%s/fragments/%s
 
 lax:
+    app:
+        merge_foreign_fragments: False
     glencoe:
         cache_requests: False
 
