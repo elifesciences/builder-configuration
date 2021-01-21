@@ -4,6 +4,7 @@ lax:
         allow_invalid_ajson: True
         reporting_bucket: elife-lax-reports
         cache_headers_ttl: 300
+        merge_foreign_fragments: False
         users:
             api_gateway:
                 username: api-gateway
