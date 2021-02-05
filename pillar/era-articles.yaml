@@ -34,3 +34,8 @@
     date: '2020-12-08T11:00:00Z'
     display: https://elife.stencila.io/article-61523/v14/
     download: https://hub.stenci.la/api/projects/1316/snapshots/14/archive
+
+'60287':
+    date: '2021-02-05T11:00:00Z'
+    display: https://elife.stencila.io/article-60287/v9/
+    download: https://hub.stenci.la/api/projects/1307/snapshots/9/archive
