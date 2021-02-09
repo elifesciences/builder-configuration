@@ -20,6 +20,8 @@ journal:
     # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
     # 'crawl-delay' directive:
     # - https://en.wikipedia.org/wiki/Robots_exclusion_standard#Crawl-delay_directive
+    # lsh@2021-01-04: bingbot ignores rules that apply to all bots (*) if it has a specific entry.
+    # lsh@2021-02-09: robots.txt has no proper specification! https://github.com/elifesciences/issues/issues/6451
     robots:
         - |
             User-agent: *
@@ -32,30 +34,34 @@ journal:
             User-agent: Googlebot
             Disallow: /*.ris
             Disallow: /*.bib
+            Disallow: /download/
         - |
             User-agent: Amazonbot
             Disallow: /search
+            Disallow: /download/
         - |
             User-agent: turnitinbot
             Disallow: /search
-        # lsh@2020-01-04: bingbot ignores rules that apply to all bots (*) if it has a specific entry.
-        # told to me during email correspondence with bingbot support.
+            Disallow: /download/
         - |
             User-agent: bingbot
-            Disallow: /download/
             Disallow: /search
+            Disallow: /download/
             Crawl-delay: 10
         # https://megaindex.com/crawler
         - |
             User-agent: MegaIndex.ru
             Disallow: /search
+            Disallow: /download/
         - |
             User-agent: megaindex.com
             Disallow: /search
+            Disallow: /download/
         # https://www.semrush.com/bot/
         - |
             User-agent: SemrushBot
             Disallow: /
+            Disallow: /download/
         - |
             Sitemap: https://elifesciences.org/sitemap.xml
 
