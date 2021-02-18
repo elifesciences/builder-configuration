@@ -78,8 +78,9 @@ journal_cms:
         article_fragments_endpoint: {{ gateway_url_internal }}/articles/%s/fragments/%s
 
 lax:
-    app:
-        merge_foreign_fragments: False
+    # lsh@2021-02: re-enabled after api-raml changes allow snippets to be valid. see ./pillar/lax-public.sls
+    #app:
+    #    merge_foreign_fragments: False
     glencoe:
         cache_requests: False
 
