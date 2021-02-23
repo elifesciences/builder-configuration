@@ -62,6 +62,11 @@ journal:
             User-agent: SemrushBot
             Disallow: /
             Disallow: /download/
+        # paid-for SEO search engine
+        # consistently hundreds of requests an hour
+        - |
+            User-agent: MJ12bot
+            Disallow: /
         - |
             Sitemap: https://elifesciences.org/sitemap.xml
 
