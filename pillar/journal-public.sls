@@ -69,6 +69,9 @@ journal:
             Disallow: /
         - |
             Sitemap: https://elifesciences.org/sitemap.xml
+        - |
+            User-agent: trendkite-akashic-crawler
+            Disallow: /
 
     redis_cache: null
     redis_sessions: null
