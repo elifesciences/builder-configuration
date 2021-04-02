@@ -72,6 +72,9 @@ journal:
         - |
             User-agent: trendkite-akashic-crawler
             Disallow: /
+        - |
+            User-agent: serpstatbot
+            Disallow: /
 
     redis_cache: null
     redis_sessions: null
