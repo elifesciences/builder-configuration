@@ -24,7 +24,7 @@ journal:
     calls_to_action:
       - id: survey2021
         path: ^/
-        text: Voice your concerns about research culture and research communication: Have your say in our 7th annual survey.
+        text: 'Voice your concerns about research culture and research communication: Have your say in our 7th annual survey.'
         button:
             text: Take the Survey
             path: https://www.surveymonkey.co.uk/r/LTS6DDT
