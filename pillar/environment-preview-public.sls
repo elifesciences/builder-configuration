@@ -40,4 +40,4 @@ journal:
                 height: 600
         needsJs: true
         dismissible:
-            cookieExpires: Tue, 1 June 2021 00:00:00 UTC
+            cookieExpires: 'Tue, 1 June 2021 00:00:00 UTC'
