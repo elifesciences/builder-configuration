@@ -246,7 +246,27 @@ journal:
 
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
-    calls_to_action: []
+    calls_to_action:
+      - id: survey2021
+        from: 2021-05-04T09:00:00Z
+        path: ^/
+        text: 'Voice your concerns about research culture and research communication: Have your say in our 7th annual survey.'
+        button:
+            text: Take the Survey
+            path: https://www.surveymonkey.co.uk/r/LTS6DDT
+        image:
+            alt: ''
+            uri: https://iiif.elifesciences.org/lax/survey2019.png
+            source:
+                mediaType: image/png
+                uri: https://iiif.elifesciences.org/lax/survey2019.png/full/full/0/default.png
+                filename: survey2019.png
+            size:
+                width: 600
+                height: 600
+        needsJs: true
+        dismissible:
+            cookieExpires: 'Sun, 16 May 2021 00:00:00 UTC'
 
 elife:
     redis:
