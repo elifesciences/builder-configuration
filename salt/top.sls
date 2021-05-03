@@ -398,7 +398,7 @@ base:
         - iiif.loris-maintenance
 
     'iiif--devchk*':
-        - elife.java8
+        - elife.swapspace
         - iiif.deviation-checker
 
     'redirects--*':
