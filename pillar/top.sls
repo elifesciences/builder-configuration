@@ -183,8 +183,8 @@ base:
         - environment-continuumtestpreview
 
     # lsh@2021-06-29: temporary
-    'journal-cms--ci--*':
-        - journal-cms-ci-public
+    'journal-cms--continuumtest--*':
+        - journal-cms-continuumtest-public
 
     # temporary
     'journal--title-length--*':
