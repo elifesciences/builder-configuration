@@ -20,6 +20,9 @@ elife:
         allowed: {}
         denied: {}
 
+    composer:
+        version: 1.10.21
+
     docker:
         # username:
         # password:
