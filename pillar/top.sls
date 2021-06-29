@@ -154,12 +154,10 @@ base:
         - environment-demo-public
         - environment-demo
 
-    # deprecated: use staging
     '*--continuumtest':
         - environment-continuumtest-public
         - environment-continuumtest
 
-    # deprecated: use staging
     '*--continuumtest--*':
         - environment-continuumtest-public
         - environment-continuumtest
@@ -183,6 +181,10 @@ base:
     '*--continuumtestpreview--*':
         - environment-continuumtestpreview-public
         - environment-continuumtestpreview
+
+    # lsh@2021-06-29: temporary
+    'journal-cms--ci--*':
+        - journal-cms-ci-public
 
     # temporary
     'journal--title-length--*':
