@@ -182,7 +182,7 @@ base:
         - environment-continuumtestpreview-public
         - environment-continuumtestpreview
 
-    # lsh@2021-06-29: temporary
+    # lsh@2021-06-29: temporary, remove when journal-cms has switched to composer 2
     'journal-cms--continuumtest--*':
         - journal-cms-continuumtest-public
 
