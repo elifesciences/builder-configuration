@@ -19,6 +19,8 @@ elife:
         # see builder-private
         allowed: {}
         denied: {}
+        allowed_masterless: {}
+        denied_masterless: {}
 
     composer:
         version: 1.10.21
