@@ -21,4 +21,3 @@ journal:
     # web_users: # see builder-private
     feature_xpub: false
     submit_url: https://reviewer.elifesciences.org/login
-    cb_id: 0a5c50d8-fcf9-47b1-8f4f-1eaadb13941b
