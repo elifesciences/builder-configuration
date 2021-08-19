@@ -27,6 +27,7 @@ journal:
     # not yet active
     #observer_url: http://continuumtest--observer.elife.internal
     default_host: continuumtest--cdn-journal.elifesciences.org
+    cb_id: 0a5c50d8-fcf9-47b1-8f4f-1eaadb13941b
 
     oauth2_client_id: journal--continuumtest
 
