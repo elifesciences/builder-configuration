@@ -32,7 +32,7 @@ journal:
     default_host: elifesciences.org
     # gtm_id: # see builder-private
     # google_optimize_id: # see builder-private
-    cb_id: 0a5c50d8-fcf9-47b1-8f4f-1eaadb13941b
+    cookie_consent: true
     oauth2_client_id: journal--prod
     status_checks:
         Annotations: ping/annotations
