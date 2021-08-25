@@ -8,6 +8,7 @@ journal:
 
     gtm_id: null
     google_optimize_id: null
+    cb_id: null
 
     # secret: # see builder-private
 
