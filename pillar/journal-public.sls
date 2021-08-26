@@ -9,7 +9,6 @@ journal:
     gtm_id: null
     google_optimize_id: null
     cb_id: null
-    cookie_consent: false
 
     # secret: # see builder-private
 
