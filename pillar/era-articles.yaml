@@ -49,3 +49,8 @@
     date: '2021-06-01T13:00:00Z'
     display: https://elife.stencila.io/article-65658/v23/
     download: https://hub.stenci.la/api/projects/1469/snapshots/23/archive
+
+'61277':
+    date: '2021-08-31T13:00:00Z'
+    display: https://elife.stencila.io/article-61277/v71/
+    download: https://hub.stenci.la/api/projects/1342/snapshots/71/archive
