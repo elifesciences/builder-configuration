@@ -57,3 +57,7 @@ elife:
         memory_limit: 128M
         upload_max_filesize: 32M
         post_max_size: 32M
+
+    # todo: remove when all projects switched to composer 2
+    composer:
+        version: 2.1.3
