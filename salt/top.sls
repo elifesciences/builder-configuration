@@ -199,7 +199,7 @@ base:
 
     'elife-alfred--*':
         - elife.swapspace
-        - elife.java8
+        - elife.java11
         - elife.jenkins-scripts
         - elife.nginx
         - elife.postfix
@@ -215,7 +215,7 @@ base:
         - elife.helm
 
     'elife-libraries--*':
-        - elife.java8
+        - elife.java11
         - elife.php7
         - elife.composer
         - elife.nodejs6
@@ -243,7 +243,7 @@ base:
         - elife.spectrum
 
     'containers--*--*':
-        - elife.java8
+        - elife.java11
         - elife.external-volume
         - elife.jenkins-scripts
         - elife.docker
