@@ -11,6 +11,11 @@ search:
         logging: false
         force_sync: false
 
+    opensearch:
+        servers: http://localhost:9201
+        logging: false
+        force_sync: false
+
     gearman:
         servers: 127.0.0.1
         # deprecated and is now found in elife.gearman.db
