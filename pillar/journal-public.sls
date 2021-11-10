@@ -26,6 +26,7 @@ journal:
         - |
             User-agent: *
             Disallow: $robots_disallow
+            Disallow: /search
             Disallow: /download/
             Crawl-delay: 10
         # probably unnecessary:
@@ -62,16 +63,20 @@ journal:
             User-agent: SemrushBot
             Disallow: /
             Disallow: /download/
-        # paid-for SEO search engine
-        # consistently hundreds of requests an hour
         - |
             User-agent: MJ12bot
             Disallow: /
         - |
-            Sitemap: https://elifesciences.org/sitemap.xml
-        - |
             User-agent: trendkite-akashic-crawler
             Disallow: /
+        - |
+            User-agent: Seekport Crawler
+            Disallow: /
+        - |
+            User-agent: Linespider
+            Disallow: /
+        - |
+            Sitemap: https://elifesciences.org/sitemap.xml
 
     redis_cache: null
     redis_sessions: null
