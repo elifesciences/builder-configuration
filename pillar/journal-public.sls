@@ -73,6 +73,9 @@ journal:
             User-agent: Seekport Crawler
             Disallow: /
         - |
+            User-agent: Linespider
+            Disallow: /
+        - |
             Sitemap: https://elifesciences.org/sitemap.xml
 
     redis_cache: null
