@@ -293,7 +293,9 @@ base:
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
+        - elife.docker
         - search.elasticsearch
+        - search.opensearch
         - search.gearman-persistence
         - search.leader
 
