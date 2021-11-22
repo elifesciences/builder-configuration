@@ -294,6 +294,7 @@ base:
         - elife.newrelic-php
         - elife.java8
         - elife.docker
+        - elife.swapspace
         - search.elasticsearch
         - search.opensearch
         - search.gearman-persistence
