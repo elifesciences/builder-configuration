@@ -44,7 +44,6 @@ base:
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
-        - elife.no-more-daemon
         - elife-dashboard
         - elife-dashboard.uwsgi
         - elife-dashboard.scheduler
@@ -96,8 +95,6 @@ base:
         - elife.uwsgi
         - elife.postgresql-11
         - elife.postgresql-appdb
-        - elife.mercurial
-        - elife.no-more-daemon
         - elife.newrelic-python
         - elife.external-volume
         - lax
@@ -185,7 +182,6 @@ base:
         - api-dummy.nginx
 
     'elife-metrics--*':
-        - elife.no-more-daemon
         - elife.nginx
         - elife.uwsgi
         - elife.postgresql-11
@@ -219,7 +215,6 @@ base:
         - elife.php7
         - elife.composer
         - elife.nodejs6
-        - elife.mercurial
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
