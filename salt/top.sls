@@ -96,7 +96,6 @@ base:
         - elife.uwsgi
         - elife.postgresql-11
         - elife.postgresql-appdb
-        - elife.mercurial
         - elife.no-more-daemon
         - elife.newrelic-python
         - elife.external-volume
@@ -219,7 +218,6 @@ base:
         - elife.php7
         - elife.composer
         - elife.nodejs6
-        - elife.mercurial
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
