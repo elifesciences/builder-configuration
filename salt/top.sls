@@ -387,6 +387,7 @@ base:
         - personalised-covers.localstack
 
     'iiif--*':
+        - elife.swapspace
         - elife.nginx
         - elife.external-volume
         - elife.newrelic-python
