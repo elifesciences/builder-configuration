@@ -7,9 +7,6 @@ elife:
     aws: {}
         #access_key_id: 
         #secret_access_key: 
-    coveralls:
-        tokens: {}
-            # profiles: 
     ssh_credentials:
         ubuntu:
             username: ubuntu
