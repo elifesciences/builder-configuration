@@ -80,6 +80,10 @@ search:
         servers: http://end2end--search--1.elife.internal:9200
         logging: true
 
+    opensearch:
+        servers: http://end2end--search--1.elife.internal:9201
+        logging: true
+
     gearman:
         servers: end2end--search--1.elife.internal
 
