@@ -270,7 +270,7 @@ base:
         - anonymous
         - elife.aws-cli
 
-    # 'follower' because it may not have elasticsearch installed
+    # 'follower' because it may not have opensearch installed
     'search--*':
         - elife.php7
         - elife.composer
@@ -281,24 +281,25 @@ base:
         - elife.aws-cli
         - search
 
-    # the 'leader' because it has elasticsearch installed
-    #'search--*--1': # revert back to this once opendistro is dealt with
-    'search--*--1 and not search--opendistro--1':
+    # the 'leader' because it has opensearch installed
+    'search--*--1':
         - elife.postgresql
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
         - elife.docker
         - elife.swapspace
-        - search.elasticsearch
+        #- search.elasticsearch
         - search.opensearch
+        - search.remove-elasticsearch
         - search.gearman-persistence
         - search.leader
 
+    # dev/ci
     # https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
     # you can test this on the salt-master with:
     # $ salt -C 'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*' --preview-target
-    'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--* and not search--opendistro--*':
+    'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
         - api-dummy
         - search.api-dummy
         - elife.proofreader-php
@@ -314,18 +315,6 @@ base:
         - search.processes
 
     'search--prod--1':
-        - elife.multiservice
-        - search.processes
-
-    # remove once opendistro is dealt with
-    'search--opendistro--*':
-        - elife.postgresql
-        - elife.gearman
-        - elife.newrelic-php
-        - elife.java11
-        - search.elasticsearch-opendistro
-        - search.gearman-persistence
-        - search.leader
         - elife.multiservice
         - search.processes
 
