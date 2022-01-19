@@ -21,7 +21,7 @@ search:
     aws:
         endpoint: http://localhost:4100
 
-    elasticsearch:
+    opensearch:
         logging: true
         force_sync: true
 

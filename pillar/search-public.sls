@@ -6,11 +6,6 @@ search:
     aws:
         endpoint: null
 
-    elasticsearch:
-        servers: http://localhost:9200 
-        logging: false
-        force_sync: false
-
     opensearch:
         servers: http://localhost:9201
         logging: false
