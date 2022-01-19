@@ -89,8 +89,8 @@ search:
         url: http://prod--gateway.elife.internal
         requests_batch: 20
 
-    elasticsearch:
-        servers: http://prod--search--1.elife.internal:9200
+    opensearch:
+        servers: http://prod--search--1.elife.internal:9201
 
     gearman:
         servers: prod--search--1.elife.internal

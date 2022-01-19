@@ -289,9 +289,7 @@ base:
         - elife.java8
         - elife.docker
         - elife.swapspace
-        #- search.elasticsearch
         - search.opensearch
-        - search.remove-elasticsearch
         - search.gearman-persistence
         - search.leader
 

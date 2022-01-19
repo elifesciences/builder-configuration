@@ -76,10 +76,6 @@ search:
         url: http://end2end--gateway.elife.internal
         requests_batch: 20
 
-    elasticsearch:
-        servers: http://end2end--search--1.elife.internal:9200
-        logging: true
-
     opensearch:
         servers: http://end2end--search--1.elife.internal:9201
         logging: true
