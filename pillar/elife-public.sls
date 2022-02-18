@@ -45,10 +45,11 @@ elife:
             #    enabled: True
 
     eks:
-        clusters:
-            kubernetes-aws--test:
-                region: us-east-1
-                role: arn:aws:iam::512686554592:role/kubernetes-aws--test--AmazonEKSUserRole
+        clusters: {}
+            # lsh@2022-02-18: disabled, kubernetes-aws--test has been deleted
+            #kubernetes-aws--test:
+            #    region: us-east-1
+            #    role: arn:aws:iam::512686554592:role/kubernetes-aws--test--AmazonEKSUserRole
 
     mockserver:
         expectations: {}
