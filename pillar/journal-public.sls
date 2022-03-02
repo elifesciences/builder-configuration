@@ -6,6 +6,12 @@ journal:
     observer_url: http://prod--observer.elife.internal
     default_host: null
 
+    google_api_client:
+        client_id: some-id
+        client_secret: ThisIsASecret
+        refresh_token: Refreshtoken
+        optout_unsubscribe_spreadsheet_id: spreadsheet-id
+
     gtm_id: null
     google_optimize_id: null
     cb_id: null
