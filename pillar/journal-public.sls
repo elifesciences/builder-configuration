@@ -11,6 +11,7 @@ journal:
         client_secret: ThisIsASecret
         refresh_token: Refreshtoken
         optout_unsubscribe_spreadsheet_id: spreadsheet-id
+        optout_unsubscribe_id_salt: usesomesillystringforsalt
 
     gtm_id: null
     google_optimize_id: null
