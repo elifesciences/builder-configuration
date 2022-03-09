@@ -1,3 +1,5 @@
+{% set osrelease = salt['grains.get']('osrelease') %}
+
 # minion ids are of the form {project}--{environment}--{node} e.g. elife-bot--end2end--1
 # older existing minion ids are of them form {project}--{environment} e.g. elife-bot--prod
 base:
@@ -196,6 +198,11 @@ base:
     'elife-alfred--*':
         - elife.swapspace
         - elife.java11
+        {% if osrelease == "18.04" %}
+        - elife.nodejs6 # for 'npm' and npm releases
+        {% else %}
+        - elife.nodejs # for 'npm' and npm releases
+        {% endif %}
         - elife.jenkins-scripts
         - elife.nginx
         - elife.postfix
