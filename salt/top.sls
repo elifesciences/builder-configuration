@@ -42,15 +42,19 @@ base:
         - api-gateway.kong
 
     'elife-dashboard--*':
+        {% if osrelease == "18.04" %}
+        - elife.nodejs6
         - elife.postgresql-11
+        {% else %}
+        - elife.nodejs
+        - elife.postgresql
+        {% endif %}
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
         - elife-dashboard
         - elife-dashboard.uwsgi
         - elife-dashboard.scheduler
-        - elife.nodejs6
-        #- elife-dashboard.dashboard2
 
     'elife-dashboard--end2end*':
         - elife-dashboard.processes
