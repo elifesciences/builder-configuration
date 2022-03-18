@@ -225,7 +225,11 @@ base:
         - elife.java11
         - elife.php7
         - elife.composer
+        {% if osrelease == "18.04" %}
         - elife.nodejs6
+        {% else %}
+        - elife.nodejs
+        {% endif %}
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
