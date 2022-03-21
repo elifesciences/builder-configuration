@@ -29,6 +29,9 @@ search:
     rds_articles: {{ era_articles|yaml }}
 
 elife:
+    composer:
+        version: 2.2.7
+
     gearman:
         persistent: True
 
