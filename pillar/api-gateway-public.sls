@@ -171,7 +171,7 @@ api_gateway:
             strip_uri: True
 
         ping_lax:
-            upstream_url: {{ lax_url }}/api/v2/ping
+            upstream_url: {{ lax_url }}/ping
             uris: /ping/lax
             strip_uri: True
 
