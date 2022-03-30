@@ -46,7 +46,7 @@ base:
         - elife.nodejs6
         - elife.postgresql-11
         {% else %}
-        - elife.nodejs
+        - elife.nodejs16
         - elife.postgresql
         {% endif %}
         - elife.nginx
@@ -205,7 +205,7 @@ base:
         {% if osrelease == "18.04" %}
         - elife.nodejs6 # for 'npm' and npm releases
         {% else %}
-        - elife.nodejs # for 'npm' and npm releases
+        - elife.nodejs16 # for 'npm' and npm releases
         {% endif %}
         - elife.jenkins-scripts
         - elife.nginx
@@ -228,7 +228,7 @@ base:
         {% if osrelease == "18.04" %}
         - elife.nodejs6
         {% else %}
-        - elife.nodejs
+        - elife.nodejs16
         {% endif %}
         - elife.aws-cli
         - elife.external-volume
