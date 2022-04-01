@@ -47,7 +47,7 @@ base:
         - elife-dashboard
         - elife-dashboard.uwsgi
         - elife-dashboard.scheduler
-        - elife.nodejs6
+        - elife.nodejs16
         #- elife-dashboard.dashboard2
 
     'elife-dashboard--end2end*':
