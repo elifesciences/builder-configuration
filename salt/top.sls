@@ -43,10 +43,8 @@ base:
 
     'elife-dashboard--*':
         {% if osrelease == "18.04" %}
-        - elife.nodejs6
         - elife.postgresql-11
         {% else %}
-        - elife.nodejs16
         - elife.postgresql
         {% endif %}
         - elife.nginx
@@ -55,6 +53,8 @@ base:
         - elife-dashboard
         - elife-dashboard.uwsgi
         - elife-dashboard.scheduler
+        - elife.nodejs16
+        #- elife-dashboard.dashboard2
 
     'elife-dashboard--end2end*':
         - elife-dashboard.processes
