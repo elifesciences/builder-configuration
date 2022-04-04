@@ -1,3 +1,5 @@
+{% set osrelease = salt['grains.get']('osrelease') %}
+
 # minion ids are of the form {project}--{environment}--{node} e.g. elife-bot--end2end--1
 # older existing minion ids are of them form {project}--{environment} e.g. elife-bot--prod
 base:
@@ -40,7 +42,11 @@ base:
         - api-gateway.kong
 
     'elife-dashboard--*':
+        {% if osrelease == "18.04" %}
         - elife.postgresql-11
+        {% else %}
+        - elife.postgresql
+        {% endif %}
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
@@ -196,6 +202,11 @@ base:
     'elife-alfred--*':
         - elife.swapspace
         - elife.java11
+        {% if osrelease == "18.04" %}
+        - elife.nodejs6 # for 'npm' and npm releases
+        {% else %}
+        - elife.nodejs16 # for 'npm' and npm releases
+        {% endif %}
         - elife.jenkins-scripts
         - elife.nginx
         - elife.postfix
@@ -214,7 +225,11 @@ base:
         - elife.java11
         - elife.php7
         - elife.composer
+        {% if osrelease == "18.04" %}
         - elife.nodejs6
+        {% else %}
+        - elife.nodejs16
+        {% endif %}
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
