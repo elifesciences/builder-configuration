@@ -128,6 +128,9 @@ base:
     'bioprotocol--*':
         - bioprotocol
 
+    'bastion--*':
+        - bastion
+
     # environment overrides; this have to be at the end of this file
 
     '*--ci':

@@ -457,6 +457,7 @@ base:
         - elife-ink.nginx
 
     'bastion--*':
+        - elife.swapspace
         - bastion
 
     'bioprotocol--*':
