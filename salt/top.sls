@@ -87,6 +87,7 @@ base:
         # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
     'elife-bot--continuumtest*':
+        - elife.external-volume
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
