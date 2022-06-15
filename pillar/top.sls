@@ -24,6 +24,7 @@ base:
         - bitbucket
 
     'elife-bot--end2end--*':
+        - nvme-ext-disk
         - elife-bot-end2end
 
     'elife-alfred--*':
@@ -196,9 +197,6 @@ base:
         - nvme-ext-disk
 
     'elife-bot--ci--*':
-        - nvme-ext-disk
-
-    'elife-bot--end2end--*':
         - nvme-ext-disk
 
     
