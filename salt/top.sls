@@ -78,6 +78,7 @@ base:
         - elife.vsftpd
 
     'elife-bot--end2end*':
+        - elife.external-volume
         - elife.nginx
         - elife.vsftpd
         - elife.vsftpd-nginx
