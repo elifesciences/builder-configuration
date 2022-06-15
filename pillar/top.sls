@@ -133,6 +133,7 @@ base:
 
 
     # per-environment overrides; order of this section is important.
+    # lsh@2022-06-15: sections without '--*' look incorrect. what minions are they matching against?
 
 
     '*--ci':
