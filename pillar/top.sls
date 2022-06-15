@@ -191,7 +191,7 @@ base:
     # per-project + per-environment overrides; order of this section is important.
 
     
-    'elife-bot--continuumtest':
+    'elife-bot--continuumtest--*':
         - nvme-ext-disk
     
     
