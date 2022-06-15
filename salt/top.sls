@@ -74,6 +74,7 @@ base:
         - elife-bot.feeder
 
     'elife-bot--ci*':
+        - elife.external-volume
         - elife.vsftpd
 
     'elife-bot--end2end*':

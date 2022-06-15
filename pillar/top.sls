@@ -194,7 +194,10 @@ base:
     
     'elife-bot--continuumtest--*':
         - nvme-ext-disk
-    
+
+    'elife-bot--ci--*':
+        - nvme-ext-disk
+
     
     # misc overrides.
 
