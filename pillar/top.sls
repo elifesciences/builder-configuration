@@ -131,7 +131,10 @@ base:
     'bastion--*':
         - bastion
 
-    # environment overrides; this have to be at the end of this file
+
+    # per-environment overrides; order of this section is important.
+    # lsh@2022-06-15: sections without '--*' look incorrect. what minions are they matching against?
+
 
     '*--ci':
         - environment-ci-public
@@ -184,6 +187,17 @@ base:
     '*--continuumtestpreview--*':
         - environment-continuumtestpreview-public
         - environment-continuumtestpreview
+
+
+    # per-project + per-environment overrides; order of this section is important.
+
+    
+    'elife-bot--continuumtest--*':
+        - nvme-ext-disk
+    
+    
+    # misc overrides.
+
 
     # lsh@2021-06-29: temporary
     'journal-cms--continuumtest--*':
