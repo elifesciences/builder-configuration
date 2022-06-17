@@ -199,6 +199,9 @@ base:
     'elife-bot--ci--*':
         - nvme-ext-disk
 
+    'elife-libraries--load--*':
+        - nvme-ext-disk
+
     
     # misc overrides.
 
