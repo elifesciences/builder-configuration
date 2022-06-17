@@ -208,6 +208,8 @@ base:
     'elife-libraries--spectrum--*':
         - nvme-ext-disk
 
+    'elife-libraries--ci--*':
+        - nvme-ext-disk
 
     # misc overrides.
 
