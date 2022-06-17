@@ -32,6 +32,7 @@ base:
         - alfred
 
     'elife-libraries--*':
+        - nvme-ext-disk
         - elife-libraries
         - pypi
 
@@ -199,17 +200,6 @@ base:
     'elife-bot--ci--*':
         - nvme-ext-disk
 
-    'elife-libraries--load--*':
-        - nvme-ext-disk
-
-    'elife-libraries--powerful3--*':
-        - nvme-ext-disk
-    
-    'elife-libraries--spectrum--*':
-        - nvme-ext-disk
-
-    'elife-libraries--ci--*':
-        - nvme-ext-disk
 
     # misc overrides.
 
