@@ -205,6 +205,10 @@ base:
     'elife-libraries--powerful3--*':
         - nvme-ext-disk
     
+    'elife-libraries--spectrum--*':
+        - nvme-ext-disk
+
+
     # misc overrides.
 
 
