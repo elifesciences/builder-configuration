@@ -202,6 +202,8 @@ base:
     'elife-libraries--load--*':
         - nvme-ext-disk
 
+    'elife-libraries--powerful3--*':
+        - nvme-ext-disk
     
     # misc overrides.
 
