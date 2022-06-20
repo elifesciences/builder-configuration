@@ -66,6 +66,7 @@ base:
         - elife-dashboard.processes
 
     'elife-bot--*':
+        - elife.external-volume
         - elife.redis-server
         - elife.docker
         - elife.newrelic-python
@@ -74,11 +75,9 @@ base:
         - elife-bot.feeder
 
     'elife-bot--ci*':
-        - elife.external-volume
         - elife.vsftpd
 
     'elife-bot--end2end*':
-        - elife.external-volume
         - elife.nginx
         - elife.vsftpd
         - elife.vsftpd-nginx
@@ -89,7 +88,6 @@ base:
         # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
     'elife-bot--continuumtest*':
-        - elife.external-volume
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
