@@ -19,12 +19,12 @@ base:
         - api-gateway
 
     'elife-bot--*':
+        - nvme-ext-disk
         - elife-bot-public
         - elife-bot
         - bitbucket
 
     'elife-bot--end2end--*':
-        - nvme-ext-disk
         - elife-bot-end2end
 
     'elife-alfred--*':
@@ -194,11 +194,7 @@ base:
     # per-project + per-environment overrides; order of this section is important.
 
     
-    'elife-bot--continuumtest--*':
-        - nvme-ext-disk
-
-    'elife-bot--ci--*':
-        - nvme-ext-disk
+    # ...
 
 
     # misc overrides.
