@@ -194,7 +194,11 @@ base:
     # per-project + per-environment overrides; order of this section is important.
 
     
-    # ...
+    'journal-cms--continuumtest--*':
+        - nvme-ext-disk
+
+    'journal-cms--ci--*':
+        - nvme-ext-disk
 
 
     # misc overrides.
