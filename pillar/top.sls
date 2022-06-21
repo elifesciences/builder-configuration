@@ -202,6 +202,8 @@ base:
     'journal-cms--ci--*':
         - nvme-ext-disk
 
+    'journal-cms--end2end--*':
+        - nvme-ext-disk
 
     # misc overrides.
 
