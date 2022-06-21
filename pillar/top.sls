@@ -196,6 +196,8 @@ base:
     
     'journal-cms--continuumtest--*':
         - nvme-ext-disk
+        # lsh@2021-06-29: temporary
+        - journal-cms-continuumtest-public
 
     'journal-cms--ci--*':
         - nvme-ext-disk
@@ -203,10 +205,6 @@ base:
 
     # misc overrides.
 
-
-    # lsh@2021-06-29: temporary
-    'journal-cms--continuumtest--*':
-        - journal-cms-continuumtest-public
 
     # temporary
     'journal--title-length--*':
