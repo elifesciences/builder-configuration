@@ -153,7 +153,7 @@ base:
         - journal-cms
 
     'journal-cms--ci*':
-        - elife.docker
+        - elife.docker-native
         - elife.goaws
         - elife.swapspace
 
