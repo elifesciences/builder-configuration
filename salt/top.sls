@@ -175,7 +175,7 @@ base:
         - elife.postfix-ses
     
     'journal-cms--ckeditor--*':
-        - elife.docker
+        - elife.docker-native
         - elife.goaws
         - elife.swapspace
 
@@ -366,7 +366,11 @@ base:
         - elife.nginx
         - elife.nginx-php7
         - elife.redis-server
+        {% if osrelease == "18.04" %}
         - elife.nodejs6
+        {% else %}
+        - elife.nodejs16
+        {% endif %}
         - personalised-covers.aws
         - personalised-covers
         - elife.newrelic-php
