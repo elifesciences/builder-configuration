@@ -414,7 +414,7 @@ base:
 
     'profiles--end2end--*':
         - elife.postgresql-11
-        - elife.docker
+        - elife.docker-native
 
     'profiles--prod--*':
         - elife.postgresql-11
