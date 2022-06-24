@@ -379,7 +379,7 @@ base:
         - api-dummy
         - elife.proofreader-php
         - personalised-covers.api-dummy
-        - elife.docker
+        - elife.docker-native
         - elife.aws-cli
         - elife.sidecars
         - personalised-covers.localstack
@@ -388,7 +388,7 @@ base:
         - api-dummy
         - elife.proofreader-php
         - personalised-covers.api-dummy
-        - elife.docker
+        - elife.docker-native
         - elife.aws-cli
         - elife.sidecars
         - personalised-covers.localstack
