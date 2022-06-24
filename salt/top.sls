@@ -42,11 +42,7 @@ base:
         - api-gateway.kong
 
     'elife-dashboard--*':
-        {% if osrelease == "18.04" %}
         - elife.postgresql-11
-        {% else %}
-        - elife.postgresql
-        {% endif %}
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
