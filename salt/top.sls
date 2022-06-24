@@ -409,21 +409,27 @@ base:
         - elife.nginx-error-pages
         - redirects
 
+    'profiles--ci--*':
+        - elife.docker
+
     'profiles--end2end--*':
         - elife.postgresql-11
+        - elife.docker
 
     'profiles--prod--*':
         - elife.postgresql-11
+        - elife.docker
 
     'profiles--continuumtest--*':
         - elife.postgresql-container
+        - elife.docker-native
 
     'profiles--*':
         - elife.uwsgi
         - elife.nginx
         - elife.aws-credentials
         - elife.aws-cli
-        - elife.docker
+        #- elife.docker
         - elife.docker-databases
         - elife.sidecars
         - profiles.postgresql
