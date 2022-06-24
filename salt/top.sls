@@ -335,7 +335,7 @@ base:
         - elife.docker-native
 
     'recommendations--end2end--*':
-        - elife.docker
+        - elife.docker-native
 
     'recommendations--prod--*':
         - elife.docker
