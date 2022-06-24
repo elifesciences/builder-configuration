@@ -328,11 +328,22 @@ base:
         - elife.multiservice
         - search.processes
 
+    'recommendations--continuumtest--*':
+        - elife.docker-native
+
+    'recommendations--ci--*':
+        - elife.docker
+
+    'recommendations--end2end--*':
+        - elife.docker
+
+    'recommendations--prod--*':
+        - elife.docker
+
     'recommendations--*':
         - elife.nginx
-        - elife.docker
         - recommendations
-
+        
     'statusbase--*':
         - elife.php7
         - elife.composer
