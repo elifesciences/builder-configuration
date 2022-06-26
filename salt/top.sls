@@ -328,19 +328,8 @@ base:
         - elife.multiservice
         - search.processes
 
-    'recommendations--continuumtest--*':
-        - elife.docker-native
-
-    'recommendations--ci--*':
-        - elife.docker-native
-
-    'recommendations--end2end--*':
-        - elife.docker-native
-
-    'recommendations--prod--*':
-        - elife.docker
-
     'recommendations--*':
+        - elife.docker-native
         - elife.nginx
         - recommendations
         
