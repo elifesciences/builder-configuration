@@ -61,6 +61,7 @@ base:
         - pattern-library
 
     'journal-cms--*':
+        - nvme-ext-disk
         - journal-cms-public
         - journal-cms
 
@@ -195,15 +196,9 @@ base:
 
     
     'journal-cms--continuumtest--*':
-        - nvme-ext-disk
         # lsh@2021-06-29: temporary
         - journal-cms-continuumtest-public
 
-    'journal-cms--ci--*':
-        - nvme-ext-disk
-
-    'journal-cms--end2end--*':
-        - nvme-ext-disk
 
     # misc overrides.
 
