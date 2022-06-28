@@ -398,7 +398,13 @@ base:
     'iiif--end2end--*':
         - elife.docker-native
 
-    'iiif--prod--*':
+    'iiif--prod--1':
+        - elife.docker-native
+
+    'iiif--prod--2':
+        - elife.docker
+
+    'iiif--prod--3':
         - elife.docker
 
     'iiif--*':
