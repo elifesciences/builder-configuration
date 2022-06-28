@@ -105,6 +105,9 @@ base:
     'iiif--prod--1':
         - nvme-ext-disk
 
+    'iiif--prod--2':
+        - nvme-ext-disk
+
     'iiif--*':
         - iiif-public
         - iiif

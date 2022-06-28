@@ -402,7 +402,7 @@ base:
         - elife.docker-native
 
     'iiif--prod--2':
-        - elife.docker
+        - elife.docker-native
 
     'iiif--prod--3':
         - elife.docker
