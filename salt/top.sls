@@ -389,30 +389,12 @@ base:
         - elife.sidecars
         - personalised-covers.localstack
 
-    'iiif--continuumtest--*':
-        - elife.docker-native
-
-    'iiif--ci--*':
-        - elife.docker-native
-
-    'iiif--end2end--*':
-        - elife.docker-native
-
-    'iiif--prod--1':
-        - elife.docker-native
-
-    'iiif--prod--2':
-        - elife.docker-native
-
-    'iiif--prod--3':
-        - elife.docker
-
     'iiif--*':
         - elife.swapspace
         - elife.nginx
         - elife.external-volume
         - elife.newrelic-python
-        #- elife.docker
+        - elife.docker-native
         - iiif.loris-removal
         - iiif
         - iiif.loris-maintenance
