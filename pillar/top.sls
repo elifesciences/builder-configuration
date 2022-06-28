@@ -102,6 +102,9 @@ base:
     'personalised-covers--pr-*':
         - personalised-covers-ci-public
 
+    'iiif--prod--1':
+        - nvme-ext-disk
+
     'iiif--*':
         - iiif-public
         - iiif
