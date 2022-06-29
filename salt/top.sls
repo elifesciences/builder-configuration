@@ -313,7 +313,7 @@ base:
         - api-dummy
         - search.api-dummy
         - elife.proofreader-php
-        - elife.docker
+        - elife.docker-native
         - elife.goaws
 
     'search--end2end--1':
