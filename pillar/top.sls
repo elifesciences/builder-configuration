@@ -47,6 +47,9 @@ base:
         - elife-reporting
         - bitbucket
 
+    'lax--end2end--1':
+        - nvme-ext-disk
+
     'journal--*':
         - journal-public
         - journal
