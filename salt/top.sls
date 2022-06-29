@@ -317,7 +317,7 @@ base:
         - elife.goaws
 
     'search--end2end--1':
-        - elife.docker
+        - elife.docker-native
         - elife.multiservice
         - search.processes
 
