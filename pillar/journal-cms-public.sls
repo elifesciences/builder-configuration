@@ -53,10 +53,7 @@ journal_cms:
         db: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230506-elife_2_0-mysql.gz
 
 elife:
-    php:    
-        # lsh@2022-07-01: doubled to 256M after upgrading to php7.4 and Ubuntu 20.04 to debug:
-        # - https://github.com/elifesciences/issues/issues/7535
-        #memory_limit: 128M
-        memory_limit: 256M
+    php:
+        memory_limit: 128M
         upload_max_filesize: 32M
         post_max_size: 32M
