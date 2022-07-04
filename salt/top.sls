@@ -299,7 +299,7 @@ base:
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
-        #- elife.docker
+        - elife.docker-native
         - elife.swapspace
         - search.opensearch
         - search.gearman-persistence
@@ -313,21 +313,17 @@ base:
         - api-dummy
         - search.api-dummy
         - elife.proofreader-php
-        - elife.docker-native
         - elife.goaws
 
     'search--end2end--1':
-        - elife.docker-native
         - elife.multiservice
         - search.processes
 
     'search--continuumtest--1':
-        - elife.docker-native
         - elife.multiservice
         - search.processes
 
     'search--prod--1':
-        - elife.docker
         - elife.multiservice
         - search.processes
 
