@@ -50,10 +50,7 @@ base:
     'lax--end2end--*':
         - nvme-ext-disk
 
-    'lax--prod--1':
-        - nvme-ext-disk
-
-    'lax--prod--2':
+    'lax--prod--*':
         - nvme-ext-disk
 
     'journal--*':
