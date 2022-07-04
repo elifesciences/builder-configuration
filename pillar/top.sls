@@ -53,6 +53,9 @@ base:
     'lax--prod--1':
         - nvme-ext-disk
 
+    'lax--prod--2':
+        - nvme-ext-disk
+
     'journal--*':
         - journal-public
         - journal
