@@ -128,6 +128,9 @@ base:
     'journal--continuumtestpreview--*':
         - elife.docker-native
 
+    'journal--demo--*':
+        - elife.docker-native
+
     'journal--continuumtest--*':
         - elife.docker
 
