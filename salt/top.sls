@@ -122,11 +122,8 @@ base:
         - lax.cron
         - elife-reporting.cron
 
-    'journal--*':
-        #- elife.docker
-        - elife.nginx
-        - elife.nginx-error-pages
-        - journal
+    'journal--pr-*':
+        - elife.docker
 
     'journal--continuumtestpreview--*':
         - elife.docker-native
@@ -142,6 +139,12 @@ base:
 
     'journal--prod--*':
         - elife.docker
+
+    'journal--*':
+        #- elife.docker
+        - elife.nginx
+        - elife.nginx-error-pages
+        - journal
 
     'pattern-library--*':
         - elife.docker
