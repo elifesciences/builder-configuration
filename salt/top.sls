@@ -141,7 +141,7 @@ base:
         - elife.docker
 
     'journal--end2end--*':
-        - elife.docker
+        - elife.docker-native
 
     'journal--prod--*':
         - elife.docker
