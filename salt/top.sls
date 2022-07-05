@@ -123,10 +123,25 @@ base:
         - elife-reporting.cron
 
     'journal--*':
-        - elife.docker
+        #- elife.docker
         - elife.nginx
         - elife.nginx-error-pages
         - journal
+
+    'journal--continuumtestpreview--*':
+        - elife.docker-native
+
+    'journal--continuumtest--*':
+        - elife.docker
+
+    'journal--ci--*':
+        - elife.docker
+
+    'journal--end2end--*':
+        - elife.docker
+
+    'journal--prod--*':
+        - elife.docker
 
     'pattern-library--*':
         - elife.docker
