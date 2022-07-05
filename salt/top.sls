@@ -135,7 +135,7 @@ base:
         - elife.docker-native
 
     'journal--continuumtest--*':
-        - elife.docker
+        - elife.docker-native
 
     'journal--ci--*':
         - elife.docker
