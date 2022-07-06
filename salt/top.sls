@@ -150,7 +150,7 @@ base:
         - elife.docker-native
 
     'journal--prod--3':
-        - elife.docker
+        - elife.docker-native
 
     'journal--prod--4':
         - elife.docker
