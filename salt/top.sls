@@ -123,7 +123,7 @@ base:
         - elife-reporting.cron
 
     'journal--pr-*':
-        - elife.docker
+        - elife.docker-native
 
     'journal--continuumtestpreview--*':
         - elife.docker-native
@@ -138,13 +138,23 @@ base:
         - elife.docker-native
 
     'journal--ci--*':
-        - elife.docker
+        - elife.docker-native
 
     'journal--end2end--*':
         - elife.docker-native
 
-    'journal--prod--*':
+    'journal--prod--1':
+        - elife.docker-native
+
+    'journal--prod--2':
         - elife.docker
+
+    'journal--prod--3':
+        - elife.docker
+
+    'journal--prod--4':
+        - elife.docker
+
 
     'journal--*':
         #- elife.docker
