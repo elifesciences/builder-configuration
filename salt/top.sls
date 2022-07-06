@@ -145,6 +145,8 @@ base:
 
     'journal--prod--1':
         - elife.docker-native
+    'journal--prod--2':
+        - elife.docker-native
 
     'journal--prod--2':
         - elife.docker
