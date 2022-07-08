@@ -199,11 +199,7 @@ base:
     'elife-alfred--*':
         - elife.swapspace
         - elife.java11
-        {% if osrelease == "18.04" %}
-        - elife.nodejs6 # for 'npm' and npm releases
-        {% else %}
         - elife.nodejs16 # for 'npm' and npm releases
-        {% endif %}
         - elife.jenkins-scripts
         - elife.nginx
         - elife.postfix
