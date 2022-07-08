@@ -249,7 +249,7 @@ base:
         - elife.java11
         - elife.external-volume
         - elife.jenkins-scripts
-        - elife.docker
+        - elife.docker-native
         - elife.docker-push
         - elife.hub
         - elife.jenkins-node
