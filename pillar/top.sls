@@ -28,6 +28,7 @@ base:
         - elife-bot-end2end
 
     'elife-alfred--*':
+        - nvme-ext-disk
         - elife-alfred-public
         - alfred
 
