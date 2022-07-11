@@ -1,21 +1,20 @@
 {% set osrelease = salt['grains.get']('osrelease') %}
 
 # minion ids are of the form {project}--{environment}--{node} e.g. elife-bot--end2end--1
-# older existing minion ids are of them form {project}--{environment} e.g. elife-bot--prod
 base:
     # all projects get these
     '*':
         - elife
 
     # all "production" servers
-    '*--prod--* or *--prod or master-server--2018-04-09-2--*':
+    '*--prod--*:
         - elife.newrelic-infrastructure
     
-    'master-server--2018-04-09-2--*':
+    'master-server--prod--*':
         - elife.backups-cron
 
     # all "non-production" servers
-    'not *--prod--* and not *--prod and not master-server--2018-04-09-2--*':
+    'not *--prod--*':
         # temporary. remove once all non-prod instances have infrastructure removed
         - elife.newrelic-infrastructure-removal
 
@@ -52,13 +51,13 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-    'elife-dashboard--end2end*':
+    'elife-dashboard--end2end--*':
         - elife-dashboard.processes
 
-    'elife-dashboard--continuumtest*':
+    'elife-dashboard--continuumtest--*':
         - elife-dashboard.processes
 
-    'elife-dashboard--prod*':
+    'elife-dashboard--prod--*':
         - elife-dashboard.processes
 
     'elife-bot--*':
@@ -70,10 +69,10 @@ base:
         - elife-bot
         - elife-bot.feeder
 
-    'elife-bot--ci*':
+    'elife-bot--ci--*':
         - elife.vsftpd
 
-    'elife-bot--end2end*':
+    'elife-bot--end2end--*':
         - elife.nginx
         - elife.vsftpd
         - elife.vsftpd-nginx
@@ -83,12 +82,12 @@ base:
         - elife.mockserver
         # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
-    'elife-bot--continuumtest*':
+    'elife-bot--continuumtest--*':
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
 
-    'elife-bot--prod*':
+    'elife-bot--prod--*':
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
@@ -106,15 +105,15 @@ base:
         - elife-reporting
         - lax.adaptors
 
-    'lax--end2end*':
+    'lax--end2end--*':
         - elife.multiservice
         - lax.processes
 
-    'lax--continuumtest*':
+    'lax--continuumtest--*':
         - elife.multiservice
         - lax.processes
 
-    'lax--prod*':
+    'lax--prod--*':
         - elife.multiservice
         - lax.processes
 
@@ -148,17 +147,17 @@ base:
         - elife.aws-cli
         - journal-cms
 
-    'journal-cms--ci*':
+    'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
         - elife.swapspace
 
-    'journal-cms--end2end*':
+    'journal-cms--end2end--*':
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
 
-    'journal-cms--continuumtest*':
+    'journal-cms--continuumtest--*':
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
@@ -218,11 +217,7 @@ base:
         - elife.java11
         - elife.php7
         - elife.composer
-        {% if osrelease == "18.04" %}
-        - elife.nodejs6
-        {% else %}
         - elife.nodejs16
-        {% endif %}
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
@@ -245,7 +240,7 @@ base:
         - elife.docker
         - elife.spectrum
 
-    'containers--*--*':
+    'containers--*':
         - elife.java11
         - elife.external-volume
         - elife.jenkins-scripts
@@ -328,15 +323,6 @@ base:
         - elife.nginx
         - recommendations
         
-    'statusbase--*':
-        - elife.php7
-        - elife.composer
-        - elife.mysql-client
-        - elife.mysql-server
-        - elife.nginx
-        - elife.nginx-php7
-        - statusbase
-
     'observer--*':
         - elife.uwsgi
         - elife.java8
@@ -357,16 +343,12 @@ base:
         - elife.nginx
         - elife.nginx-php7
         - elife.redis-server
-        {% if osrelease == "18.04" %}
-        - elife.nodejs6
-        {% else %}
         - elife.nodejs16
-        {% endif %}
         - personalised-covers.aws
         - personalised-covers
         - elife.newrelic-php
 
-    'personalised-covers--ci*':
+    'personalised-covers--ci--*':
         - api-dummy
         - elife.proofreader-php
         - personalised-covers.api-dummy
@@ -394,7 +376,7 @@ base:
         - iiif
         - iiif.loris-maintenance
 
-    'iiif--devchk*':
+    'iiif--devchk--*':
         - elife.java8
         - iiif.deviation-checker
 
