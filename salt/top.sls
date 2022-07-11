@@ -7,7 +7,7 @@ base:
         - elife
 
     # all "production" servers
-    '*--prod--*:
+    '*--prod--*':
         - elife.newrelic-infrastructure
     
     'master-server--prod--*':
