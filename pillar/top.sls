@@ -19,7 +19,6 @@ base:
         - api-gateway
 
     'elife-bot--*':
-        - nvme-ext-disk
         - elife-bot-public
         - elife-bot
         - bitbucket
@@ -28,12 +27,10 @@ base:
         - elife-bot-end2end
 
     'elife-alfred--*':
-        - nvme-ext-disk
         - elife-alfred-public
         - alfred
 
     'elife-libraries--*':
-        - nvme-ext-disk
         - elife-libraries
         - pypi
 
@@ -47,12 +44,6 @@ base:
         - lax
         - elife-reporting
         - bitbucket
-
-    'lax--end2end--*':
-        - nvme-ext-disk
-
-    'lax--prod--*':
-        - nvme-ext-disk
 
     'journal--*':
         - journal-public
@@ -68,7 +59,6 @@ base:
         - pattern-library
 
     'journal-cms--*':
-        - nvme-ext-disk
         - journal-cms-public
         - journal-cms
 
@@ -110,7 +100,6 @@ base:
         - personalised-covers-ci-public
 
     'iiif--*':
-        - nvme-ext-disk
         - iiif-public
         - iiif
 
