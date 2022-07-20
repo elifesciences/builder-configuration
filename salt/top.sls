@@ -227,7 +227,7 @@ base:
         - elife.jenkins-scripts
         - elife.proofreader-php
         - elife.hub
-        - elife.docker
+        - elife.docker-native
         - elife.docker-push
         - elife.pypi
         - elife-libraries
@@ -237,7 +237,6 @@ base:
 
     'elife-libraries--spectrum--*':
         - elife.external-volume-srv
-        - elife.docker
         - elife.spectrum
 
     'containers--*':
