@@ -372,7 +372,6 @@ base:
         - elife.external-volume
         - elife.newrelic-python
         - elife.docker-native
-        - iiif.loris-removal
         - iiif
         - iiif.loris-maintenance
 
