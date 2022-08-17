@@ -29,7 +29,7 @@ base:
         # put common big and slow deps in here
 
     'api-gateway--*':
-        - elife.docker
+        - elife.docker-native
         - elife.postgresql
         - elife.nginx
         - elife.nginx-error-pages
@@ -63,7 +63,7 @@ base:
     'elife-bot--*':
         - elife.external-volume
         - elife.redis-server
-        - elife.docker
+        - elife.docker-native
         - elife.newrelic-python
         - elife-bot.strip-coverletter
         - elife-bot
@@ -128,7 +128,7 @@ base:
         - journal
 
     'pattern-library--*':
-        - elife.docker
+        - elife.docker-native
         - elife.nginx
         - elife.nginx-upgrade-http
         - pattern-library
@@ -409,7 +409,7 @@ base:
         - elife.nginx
         - elife.aws-credentials
         - elife.aws-cli
-        - elife.docker
+        - elife.docker-native
         - elife.sidecars
         - annotations
         - annotations.containers
@@ -419,7 +419,7 @@ base:
         - elife.nginx
         - elife.aws-credentials
         - elife.aws-cli
-        - elife.docker
+        - elife.docker-native
         - elife.docker-databases
         - digests
 
@@ -428,7 +428,7 @@ base:
 
     'elife-ink--*':
         - elife.nginx
-        - elife.docker
+        - elife.docker-native
         - elife-ink
         - elife-ink.nginx
 
