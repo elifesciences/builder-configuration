@@ -23,9 +23,6 @@ base:
         - elife-bot
         - bitbucket
 
-    'elife-bot--end2end--*':
-        - elife-bot-end2end
-
     'elife-alfred--*':
         - elife-alfred-public
         - alfred
@@ -136,33 +133,17 @@ base:
     # lsh@2022-06-15: sections without '--*' look incorrect. what minions are they matching against?
 
 
-    '*--ci':
-        - environment-ci-public
-        - environment-ci
-
     '*--ci--*':
         - environment-ci-public
         - environment-ci
-
-    '*--end2end':
-        - environment-end2end-public
-        - environment-end2end
 
     '*--end2end--*':
         - environment-end2end-public
         - environment-end2end
 
-    '*--demo':
-        - environment-demo-public
-        - environment-demo
-
     '*--demo--*':
         - environment-demo-public
         - environment-demo
-
-    '*--continuumtest':
-        - environment-continuumtest-public
-        - environment-continuumtest
 
     '*--continuumtest--*':
         - environment-continuumtest-public
@@ -171,10 +152,6 @@ base:
     '*--staging--*':
         - environment-staging-public
         - environment-staging
-
-    '*--prod':
-        - environment-prod-public
-        - environment-prod
 
     '*--prod--*':
         - environment-prod-public
