@@ -222,7 +222,7 @@ base:
         - elife.external-volume
         - elife.mysql-client
         - elife.mysql-server
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.jenkins-node
         - elife.jenkins-scripts
         - elife.proofreader-php
