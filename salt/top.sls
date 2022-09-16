@@ -436,9 +436,16 @@ base:
         - elife.swapspace
         - bastion
 
+    'bioprotocol--continuumtest--*':
+        - elife.postgresql-11
+
+    'bioprotocol--* and not bioprotocol--continuumtest--*':
+        - elife.postgresql
+
     'bioprotocol--*':
         - elife.nginx
-        - elife.postgresql
+        #- elife.postgresql
+        #- elife.postgresql-11
         - elife.postgresql-appdb
         - elife.uwsgi
         - elife.newrelic-python
