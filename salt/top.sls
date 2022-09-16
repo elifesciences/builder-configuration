@@ -285,7 +285,8 @@ base:
 
     # the 'leader' because it has opensearch installed
     'search--*--1':
-        - elife.postgresql
+        #- elife.postgresql
+        #- elife.postgresql-11
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
@@ -295,25 +296,24 @@ base:
         - search.gearman-persistence
         - search.leader
 
-    # dev/ci
-    # https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
+    'search--*--1 and not search--continuumtest--1':
+        - elife.postgresql
+
+    'search--continuumtest--1':
+        - elife.postgresql-11
+
+    # dev/ci only
     # you can test this on the salt-master with:
     # $ salt -C 'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*' --preview-target
+    # - https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
     'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
         - api-dummy
         - search.api-dummy
         - elife.proofreader-php
         - elife.goaws
 
-    'search--end2end--1':
-        - elife.multiservice
-        - search.processes
-
-    'search--continuumtest--1':
-        - elife.multiservice
-        - search.processes
-
-    'search--prod--1':
+    # non-dev/non-ci leaders only
+    'search--end2end--1 or search--continuumtest--1 or search--prod--1':
         - elife.multiservice
         - search.processes
 
@@ -321,7 +321,7 @@ base:
         - elife.docker-native
         - elife.nginx
         - recommendations
-        
+
     'observer--*':
         - elife.uwsgi
         - elife.java8
