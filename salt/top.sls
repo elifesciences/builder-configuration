@@ -285,8 +285,7 @@ base:
 
     # the 'leader' because it has opensearch installed
     'search--*--1':
-        #- elife.postgresql
-        #- elife.postgresql-11
+        - elife.postgresql-11
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
@@ -295,12 +294,6 @@ base:
         - search.opensearch
         - search.gearman-persistence
         - search.leader
-
-    'search--*--1 and not search--continuumtest--1 and not search--ci--1 and not search--end2end--1':
-        - elife.postgresql
-
-    'search--continuumtest--1 or search--ci--1 or search--end2end--1':
-        - elife.postgresql-11
 
     # dev/ci only
     # you can test this on the salt-master with:
