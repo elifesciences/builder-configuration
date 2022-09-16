@@ -429,10 +429,10 @@ base:
         - elife.swapspace
         - bastion
 
-    'bioprotocol--continuumtest--* or bioprotocol--ci--*':
+    'bioprotocol--continuumtest--* or bioprotocol--ci--* or bioprotocol--end2end--*':
         - elife.postgresql-11
 
-    'bioprotocol--* and not bioprotocol--continuumtest--* and not bioprotocol--ci--*':
+    'bioprotocol--* and not bioprotocol--continuumtest--* and not bioprotocol--ci--* and not bioprotocol--end2end--*':
         - elife.postgresql
 
     'bioprotocol--*':
