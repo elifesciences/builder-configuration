@@ -296,10 +296,10 @@ base:
         - search.gearman-persistence
         - search.leader
 
-    'search--*--1 and not search--continuumtest--1 and not search--ci--1':
+    'search--*--1 and not search--continuumtest--1 and not search--ci--1 and not search--end2end--1':
         - elife.postgresql
 
-    'search--continuumtest--1 or search--ci--1':
+    'search--continuumtest--1 or search--ci--1 or search--end2end--1':
         - elife.postgresql-11
 
     # dev/ci only
