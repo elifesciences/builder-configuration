@@ -30,7 +30,7 @@ base:
 
     'api-gateway--*':
         - elife.docker-native
-        - elife.postgresql
+        - elife.postgresql-11
         - elife.nginx
         - elife.nginx-error-pages
         - elife.certificates
