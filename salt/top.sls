@@ -28,10 +28,10 @@ base:
         # basebox is used as a base for other projects
         # put common big and slow deps in here
 
-    'api-gateway--* and not api-gateway--continuumtest--*':
+    'api-gateway--* and not api-gateway--continuumtest--* and not api-gateway--end2end--*':
         - elife.postgresql
 
-    'api-gateway--continuumtest--*':
+    'api-gateway--continuumtest--* or api-gateway--end2end--*':
         - elife.postgresql-11
 
     'api-gateway--*':
