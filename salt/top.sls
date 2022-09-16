@@ -28,9 +28,14 @@ base:
         # basebox is used as a base for other projects
         # put common big and slow deps in here
 
+    'api-gateway--* and not api-gateway--continuumtest--*':
+        - elife.postgresql
+
+    'api-gateway--continuumtest--*':
+        - elife.postgresql-11
+
     'api-gateway--*':
         - elife.docker-native
-        - elife.postgresql
         - elife.nginx
         - elife.nginx-error-pages
         - elife.certificates
