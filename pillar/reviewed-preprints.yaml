@@ -1,0 +1,9 @@
+# After modifying this file, run:
+# https://alfred.elifesciences.org/job/process/job/process-rds-publishing/
+# to allow search, journal and journal-cms to decorate articles with
+# reviewedDate and curationLabels
+#
+# format:
+# id of reviewed-preprint:
+#     reviewedDate: date of review of preprint
+#     curationLabels: list of curation labels
