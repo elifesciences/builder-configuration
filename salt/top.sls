@@ -284,10 +284,10 @@ base:
         - search
 
     # the 'leader' because it has opensearch installed
-    'search--*--1 and not search--continuumtest--1':
+    'search--*--1 and not search--continuumtest--1 and not search--prod--1':
         - elife.postgresql-11
 
-    'search--continuumtest--1':
+    'search--continuumtest--1 or search--prod--1':
         - elife.postgresql
 
     'search--*--1':
