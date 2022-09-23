@@ -284,8 +284,13 @@ base:
         - search
 
     # the 'leader' because it has opensearch installed
-    'search--*--1':
+    'search--*--1 and not search--continuumtest--1':
         - elife.postgresql-11
+
+    'search--continuumtest--1':
+        - elife.postgresql
+
+    'search--*--1':
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
