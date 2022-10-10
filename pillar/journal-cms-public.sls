@@ -52,9 +52,6 @@ journal_cms:
         files: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230509-archive-b47198f6.tar.gz
         db: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230506-elife_2_0-mysql.gz
 
-    {% import_yaml "reviewed-preprints.yaml" as reviewed_preprints %}
-    reviewed_preprints: {{ reviewed_preprints|yaml }}
-
 elife:
     php:
         memory_limit: 128M
