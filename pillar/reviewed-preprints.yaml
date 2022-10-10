@@ -1,0 +1,13 @@
+# allow search and journal to decorate articles with
+# reviewedDate and curationLabels
+#
+# format:
+# id of reviewed-preprint:
+#     reviewedDate: date of review of preprint
+#     curationLabels: list of curation labels
+
+'30274':
+    reviewedDate: '2020-08-24T13:30:00Z'
+    curationLabels:
+        - 'foo'
+        - 'bar'
