@@ -4,6 +4,8 @@ journal:
     # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
+    # no trailing slashes. leave empty to prevent adding redirect rules.
+    preprint_url:
     default_host: null
 
     google_api_client:
