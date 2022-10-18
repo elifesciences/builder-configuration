@@ -4,6 +4,8 @@ elife:
 journal:
     api_url: http://prod--gateway.elife.internal
     api_url_public: https://prod--gateway.elifesciences.org
+    # no trailing slashes. leave empty to prevent adding redirect rules.
+    preprint_url: https://prod--epp.elifesciences.org
     # api_key: # see builder-private
     oauth2_client_id: journal--preview
     xpub_client_id: journal--preview
