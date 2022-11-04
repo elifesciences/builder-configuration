@@ -134,6 +134,7 @@ base:
         - pattern-library
 
     'journal-cms--*':
+        - elife.apache-removal # lsh@2022-11-04: temporary, remove once apache2 purged
         - elife.external-volume
         - elife.external-volume-srv
         - elife.php7
