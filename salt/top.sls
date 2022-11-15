@@ -28,8 +28,13 @@ base:
         # basebox is used as a base for other projects
         # put common big and slow deps in here
 
-    'api-gateway--*':
+    'api-gateway--* and not api-gateway--prod*':
+        - elife.postgresql-12
+
+    'api-gateway--prod*':
         - elife.postgresql-11
+
+    'api-gateway--*':
         - elife.docker-native
         - elife.nginx
         - elife.nginx-error-pages
