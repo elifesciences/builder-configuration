@@ -286,7 +286,7 @@ base:
 
     # the 'leader' because it has opensearch installed
     'search--*--1':
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
