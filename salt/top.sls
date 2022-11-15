@@ -379,10 +379,10 @@ base:
         - redirects
 
     'profiles--end2end--*':
-        - elife.postgresql-11
+        - elife.postgresql-12
 
     'profiles--prod--*':
-        - elife.postgresql-11
+        - elife.postgresql-12
 
     'profiles--continuumtest--*':
         - elife.postgresql-container
