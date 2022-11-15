@@ -223,7 +223,7 @@ base:
         - elife.external-volume
         - elife.mysql-client
         - elife.mysql-server
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.jenkins-node
         - elife.jenkins-scripts
         - elife.proofreader-php
