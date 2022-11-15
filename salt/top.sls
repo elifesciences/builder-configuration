@@ -41,7 +41,7 @@ base:
         - api-gateway.kong
 
     'elife-dashboard--*':
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
