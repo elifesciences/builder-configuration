@@ -320,7 +320,7 @@ base:
         - elife.uwsgi
         - elife.java8
         - elife.nginx
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.newrelic-python
         - observer
