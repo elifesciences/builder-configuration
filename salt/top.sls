@@ -95,7 +95,7 @@ base:
     'lax--*':
         - elife.nginx
         - elife.uwsgi
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.newrelic-python
         - elife.external-volume
