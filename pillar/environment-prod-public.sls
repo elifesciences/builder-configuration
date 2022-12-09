@@ -29,6 +29,8 @@ journal:
     api_url_public: {{ gateway_url_public }}
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
+    # no trailing slashes. leave empty to prevent adding redirect rules.
+    preprint_url: https://prod--epp.elifesciences.org
     default_host: elifesciences.org
     # gtm_id: # see builder-private
     # google_optimize_id: # see builder-private

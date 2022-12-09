@@ -29,7 +29,7 @@ base:
         # put common big and slow deps in here
 
     'api-gateway--*':
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.docker-native
         - elife.nginx
         - elife.nginx-error-pages
@@ -41,7 +41,7 @@ base:
         - api-gateway.kong
 
     'elife-dashboard--*':
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.nginx
         - elife.newrelic-python
         - elife.uwsgi
@@ -95,7 +95,7 @@ base:
     'lax--*':
         - elife.nginx
         - elife.uwsgi
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.newrelic-python
         - elife.external-volume
@@ -134,6 +134,7 @@ base:
         - pattern-library
 
     'journal-cms--*':
+        - elife.apache-removal # lsh@2022-11-04: temporary, remove once apache2 purged
         - elife.external-volume
         - elife.external-volume-srv
         - elife.php7
@@ -186,7 +187,7 @@ base:
     'elife-metrics--*':
         - elife.nginx
         - elife.uwsgi
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.newrelic-python
         - elife-metrics
@@ -222,7 +223,7 @@ base:
         - elife.external-volume
         - elife.mysql-client
         - elife.mysql-server
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.jenkins-node
         - elife.jenkins-scripts
         - elife.proofreader-php
@@ -284,13 +285,8 @@ base:
         - search
 
     # the 'leader' because it has opensearch installed
-    'search--*--1 and not search--continuumtest--1 and not search--prod--1':
-        - elife.postgresql-11
-
-    'search--continuumtest--1 or search--prod--1':
-        - elife.postgresql
-
     'search--*--1':
+        - elife.postgresql-12
         - elife.gearman
         - elife.newrelic-php
         - elife.java8
@@ -324,7 +320,7 @@ base:
         - elife.uwsgi
         - elife.java8
         - elife.nginx
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.newrelic-python
         - observer
@@ -428,7 +424,7 @@ base:
 
     'bioprotocol--*':
         - elife.nginx
-        - elife.postgresql-11
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi
         - elife.newrelic-python

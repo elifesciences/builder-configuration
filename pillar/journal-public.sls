@@ -4,6 +4,8 @@ journal:
     # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
+    # no trailing slashes. leave empty to prevent adding redirect rules.
+    preprint_url:
     default_host: null
 
     google_api_client:
@@ -129,6 +131,9 @@ journal:
     {% import_yaml "era-articles.yaml" as era_articles %}
     era_articles: {{ era_articles|yaml }}
     rds_articles: {{ era_articles|yaml }}
+
+    {% import_yaml "reviewed-preprints.yaml" as reviewed_preprints %}
+    reviewed_preprints: {{ reviewed_preprints|yaml }}
 
     dismissible_info_bars: {}
 
