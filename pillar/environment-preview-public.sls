@@ -21,5 +21,4 @@ journal:
         Search: ping/search
 
     # web_users: # see builder-private
-    feature_xpub: false
     submit_url: https://reviewer.elifesciences.org/login
