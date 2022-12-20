@@ -16,7 +16,7 @@ profiles:
         name: profiles
         username: profiles
         # password: 
-        host: 127.0.0.1
+        host: host.docker.internal #127.0.0.1
         port: 5432
     logging:
         level: DEBUG
