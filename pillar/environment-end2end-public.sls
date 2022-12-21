@@ -25,6 +25,8 @@ journal:
     # not yet active
     side_by_side_view_url: https://end2end--lens.elifesciences.org
     observer_url: http://end2end--observer.elife.internal
+    # no trailing slashes. leave empty to prevent adding redirect rules.
+    preprint_url: https://staging--epp.elifesciences.org
     default_host: end2end--cdn-journal.elifesciences.org
     redis_cache: true # ElastiCache
     redis_sessions: true # ElastiCache
