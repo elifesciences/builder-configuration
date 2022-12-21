@@ -404,6 +404,8 @@ base:
         - annotations.containers
 
     'digests--*':
+        - elife.postgresql-12
+        - elife.postgresql-appdb
         - elife.uwsgi-params
         - elife.nginx
         - elife.aws-credentials
@@ -413,7 +415,7 @@ base:
         - digests
 
     'digests--* and not digests--end2end--* and not digests--continuumtest--* and not digests--prod--*':
-        - elife.postgresql-container
+        - elife.postgresql-container-removal
 
     'elife-ink--*':
         - elife.nginx
