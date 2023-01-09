@@ -30,9 +30,6 @@ elife:
         # password:
         prune_days: 14
 
-    docker_postgresql:
-        image_tag: 11
-
     sidecars:
         # main image that will be used to extract labels 
         # indicating metadata about the sidecars such as their own tags

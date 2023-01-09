@@ -378,9 +378,6 @@ base:
         - elife.nginx-error-pages
         - redirects
 
-    'profiles--continuumtest--*':
-        - elife.postgresql-container-removal
-
     'profiles--*':
         - elife.postgresql-12
         - elife.uwsgi
@@ -413,9 +410,6 @@ base:
         - elife.docker-native
         - elife.docker-databases
         - digests
-
-    'digests--* and not digests--end2end--* and not digests--continuumtest--* and not digests--prod--*':
-        - elife.postgresql-container-removal
 
     'elife-ink--*':
         - elife.nginx
