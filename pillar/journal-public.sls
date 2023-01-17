@@ -132,9 +132,6 @@ journal:
     era_articles: {{ era_articles|yaml }}
     rds_articles: {{ era_articles|yaml }}
 
-    {% import_yaml "reviewed-preprints.yaml" as reviewed_preprints %}
-    reviewed_preprints: {{ reviewed_preprints|yaml }}
-
     dismissible_info_bars: {}
 
     submit_url: https://submit.elifesciences.org/

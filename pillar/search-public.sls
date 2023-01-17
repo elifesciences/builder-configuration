@@ -28,9 +28,6 @@ search:
     era_articles: {{ era_articles|yaml }}
     rds_articles: {{ era_articles|yaml }}
 
-    {% import_yaml "reviewed-preprints.yaml" as reviewed_preprints %}
-    reviewed_preprints: {{ reviewed_preprints|yaml }}
-
 elife:
     composer:
         version: 2.2.7
