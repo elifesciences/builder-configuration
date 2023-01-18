@@ -4,6 +4,9 @@ journal_cms:
         # user: 
         # password: 
 
+    composer:
+        version: 2.3.5
+
     logs:
         file_path: private://monolog/
 
