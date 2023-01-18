@@ -4,9 +4,6 @@ journal_cms:
         # user: 
         # password: 
 
-    composer:
-        version: 2.3.5
-
     logs:
         file_path: private://monolog/
 
@@ -60,3 +57,6 @@ elife:
         memory_limit: 128M
         upload_max_filesize: 32M
         post_max_size: 32M
+
+    composer:
+        version: 2.3.5
