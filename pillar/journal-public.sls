@@ -135,7 +135,6 @@ journal:
     dismissible_info_bars: {}
 
     submit_url: https://submit.elifesciences.org/
-    feature_xpub: false
     calls_to_action: []
 
 elife:

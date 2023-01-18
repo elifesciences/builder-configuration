@@ -48,7 +48,6 @@ journal:
     xpub_client_id: journal--end2end
     # xpub_client_secret: # see builder-private
     cache_control: public, max-age={{ 60 * 30 }}, s-maxage={{ 60 * 62 }}, stale-while-revalidate={{ 60 * 60 * 12 }}, stale-if-error={{ 60 * 60 * 24 }}
-    feature_xpub: true
     submit_url: https://end2end--xpub.elifesciences.org/login
 
 journal_cms:
