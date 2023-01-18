@@ -57,3 +57,6 @@ elife:
         memory_limit: 128M
         upload_max_filesize: 32M
         post_max_size: 32M
+
+    composer:
+        version: 2.3.5
