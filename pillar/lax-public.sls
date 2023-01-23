@@ -10,7 +10,7 @@ lax:
                 username: api-gateway
                 # password: 
 
-    # deprecated. use elife.db.app and elife.postgresql
+    # deprecated. use elife.db.app and elife.postgresql-12
     db:
         name: lax
         # username: 
