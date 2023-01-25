@@ -182,6 +182,9 @@ base:
 
     # misc overrides.
 
+    # lsh@2023-01-26: temporary, remove along with journal-cms--8032
+    'journal-cms--8032--*':
+        - journal-cms-8032
 
     # temporary
     'journal--title-length--*':
