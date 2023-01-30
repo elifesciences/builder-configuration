@@ -137,7 +137,7 @@ journal:
 
     submit_url: https://submit.elifesciences.org/
     feature_xpub: false
-    submit_redirect_url:
+    submit_redirect_url: https://elife-rp.msubmit.net/
     calls_to_action: []
 
 elife:

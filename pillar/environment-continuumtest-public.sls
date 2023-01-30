@@ -59,7 +59,6 @@ journal:
     cache_control: public, max-age={{ 60 * 30 }}, s-maxage={{ 60 * 62 }}, stale-while-revalidate={{ 60 * 60 * 12 }}, stale-if-error={{ 60 * 60 * 24 }}
 
     feature_xpub: true
-    submit_redirect_url: https://elife-rp.msubmit.net/
     submit_url: {{ journal_url }}/submit
     submit_url_redirects:
         - .*\.elifesciences.org$
