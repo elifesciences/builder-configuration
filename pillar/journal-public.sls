@@ -6,7 +6,7 @@ journal:
     observer_url: http://prod--observer.elife.internal
     # no trailing slashes. leave empty to prevent adding redirect rules.
     preprint_url:
-    about_url:
+    about_url: https://elife-container.pubpub.org
     default_host: null
 
     google_api_client:
