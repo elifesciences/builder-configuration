@@ -158,7 +158,7 @@ api_gateway:
             strip_uri: False
 
         epp_reviewed_preprints:
-            upstream_url: {{ epp_api_url }}
+            upstream_url: {{ epp_api_url }}/reviewed-preprints
             uris: /epp-reviewed-preprints
             strip_uri: False
 
