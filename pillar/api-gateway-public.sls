@@ -160,7 +160,7 @@ api_gateway:
         epp_reviewed_preprints:
             upstream_url: {{ epp_api_url }}/reviewed-preprints
             uris: /epp-reviewed-preprints
-            strip_uri: False
+            strip_uri: True
 
         ping_annotations:
             upstream_url: {{ annotations_url }}/ping
