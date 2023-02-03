@@ -11,7 +11,6 @@
 {% set annotations_url = 'http://continuumtest--annotations.elife.internal' %}
 {% set digests_url = 'http://continuumtest--digests.elife.internal' %}
 {% set bioprotocol_url = 'http://continuumtest--bp.elife.internal' %}
-{% set reviewed_preprints_url = 'https://epp-api-dummy.elifesciences.org' %}
 {% set epp_api_url = 'https://prod--epp-api.elifesciences.org/api' %}
 
 api_gateway:
@@ -153,13 +152,8 @@ api_gateway:
             strip_uri: False
 
         reviewed_preprints:
-            upstream_url: {{ reviewed_preprints_url }}
-            uris: /reviewed-preprints
-            strip_uri: False
-
-        epp_reviewed_preprints:
             upstream_url: {{ epp_api_url }}/reviewed-preprints
-            uris: /epp-reviewed-preprints
+            uris: /reviewed-preprints
             strip_uri: True
 
         ping_annotations:
@@ -208,13 +202,8 @@ api_gateway:
             strip_uri: True
 
         ping_reviewed_preprints:
-            upstream_url: {{ reviewed_preprints_url }}/ping
-            uris: /ping/reviewed-preprints
-            strip_uri: True
-
-        ping_epp_reviewed_preprints:
             upstream_url: {{ epp_api_url }}/ping
-            uris: /ping/epp-reviewed-preprints
+            uris: /ping/reviewed-preprints
             strip_uri: True
 
     # APIs that once existed but should not exist any longer
