@@ -12,6 +12,7 @@ journal_cms:
         articles_endpoint: {{ dummy_url }}/articles/%s/versions
         metrics_endpoint: {{ dummy_url }}/metrics/article/%s/%s
         all_articles_endpoint: {{ dummy_url }}/articles
+        all_reviewed_preprints_endpoint: {{ dummy_url }}/reviewed-preprints
         all_digests_endpoint: {{ dummy_url }}/digests
 
 search:

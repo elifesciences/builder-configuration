@@ -78,6 +78,7 @@ journal_cms:
         articles_endpoint: {{ gateway_url_internal }}/articles/%s/versions
         metrics_endpoint: {{ gateway_url_internal }}/metrics/article/%s/%s
         all_articles_endpoint: {{ gateway_url_internal }}/articles
+        all_reviewed_preprints_endpoint: {{ gateway_url_internal }}/reviewed-preprints
         all_digests_endpoint: {{ gateway_url_internal }}/digests
         article_fragments_endpoint: {{ gateway_url_internal }}/articles/%s/fragments/%s
 
