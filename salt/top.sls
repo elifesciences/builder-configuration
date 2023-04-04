@@ -216,6 +216,7 @@ base:
         - elife.php7
         - elife.composer
         - elife.nodejs16
+        - elife.aws-credentials
         - elife.aws-cli
         - elife.external-volume
         - elife.mysql-client
@@ -229,6 +230,11 @@ base:
         - elife.docker-push
         - elife.pypi
         - elife-libraries
+
+    'elife-libraries--ci--*':
+        # lsh@2023-04-04: todo
+        #- elife.external-volume-srv
+        - elife-libraries.builder
 
     'elife-libraries--load--*':
         - elife.spectrum
