@@ -203,6 +203,7 @@ base:
         - elife.postfix-ses
         - elife.aws-cli
         - elife.external-volume
+        - elife.external-volume-srv
         - elife-alfred.vault-approle
         - elife.vault-client
         - elife-alfred
