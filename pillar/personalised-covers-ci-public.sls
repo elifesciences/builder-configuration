@@ -1,4 +1,6 @@
 elife:
+    swap:
+        size: 1024 # MiB
     sidecars:
         containers:
             localstack:
