@@ -225,7 +225,9 @@ base:
         - elife.postgresql-12
         - elife.jenkins-node
         - elife.jenkins-scripts
-        - elife.proofreader-php
+        # lsh@2023-05-23: disabled, composer v1 is killing elife-libraries--ci:
+        # - https://github.com/elifesciences/issues/issues/6546
+        #- elife.proofreader-php
         - elife.hub
         - elife.docker-native
         - elife.docker-push
