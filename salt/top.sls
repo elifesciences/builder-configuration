@@ -227,7 +227,7 @@ base:
         - elife.jenkins-scripts
         # lsh@2023-05-23: disabled, composer v1 is killing elife-libraries--ci:
         # - https://github.com/elifesciences/issues/issues/6546
-        #- elife.proofreader-php
+        - elife.rm-proofreader-php
         - elife.hub
         - elife.docker-native
         - elife.docker-push
@@ -309,7 +309,7 @@ base:
     'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
         - api-dummy
         - search.api-dummy
-        - elife.proofreader-php
+        - elife.rm-proofreader-php
         - elife.goaws
 
     # non-dev/non-ci leaders only
@@ -349,7 +349,7 @@ base:
 
     'personalised-covers--ci--*':
         - api-dummy
-        - elife.proofreader-php
+        - elife.rm-proofreader-php
         - personalised-covers.api-dummy
         - elife.docker-native
         - elife.aws-cli
@@ -358,7 +358,7 @@ base:
 
     'personalised-covers--pr-*':
         - api-dummy
-        - elife.proofreader-php
+        - elife.rm-proofreader-php
         - personalised-covers.api-dummy
         - elife.docker-native
         - elife.aws-cli
