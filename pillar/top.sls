@@ -125,9 +125,6 @@ base:
     'digests--*':
         - digests
 
-    'elife-ink--*':
-        - elife-ink
-
     'bioprotocol--*':
         - bioprotocol
 

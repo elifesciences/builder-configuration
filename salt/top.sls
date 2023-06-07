@@ -417,12 +417,6 @@ base:
         - elife.docker-databases
         - digests
 
-    'elife-ink--*':
-        - elife.nginx
-        - elife.docker-native
-        - elife-ink
-        - elife-ink.nginx
-
     'bastion--*':
         - elife.swapspace
         - bastion
