@@ -21,7 +21,6 @@ base:
     'elife-bot--*':
         - elife-bot-public
         - elife-bot
-        - bitbucket
 
     'elife-bot--end2end--*':
         - elife-bot-end2end
@@ -46,7 +45,6 @@ base:
         - lax-public
         - lax
         - elife-reporting
-        - bitbucket
 
     'journal--*':
         - journal-public
