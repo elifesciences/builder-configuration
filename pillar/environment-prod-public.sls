@@ -21,8 +21,8 @@ elife:
 
 api_gateway:
     kong_container:
-        # 'latest' as of 2020-07-10
-        image_tag: 41d168b2a7af9f0d570d1ebc6d1d8971bac3ee82
+        # 'latest' as of 2023-07-07
+        image_tag: 8cab29b5ef0a37f50615cf984bf35a828bca7966
 
 journal:
     api_url: {{ gateway_url_internal }}
