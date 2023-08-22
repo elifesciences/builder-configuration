@@ -427,3 +427,7 @@ base:
         - elife.external-volume
         - large-repo-wrangler
 
+    'monitor--*'
+        - elife.prometheus-node-exporter
+        - monitor
+
