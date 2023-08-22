@@ -103,14 +103,17 @@ base:
         - lax.adaptors
 
     'lax--end2end--*':
+        - elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
     'lax--continuumtest--*':
+        - elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
     'lax--prod--*':
+        #- elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
