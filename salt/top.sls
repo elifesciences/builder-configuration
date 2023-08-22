@@ -428,6 +428,7 @@ base:
         - large-repo-wrangler
 
     'monitor--*':
+        - elife.certificates
         - elife.prometheus-node-exporter
         - monitor
 
