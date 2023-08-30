@@ -6,17 +6,21 @@ base:
     '*':
         - elife
 
-    # all "production" servers
+    # all "production" instances
     '*--prod--*':
         - elife.newrelic-infrastructure
-    
+
     'master-server--prod--*':
         - elife.backups-cron
 
-    # all "non-production" servers
+    # all "non-production" instances
     'not *--prod--*':
         # temporary. remove once all non-prod instances have infrastructure removed
         - elife.newrelic-infrastructure-removal
+
+    # all 'continuumtest' and 'monitor' instances
+    '*--continuumtest--* or monitor--*':
+        - elife.prometheus-node-exporter
 
     'master-server--*':
         - elife.certificates
@@ -103,17 +107,14 @@ base:
         - lax.adaptors
 
     'lax--end2end--*':
-        - elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
     'lax--continuumtest--*':
-        - elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
     'lax--prod--*':
-        #- elife.prometheus-node-exporter
         - elife.multiservice
         - lax.processes
 
