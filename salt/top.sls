@@ -328,7 +328,7 @@ base:
         - elife.nginx
         - elife.postgresql-12
         - elife.postgresql-appdb
-        - elife.newrelic-python
+        - elife.newrelic-python-removal
         - observer
         - observer.uwsgi
 
