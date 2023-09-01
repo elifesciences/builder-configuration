@@ -18,8 +18,8 @@ base:
         # temporary. remove once all non-prod instances have infrastructure removed
         - elife.newrelic-infrastructure-removal
 
-    # all 'continuumtest' and 'monitor' instances
-    '*--continuumtest--* or monitor--*':
+    # all 'continuumtest', 'prod' and 'monitor' instances
+    '*--continuumtest--* or *--prod--* or monitor--*':
         - elife.prometheus-node-exporter
 
     'master-server--*':
@@ -433,6 +433,5 @@ base:
 
     'monitor--*':
         - elife.nginx
-        - elife.prometheus-node-exporter
         - monitor
 
