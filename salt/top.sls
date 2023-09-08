@@ -5,19 +5,11 @@ base:
     # all projects get these
     '*':
         - elife
+        - elife.newrelic-infrastructure-removal
         - elife.prometheus-node-exporter
-
-    # all "production" instances
-    '*--prod--*':
-        - elife.newrelic-infrastructure
 
     'master-server--prod--*':
         - elife.backups-cron
-
-    # all "non-production" instances
-    'not *--prod--*':
-        # temporary. remove once all non-prod instances have infrastructure removed
-        - elife.newrelic-infrastructure-removal
 
     'master-server--*':
         - elife.certificates
