@@ -5,6 +5,7 @@ base:
     # all projects get these
     '*':
         - elife
+        - elife.prometheus-node-exporter
 
     # all "production" instances
     '*--prod--*':
@@ -17,10 +18,6 @@ base:
     'not *--prod--*':
         # temporary. remove once all non-prod instances have infrastructure removed
         - elife.newrelic-infrastructure-removal
-
-    # all 'continuumtest', 'continuumtestpreview', 'staging', 'prod' and 'monitor' instances
-    '*--continuumtest--* or *--continuumtestpreview--* or *--staging--* or *--prod--* or monitor--*':
-        - elife.prometheus-node-exporter
 
     'master-server--*':
         - elife.certificates
