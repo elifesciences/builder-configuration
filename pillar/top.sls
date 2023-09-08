@@ -175,11 +175,8 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
-    
-    'journal-cms--continuumtest--*':
-        # lsh@2021-06-29: temporary
-        - journal-cms-continuumtest-public
-
+    'journal-cms--ci--*':
+        - journal-cms-ci
 
     # misc overrides.
 
