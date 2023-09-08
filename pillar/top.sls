@@ -82,6 +82,9 @@ base:
         - search-public
         - search
 
+    'search--ci--*':
+        - search-ci
+
     'recommendations--*':
         - recommendations
 
