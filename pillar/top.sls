@@ -175,6 +175,10 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
+    # lsh@2023-09-12: remove once the global elife.newrelic.enabled = True pillar is dealt with.
+    'observer--prod--*':
+        - observer-prod
+
     'journal-cms--ci--*':
         - journal-cms-ci
 
