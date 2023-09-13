@@ -175,7 +175,8 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
-    # lsh@2023-09-12: remove once the global elife.newrelic.enabled = True pillar is dealt with.
+    # lsh@2023-09-12: apps that are no longer newrelic-enabled
+    # remove once the global elife.newrelic.enabled = True pillar is dealt with.
     'bioprotocol--* or observer--*':
         - newrelic-off
 

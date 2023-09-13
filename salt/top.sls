@@ -412,7 +412,6 @@ base:
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi
-        - elife.newrelic-python-removal
         - bioprotocol
 
     'large-repo-wrangler--*':
