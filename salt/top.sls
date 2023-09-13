@@ -33,7 +33,7 @@ base:
     'elife-dashboard--*':
         - elife.postgresql-12
         - elife.nginx
-        - elife.newrelic-python
+        - elife.newrelic-python-removal
         - elife.uwsgi
         - elife-dashboard
         - elife-dashboard.uwsgi
