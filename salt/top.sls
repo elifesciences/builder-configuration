@@ -353,7 +353,7 @@ base:
         - elife.swapspace
         - elife.nginx
         - elife.external-volume
-        - elife.newrelic-python
+        - elife.newrelic-python-removal
         - elife.docker-native
         - iiif
         - iiif.loris-maintenance

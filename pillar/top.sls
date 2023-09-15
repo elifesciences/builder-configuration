@@ -177,7 +177,7 @@ base:
 
     # lsh@2023-09-12: apps that are no longer newrelic-enabled
     # remove once the global elife.newrelic.enabled = True pillar is dealt with.
-    'bioprotocol--* or observer--* or elife-dashboard--* or elife-metrics--* or elife-bot--*':
+    'bioprotocol--* or observer--* or elife-dashboard--* or elife-metrics--* or elife-bot--* or iiif--*':
         - newrelic-off
 
     'journal-cms--ci--*':
