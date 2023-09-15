@@ -330,7 +330,7 @@ base:
         - elife.nodejs16
         - personalised-covers.aws
         - personalised-covers
-        - elife.newrelic-php
+        - elife.newrelic-php-removal
 
     'personalised-covers--ci--*':
         - api-dummy
