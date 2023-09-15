@@ -85,6 +85,9 @@ base:
     'search--ci--*':
         - search-ci
 
+    'search--end2end--*':
+        - search-end2end
+
     'recommendations--*':
         - recommendations
 
