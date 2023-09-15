@@ -167,7 +167,7 @@ base:
         - elife.composer
         - elife.nginx
         - elife.nginx-php7
-        - elife.newrelic-php
+        - elife.newrelic-php-removal
         - api-dummy
         - api-dummy.nginx
 
