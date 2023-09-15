@@ -74,7 +74,3 @@ elife:
                 service_template: bot-lax-adaptor-service
                 num_processes: 1
 
-    newrelic_python:
-        application_folder: /srv/lax
-        service: uwsgi-lax
-        dependency_state: configure-lax
