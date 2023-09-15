@@ -53,7 +53,7 @@ base:
         - elife.external-volume
         - elife.redis-server
         - elife.docker-native
-        - elife.newrelic-python-removal
+        #- elife.newrelic-python-removal
         - elife-bot.strip-coverletter
         - elife-bot
         - elife-bot.feeder
