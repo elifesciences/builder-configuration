@@ -280,7 +280,7 @@ base:
     'search--*--1':
         - elife.postgresql-12
         - elife.gearman
-        - elife.newrelic-php
+        - elife.newrelic-php-removal
         - elife.java8
         - elife.docker-native
         - elife.swapspace
