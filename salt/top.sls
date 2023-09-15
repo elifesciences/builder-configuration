@@ -132,7 +132,7 @@ base:
         - elife.mysql-client
         - elife.mysql-server
         - elife.redis-server
-        - elife.newrelic-php
+        - elife.newrelic-php-removal
         - elife.aws-cli
         - journal-cms
 
