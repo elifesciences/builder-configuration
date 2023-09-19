@@ -5,7 +5,6 @@ base:
     # all projects get these
     '*':
         - elife
-        - elife.newrelic-infrastructure-removal
         - elife.prometheus-node-exporter
 
     'master-server--prod--*':
