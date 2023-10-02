@@ -18,18 +18,6 @@ lax:
         host: 127.0.0.1
         port: 5432
 
-    botlax:
-        api_whitelist:
-            - '212.44.25.140' # elife
-            - '182.72.206.72/29' # exeter are 182.72.206.73 to 78
-            - '115.160.252.46' # another exeter IP
-            - '88.202.224.171' # yet another exeter IP (2019-01-14: elife2.kriyadocs.com)
-            - '52.22.158.139' # kriya live server IP address:
-            - '52.1.30.155' # kriya live server IP address:
-            - '34.225.34.128' # kriya test/integration server IP address:
-            - '185.160.182.46' # elife2.kriyadocs.com
-            - '127.0.0.1' # internal
-
     glencoe:
         cache_requests: True # default behaviour is to cache requests
 
@@ -65,12 +53,5 @@ elife:
         services:
             lax:
                 folder: /srv/lax
-            bot-lax-adaptor:
-                folder: /opt/bot-lax-adaptor
 
-    multiservice:
-        services:
-            bot-lax-adaptor:
-                service_template: bot-lax-adaptor-service
-                num_processes: 1
 
