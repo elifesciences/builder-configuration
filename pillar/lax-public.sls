@@ -35,6 +35,11 @@ lax:
     restore:
         db: lax/201706/20170605_prod--lax.elifesciences.org_230109-laxprod-psql.gz
 
+    botlax:
+        api:
+            # override the generated URL
+            url: null
+
 elife:
     db:
         app:
