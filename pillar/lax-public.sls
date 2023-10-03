@@ -59,4 +59,8 @@ elife:
             lax:
                 folder: /srv/lax
 
-
+    multiservice:
+        services:
+            bot-lax-adaptor:
+                service_template: bot-lax-adaptor-service
+                num_processes: 1
