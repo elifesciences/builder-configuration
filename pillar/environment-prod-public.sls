@@ -88,7 +88,6 @@ lax:
         cache_requests: False
     botlax:
         api:
-            # lsh@2023-10-02: override the generated URL. temporary until a code change can be made to bot-lax-adaptor.
             url: http://prod--gateway.elife.internal
 
 search:

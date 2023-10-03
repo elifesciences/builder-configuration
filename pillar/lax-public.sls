@@ -37,8 +37,7 @@ lax:
 
     botlax:
         api:
-            # override the generated URL
-            url: null
+            url:
 
 elife:
     db:
