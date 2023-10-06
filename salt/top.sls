@@ -409,6 +409,6 @@ base:
         - large-repo-wrangler
 
     'monitor--*':
+        - elife.external-volume
         - elife.nginx
         - monitor
-
