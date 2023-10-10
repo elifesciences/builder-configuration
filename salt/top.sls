@@ -120,6 +120,7 @@ base:
         - pattern-library
 
     'journal-cms--*':
+        - elife.swapspace
         - elife.apache-removal # lsh@2022-11-04: temporary, remove once apache2 purged
         - elife.external-volume
         - elife.external-volume-srv
@@ -136,7 +137,6 @@ base:
     'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
-        - elife.swapspace
 
     'journal-cms--end2end--*':
         - journal-cms.cron
@@ -158,7 +158,6 @@ base:
     'journal-cms--ckeditor--*':
         - elife.docker-native
         - elife.goaws
-        - elife.swapspace
 
     'api-dummy--*':
         - elife.php7

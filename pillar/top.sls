@@ -82,12 +82,6 @@ base:
         - search-public
         - search
 
-    'search--ci--*':
-        - search-ci
-
-    'search--end2end--*':
-        - search-end2end
-
     'recommendations--*':
         - recommendations
 
@@ -140,7 +134,6 @@ base:
 
 
     # per-environment overrides; order of this section is important.
-    # lsh@2022-06-15: sections without '--*' look incorrect. what minions are they matching against?
 
 
     '*--ci--*':
