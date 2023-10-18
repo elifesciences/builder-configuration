@@ -397,7 +397,9 @@ base:
         - bastion
 
     'bioprotocol--*':
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi
