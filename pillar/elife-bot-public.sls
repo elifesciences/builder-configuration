@@ -10,7 +10,7 @@ elife_bot:
     profiling:
         env_list:
             - dev
-            - continuumtest
+        #    - continuumtest
         processes:
             worker:
                 args: "--memory --no-browser --json --outfile /tmp/worker.scalene.json"
