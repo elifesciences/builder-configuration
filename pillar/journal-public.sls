@@ -44,7 +44,7 @@ journal:
             User-agent: Googlebot
             Disallow: /*.ris
             Disallow: /*.bib
-            Allow: /search$
+            Allow: /search$dollar
             Disallow: /search?
             Disallow: /download/
 
