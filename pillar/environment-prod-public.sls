@@ -31,9 +31,6 @@ journal:
     observer_url: http://prod--observer.elife.internal
     # no trailing slashes. leave empty to prevent adding redirect rules.
     preprint_url: https://prod--epp.elifesciences.org
-    # leave empty to prevent adding redirect rules.
-    # remove and update journal--prod nodes when ready to go live.
-    resources_url:
     default_host: elifesciences.org
     # gtm_id: # see builder-private
     # google_optimize_id: # see builder-private
