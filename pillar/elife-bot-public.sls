@@ -12,7 +12,6 @@ elife_bot:
             - dev
             - end2end
             - continuumtest
-            - prod
         processes:
             worker:
                 args: ""
