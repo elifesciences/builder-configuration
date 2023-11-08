@@ -10,7 +10,8 @@ elife_bot:
     profiling:
         env_list:
             - dev
-        #    - continuumtest
+            - end2end
+            - continuumtest
         processes:
             worker:
-                args: "--memory --no-browser --json --outfile /tmp/worker.scalene.json --profile-interval 30 --memory-leak-detector"
+                args: ""
