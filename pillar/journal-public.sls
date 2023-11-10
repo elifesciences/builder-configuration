@@ -4,9 +4,11 @@ journal:
     # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
+    pubpub_url: https://elife-container.pubpub.org
     # no trailing slashes. leave empty to prevent adding redirect rules.
     preprint_url:
     about_url: https://elife-container.pubpub.org
+    resources_url: https://elife-container.pubpub.org
     default_host: null
 
     google_api_client:
@@ -25,12 +27,10 @@ journal:
 
     web_users: {}
 
-    # robots.txt guidelines:
-    # - https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
-    # 'crawl-delay' directive:
-    # - https://en.wikipedia.org/wiki/Robots_exclusion_standard#Crawl-delay_directive
-    # lsh@2021-01-04: bingbot ignores rules that apply to all bots (*) if it has a specific entry.
-    # lsh@2021-02-09: robots.txt has no proper specification! https://github.com/elifesciences/issues/issues/6451
+    # https://www.robotstxt.org/robotstxt.html
+    # "Robots Exclusion Protocol": https://www.rfc-editor.org/rfc/rfc9309.html
+    # non-standard extensions: https://en.wikipedia.org/wiki/Robots.txt#Nonstandard_extensions
+    # Google guidelines: https://developers.google.com/search/reference/robots_txt#url-matching-based-on-path-values
     robots:
         - |
             User-agent: *
@@ -38,40 +38,22 @@ journal:
             Disallow: /search
             Disallow: /download/
             Crawl-delay: 10
-        # probably unnecessary:
-        # https://github.com/elifesciences/issues/issues/5860
+        # Googlebot related:
+        # * https://github.com/elifesciences/issues/issues/5860
+        # * https://github.com/elifesciences/journal-formula/pull/103
+        # * https://github.com/elifesciences/issues/issues/8515
         - |
             User-agent: Googlebot
             Disallow: /*.ris
             Disallow: /*.bib
+            Allow: /search$dollar
+            Disallow: /search?
             Disallow: /download/
-        - |
-            User-agent: Amazonbot
-            Disallow: /search
-            Disallow: /download/
-        - |
-            User-agent: turnitinbot
-            Disallow: /search
-            Disallow: /download/
-        - |
-            User-agent: bingbot
-            Disallow: /search
-            Disallow: /download/
-            Crawl-delay: 10
-        # https://megaindex.com/crawler
-        - |
-            User-agent: MegaIndex.ru
-            Disallow: /search
-            Disallow: /download/
-        - |
-            User-agent: megaindex.com
-            Disallow: /search
-            Disallow: /download/
-        # https://www.semrush.com/bot/
+
+        # block these entirely
         - |
             User-agent: SemrushBot
             Disallow: /
-            Disallow: /download/
         - |
             User-agent: MJ12bot
             Disallow: /
