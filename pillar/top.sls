@@ -171,8 +171,7 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
-    'bioprotocol--prod--*':
-        - bioprotocol-prod
+    # ...
 
     # misc overrides.
 
