@@ -405,7 +405,7 @@ base:
         - bioprotocol
 
     # lsh@2023-11-10: temporary, remove once caddy happy on non-prod
-    'bioprotocol--prod':
+    'bioprotocol--prod--*':
         - elife.nginx
         - elife.postgresql-12
         - elife.postgresql-appdb
