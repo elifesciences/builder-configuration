@@ -396,7 +396,16 @@ base:
         - elife.swapspace
         - bastion
 
-    'bioprotocol--*':
+    'bioprotocol--* and not bioprotocol--prod--*':
+        - elife.disable-nginx
+        - elife.caddy
+        - elife.postgresql-12
+        - elife.postgresql-appdb
+        - elife.uwsgi
+        - bioprotocol
+
+    # lsh@2023-11-10: temporary, remove once caddy happy on non-prod
+    'bioprotocol--prod':
         - elife.nginx
         - elife.postgresql-12
         - elife.postgresql-appdb
