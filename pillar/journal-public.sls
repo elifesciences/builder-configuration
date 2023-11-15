@@ -52,6 +52,9 @@ journal:
 
         # block these entirely
         - |
+            User-agent: Amazonbot
+            Disallow: /
+        - |
             User-agent: SemrushBot
             Disallow: /
         - |
