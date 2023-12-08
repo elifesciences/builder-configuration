@@ -13,6 +13,10 @@
 {% set bioprotocol_url = 'http://continuumtest--bp.elife.internal' %}
 {% set epp_api_url = 'https://prod--epp-api.elifesciences.org/api' %}
 
+elife:
+    webserver:
+        app: caddy
+
 api_gateway:
 
     admin: http://localhost:8001
