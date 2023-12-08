@@ -1,4 +1,3 @@
 elife:
     webserver:
-        app:
-            nginx
+        app: nginx
