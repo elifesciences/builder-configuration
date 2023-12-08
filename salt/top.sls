@@ -35,6 +35,7 @@ base:
     'api-gateway--* and not api-gateway--prod--*':
         - elife.postgresql-12
         - elife.docker-native
+        - elife.disable-nginx
         - elife.caddy
         - elife.nginx-error-pages
         - elife.certificates
