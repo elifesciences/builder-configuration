@@ -1,2 +1,0 @@
-elife:
-    env: continuumtest

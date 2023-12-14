@@ -171,19 +171,16 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
+
     # lsh@2023-12-08: temporary, part of caddy migration
     'api-gateway--prod--*':
         - api-gateway-prod-public
 
     # misc overrides.
 
-    # lsh@2023-01-26: temporary, remove along with journal-cms--8032
-    'journal-cms--8032--*':
-        - journal-cms-8032
-
-    # temporary
-    'journal--title-length--*':
-        - environment-title-length-public
+    # lsh@2023-12-15: temporary, remove along with search--rmgearman
+    'search--rmgearman--*':
+        - disable-loggly-logging
 
     # temporary
     'journal--pr-*--*':
