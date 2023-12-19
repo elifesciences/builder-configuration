@@ -22,17 +22,18 @@ base:
 
     # lsh@2023-12-06: temporary until all instances using caddy.
     #'api-gateway--*':
-    'api-gateway--prod--*':
-        - elife.postgresql-12
-        - elife.docker-native
-        - elife.nginx
-        - elife.nginx-error-pages
-        - elife.certificates
-        - api-gateway.proxy
-        - api-gateway.kong
+    #'api-gateway--prod--*':
+    #    - elife.postgresql-12
+    #    - elife.docker-native
+    #    - elife.nginx
+    #    - elife.nginx-error-pages
+    #    - elife.certificates
+    #    - api-gateway.proxy
+    #    - api-gateway.kong
 
     # all api-gateway instances *except* prod
-    'api-gateway--* and not api-gateway--prod--*':
+    #'api-gateway--* and not api-gateway--prod--*':
+    'api-gateway--*':
         - elife.postgresql-12
         - elife.docker-native
         - elife.disable-nginx

@@ -1,3 +1,4 @@
 elife:
     webserver:
-        app: nginx
+        #app: nginx
+        app: caddy
