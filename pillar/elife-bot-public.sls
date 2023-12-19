@@ -11,7 +11,7 @@ elife_bot:
         env_list:
             - dev
             #- end2end
-            - continuumtest
+            #- continuumtest
             #- prod
         processes:
             worker:
