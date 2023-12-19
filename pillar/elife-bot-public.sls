@@ -12,7 +12,7 @@ elife_bot:
             - dev
             #- end2end
             #- continuumtest
-            #- prod
+            - prod
         processes:
             worker:
                 args: ""
