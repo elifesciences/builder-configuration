@@ -262,23 +262,13 @@ base:
         - anonymous
         - elife.aws-cli
 
-    'search--* and not search--prod--*':
+    'search--*':
         - elife.php7
         - elife.composer
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
         - elife.nginx-php7 # nothing nginx-specific here
-        - elife.gearman-client-php
-        - elife.aws-credentials
-        - elife.aws-cli
-        - search
-
-    'search--prod--*':
-        - elife.php7
-        - elife.composer
-        - elife.nginx
-        - elife.nginx-php7
         - elife.gearman-client-php
         - elife.aws-credentials
         - elife.aws-cli
