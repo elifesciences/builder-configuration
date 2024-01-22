@@ -171,7 +171,8 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
-    # ...
+    'search--prod--*':
+        - search-public-prod
 
     # misc overrides.
 

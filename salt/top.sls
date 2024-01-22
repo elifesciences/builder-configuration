@@ -262,8 +262,19 @@ base:
         - anonymous
         - elife.aws-cli
 
-    # 'follower' because it may not have opensearch installed
-    'search--*':
+    'search--* and not search--prod--*':
+        - elife.php7
+        - elife.composer
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
+        - elife.nginx-php7 # nothing nginx-specific here
+        - elife.gearman-client-php
+        - elife.aws-credentials
+        - elife.aws-cli
+        - search
+
+    'search--prod--*':
         - elife.php7
         - elife.composer
         - elife.nginx
