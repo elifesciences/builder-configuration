@@ -357,10 +357,9 @@ base:
 
     'redirects--*':
         - elife.swapspace
-        #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
-        - elife.nginx-error-pages
+        - elife.webserver-error-pages
         - redirects
 
     'profiles--*':
