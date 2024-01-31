@@ -268,7 +268,7 @@ base:
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
-        - elife.nginx-php7 # nothing nginx-specific here
+        - elife.nginx-php7 # not nginx specific
         - elife.gearman-client-php
         - elife.aws-credentials
         - elife.aws-cli
@@ -357,7 +357,9 @@ base:
 
     'redirects--*':
         - elife.swapspace
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.nginx-error-pages
         - redirects
 
