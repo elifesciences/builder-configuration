@@ -163,10 +163,13 @@ base:
     'api-dummy--*':
         - elife.php7
         - elife.composer
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.nginx-php7
         - api-dummy
-        - api-dummy.nginx
+        #- api-dummy.nginx
+        - api-dummy.caddy
 
     'elife-metrics--*':
         - elife.nginx
