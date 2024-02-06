@@ -324,7 +324,7 @@ base:
         - elife.php7
         - elife.composer
         #- elife.nginx
-        - elife.nginx-disable
+        - elife.disable-nginx
         - elife.caddy
         - elife.nginx-php7 # not nginx-specific
         - elife.redis-server
