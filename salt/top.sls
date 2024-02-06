@@ -323,8 +323,10 @@ base:
         - elife.swapspace
         - elife.php7
         - elife.composer
-        - elife.nginx
-        - elife.nginx-php7
+        #- elife.nginx
+        - elife.nginx-disable
+        - elife.caddy
+        - elife.nginx-php7 # not nginx-specific
         - elife.redis-server
         - elife.nodejs16
         - personalised-covers.aws
@@ -332,7 +334,8 @@ base:
 
     'personalised-covers--ci--*':
         - api-dummy
-        - personalised-covers.api-dummy
+        #- api-dummy.nginx
+        - api-dummy.caddy
         - elife.docker-native
         - elife.aws-cli
         - elife.sidecars
@@ -340,7 +343,8 @@ base:
 
     'personalised-covers--pr-*':
         - api-dummy
-        - personalised-covers.api-dummy
+        #- api-dummy.nginx
+        - api-dummy.caddy
         - elife.docker-native
         - elife.aws-cli
         - elife.sidecars
