@@ -310,7 +310,9 @@ base:
     'observer--*':
         - elife.uwsgi
         - elife.java8
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.postgresql-12
         - elife.postgresql-appdb
         - observer
