@@ -335,7 +335,6 @@ base:
     'personalised-covers--ci--*':
         - api-dummy
         #- api-dummy.nginx
-        - api-dummy.nginx-disable
         - api-dummy.caddy
         - elife.docker-native
         - elife.aws-cli
@@ -345,7 +344,6 @@ base:
     'personalised-covers--pr-*':
         - api-dummy
         #- api-dummy.nginx
-        - api-dummy.nginx-disable
         - api-dummy.caddy
         - elife.docker-native
         - elife.aws-cli
