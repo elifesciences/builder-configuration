@@ -34,6 +34,7 @@ base:
         - elife.postgresql-12
         #- elife.nginx
         - elife.disable-nginx
+        - elife.caddy
         - elife.uwsgi
         - elife-dashboard
         - elife-dashboard.uwsgi
