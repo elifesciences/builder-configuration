@@ -32,7 +32,9 @@ base:
 
     'elife-dashboard--*':
         - elife.postgresql-12
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.uwsgi
         - elife-dashboard
         - elife-dashboard.uwsgi
