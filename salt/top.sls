@@ -172,13 +172,15 @@ base:
         - api-dummy.caddy
 
     'elife-metrics--*':
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.uwsgi
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife-metrics
         - elife-metrics.uwsgi
-        
+
     'elife-metrics--prod--*':
         - elife.external-volume
 
