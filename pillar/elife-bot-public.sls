@@ -7,3 +7,9 @@ elife_bot:
         # will be overridden in Vault
         credentials_json: ''
 
+    profiling:
+        env_list:
+            - dev
+            - end2end
+            - continuumtest
+            #- prod
