@@ -391,7 +391,9 @@ base:
 
     'annotations--*':
         - elife
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.aws-credentials
         - elife.aws-cli
         - elife.docker-native
