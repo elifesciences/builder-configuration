@@ -191,7 +191,9 @@ base:
         - elife.java11
         - elife.nodejs16 # for 'npm' and npm releases
         - elife.jenkins-scripts
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.postfix
         - elife.postfix-ses
         - elife.aws-cli
