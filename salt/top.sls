@@ -308,7 +308,9 @@ base:
 
     'recommendations--*':
         - elife.docker-native
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - recommendations
 
     'observer--*':
