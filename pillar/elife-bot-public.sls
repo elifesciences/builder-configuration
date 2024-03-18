@@ -10,6 +10,7 @@ elife_bot:
     profiling:
         env_list:
             - dev
+            - ci
             - end2end
             - continuumtest
             #- prod
