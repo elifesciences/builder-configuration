@@ -407,7 +407,9 @@ base:
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi-params
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.aws-credentials
         - elife.aws-cli
         - elife.docker-native
