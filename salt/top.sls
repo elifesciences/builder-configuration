@@ -434,5 +434,7 @@ base:
 
     'monitor--*':
         - elife.external-volume
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - monitor
