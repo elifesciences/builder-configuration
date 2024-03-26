@@ -175,6 +175,8 @@ base:
     'search--end2end--*':
         - search-end2end
 
+    'journal-cms--prod--*':
+        - journal-cms-prod
 
     # misc overrides.
 
