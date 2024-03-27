@@ -15,4 +15,4 @@ elife_bot:
             #- ci
             - end2end
             - continuumtest
-            #- prod
+            - prod
