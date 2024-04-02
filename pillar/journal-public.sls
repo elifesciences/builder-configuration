@@ -9,7 +9,7 @@ journal:
     preprint_url:
     about_url: https://elife-container.pubpub.org
     resources_url: https://elife-container.pubpub.org
-    media_policy_url: 
+    media_policy_url: https://elife-container.pubpub.org 
     default_host: null
 
     google_api_client:
