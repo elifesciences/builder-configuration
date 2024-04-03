@@ -59,7 +59,7 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-    media_policy_url:
+    
 
 journal_cms:
     aws:
