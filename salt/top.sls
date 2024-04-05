@@ -118,8 +118,10 @@ base:
 
     'pattern-library--*':
         - elife.docker-native
-        - elife.nginx
-        - elife.nginx-upgrade-http
+        #- elife.nginx
+        #- elife.nginx-upgrade-http
+        - elife.disable-nginx
+        - elife.caddy
         - pattern-library
 
     'journal-cms--*':
