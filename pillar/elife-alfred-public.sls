@@ -9,6 +9,8 @@ alfred:
         #secret_id: 
 
 elife:
+    webserver:
+        app: caddy
     helm:
         username: jenkins
     kubectl:

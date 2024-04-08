@@ -118,8 +118,10 @@ base:
 
     'pattern-library--*':
         - elife.docker-native
-        - elife.nginx
-        - elife.nginx-upgrade-http
+        #- elife.nginx
+        #- elife.nginx-upgrade-http
+        - elife.disable-nginx
+        - elife.caddy
         - pattern-library
 
     'journal-cms--*':
@@ -191,7 +193,9 @@ base:
         - elife.java11
         - elife.nodejs16 # for 'npm' and npm releases
         - elife.jenkins-scripts
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.postfix
         - elife.postfix-ses
         - elife.aws-cli
@@ -405,7 +409,9 @@ base:
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi-params
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.aws-credentials
         - elife.aws-cli
         - elife.docker-native
@@ -430,5 +436,7 @@ base:
 
     'monitor--*':
         - elife.external-volume
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - monitor
