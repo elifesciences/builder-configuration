@@ -384,7 +384,9 @@ base:
     'profiles--*':
         - elife.postgresql-12
         - elife.uwsgi
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.aws-credentials
         - elife.aws-cli
         - elife.docker-native
