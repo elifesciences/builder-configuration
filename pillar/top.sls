@@ -172,9 +172,6 @@ base:
     # per-project + per-environment overrides; order of this section is important.
 
 
-    'lax--prod--*':
-        - lax-prod-public
-
     'search--end2end--*':
         - search-end2end
 
