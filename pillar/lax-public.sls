@@ -57,6 +57,7 @@ elife:
         services:
             lax:
                 folder: /srv/lax
+                protocol: http-socket
 
     multiservice:
         services:
