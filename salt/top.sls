@@ -133,7 +133,9 @@ base:
         - elife.external-volume-srv
         - elife.php7
         - elife.composer
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.nginx-php7
         - elife.mysql-client
         - elife.mysql-server
