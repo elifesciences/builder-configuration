@@ -83,7 +83,9 @@ base:
         - elife-bot.cron
 
     'lax--*':
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.uwsgi
         - elife.postgresql-12
         - elife.postgresql-appdb
