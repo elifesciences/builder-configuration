@@ -32,6 +32,8 @@ profiles:
             # password:
 
 elife:
+    webserver:
+        app: caddy
     aws: {}
         # `profiles` IAM user
         # access_key_id:
