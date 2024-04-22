@@ -10,6 +10,7 @@ journal:
     about_url: https://elife-container.pubpub.org
     resources_url: https://elife-container.pubpub.org
     media_policy_url: https://elife-container.pubpub.org 
+    community_url: https://elife-container.pubpub.org/community
     default_host: null
 
     google_api_client:
