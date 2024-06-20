@@ -128,6 +128,9 @@ journal:
     calls_to_action: []
 
 elife:
+    webserver:
+        app: caddy
+
     redis:
         maxmemory: 512
 
