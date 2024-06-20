@@ -54,6 +54,9 @@ journal_cms:
         db: journal-cms/201705/20170522_prod--journal-cms.elifesciences.org_230506-elife_2_0-mysql.gz
 
 elife:
+    webserver:
+        app: caddy
+
     php:
         memory_limit: 128M
         upload_max_filesize: 32M
