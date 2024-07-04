@@ -178,6 +178,9 @@ base:
     'journal-cms--prod--*':
         - journal-cms-prod
 
+    'journal-cms--continuumtest--*':
+        - journal-cms-continuumtest
+
 
     # misc overrides.
 
