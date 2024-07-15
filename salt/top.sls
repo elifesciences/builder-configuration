@@ -114,8 +114,11 @@ base:
 
     'journal--*':
         - elife.docker-native
-        - elife.nginx
-        - elife.nginx-error-pages
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
+        #- elife.nginx-error-pages
+        - elife.webserver-error-pages
         - journal
 
     'pattern-library--*':
