@@ -11,6 +11,8 @@ journal:
     resources_url: https://elife-container.pubpub.org
     media_policy_url: https://elife-container.pubpub.org 
     community_url: https://elife-container.pubpub.org/community
+    privacy_notice_url: https://elife-container.pubpub.org/privacy-notice
+    cookie_declaration_url: https://elife-container.pubpub.org/cookie-declaration
     default_host: null
 
     google_api_client:
