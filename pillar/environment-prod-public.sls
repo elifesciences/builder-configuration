@@ -59,10 +59,6 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-    # leave empty to prevent adding redirect rules.
-    # remove and update journal--prod nodes when ready to go live.
-    privacy_notice_url:
-    cookie_declaration_url:
         
 journal_cms:
     aws:
