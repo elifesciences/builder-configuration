@@ -7,20 +7,20 @@ base:
         - elife
         - elife.prometheus-node-exporter
 
-    'master-server--prod--*':
+    'master-server--prod--* or (G@project:master-server and G@environment:prod)':
         - elife.backups-cron
 
-    'master-server--*':
+    'master-server--* or (G@project:master-server)':
         - elife.certificates
         - master-server
         - master-server.vault
         - master-server.salt-vault
 
-    'basebox--*': []
+    'basebox--* or (G@project:basebox)': []
         # basebox is used as a base for other projects
         # put common big and slow deps in here
 
-    'api-gateway--*':
+    'api-gateway--* or (G@project:api-gateway)':
         - elife.postgresql-12
         - elife.docker-native
         - elife.disable-nginx
@@ -30,7 +30,7 @@ base:
         - api-gateway.proxy
         - api-gateway.kong
 
-    'elife-dashboard--*':
+    'elife-dashboard--* or (G@project:elife-dashboard)':
         - elife.postgresql-12
         #- elife.nginx
         - elife.disable-nginx
@@ -42,16 +42,16 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-    'elife-dashboard--end2end--*':
+    'elife-dashboard--end2end--* or (G@project:elife-dashboard and G@environment:end2end)':
         - elife-dashboard.processes
 
-    'elife-dashboard--continuumtest--*':
+    'elife-dashboard--continuumtest--* or (G@project:elife-dashboard and G@environment:continuumtest)':
         - elife-dashboard.processes
 
-    'elife-dashboard--prod--*':
+    'elife-dashboard--prod--* or (G@project:elife-dashboard and G@environment:prod)':
         - elife-dashboard.processes
 
-    'elife-bot--*':
+    'elife-bot--* or (G@project:elife-bot)':
         - elife.external-volume
         - elife.redis-server
         - elife.docker-native
@@ -59,10 +59,10 @@ base:
         - elife-bot
         - elife-bot.feeder
 
-    'elife-bot--ci--*':
+    'elife-bot--ci--* or (G@project:elife-bot and G@environment:ci)':
         - elife.vsftpd
 
-    'elife-bot--end2end--*':
+    'elife-bot--end2end--* or (G@project:elife-bot and G@environment:end2end)':
         - elife.nginx
         - elife.vsftpd
         - elife.vsftpd-nginx
@@ -72,17 +72,17 @@ base:
         - elife.mockserver
         # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
-    'elife-bot--continuumtest--*':
+    'elife-bot--continuumtest--* or (G@project:elife-bot and G@environment:continuumtest)':
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
 
-    'elife-bot--prod--*':
+    'elife-bot--prod--* or (G@project:elife-bot and G@environment:prod)':
         - elife.multiservice
         - elife-bot.processes
         - elife-bot.cron
 
-    'lax--*':
+    'lax--* or (G@project:lax)':
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
@@ -96,29 +96,29 @@ base:
         - elife-reporting
         - lax.adaptors
 
-    'lax--end2end--*':
+    'lax--end2end--* or (G@project:lax and G@environment:end2end)':
         - elife.multiservice
         - lax.processes
 
-    'lax--continuumtest--*':
+    'lax--continuumtest--* or (G@project:lax and G@environment:continuumtest)':
         - elife.multiservice
         - lax.processes
 
-    'lax--prod--*':
+    'lax--prod--* or (G@project:lax and G@environment:prod)':
         - elife.multiservice
         - lax.processes
 
-    'lax--prod--1':
+    'lax--prod--1 or (G@project:lax and G@environment:end2end and G@role:leader)':
         - lax.cron
         - elife-reporting.cron
 
-    'journal--*':
+    'journal--* or (G@project:journal)':
         - elife.docker-native
         - elife.nginx
         - elife.nginx-error-pages
         - journal
 
-    'pattern-library--*':
+    'pattern-library--* or (G@project:pattern-library)':
         - elife.docker-native
         #- elife.nginx
         #- elife.nginx-upgrade-http
@@ -126,7 +126,7 @@ base:
         - elife.caddy
         - pattern-library
 
-    'journal-cms--*':
+    'journal-cms--* or (G@project:journal-cmd)':
         - elife.swapspace
         - elife.apache-removal # lsh@2022-11-04: temporary, remove once apache2 purged
         - elife.external-volume
@@ -141,32 +141,32 @@ base:
         - elife.aws-cli
         - journal-cms
 
-    'journal-cms--ci--*':
+    'journal-cms--ci--* or (G@project:journal and G@environment:ci)':
         - elife.docker-native
         - elife.goaws
 
-    'journal-cms--end2end--*':
+    'journal-cms--end2end--* or (G@project:journal and G@environment:end2end)':
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
 
-    'journal-cms--continuumtest--*':
+    'journal-cms--continuumtest--* or (G@project:journal and G@environment:continuumtest)':
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
 
-    'journal-cms--prod--*':
+    'journal-cms--prod--* or (G@project:journal and G@environment:prod)':
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
         - elife.postfix # queues then sends via AWS SES
         - elife.postfix-ses
-    
-    'journal-cms--ckeditor--*':
+
+    'journal-cms--ckeditor--* or (G@project:journal and G@environment:ckeditor)':
         - elife.docker-native
         - elife.goaws
 
-    'api-dummy--*':
+    'api-dummy--* or (G@project:api-dummy)':
         - elife.php7
         - elife.composer
         #- elife.nginx
@@ -177,7 +177,7 @@ base:
         #- api-dummy.nginx
         - api-dummy.caddy
 
-    'elife-metrics--*':
+    'elife-metrics--* or (G@project:elife-metrics)':
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
@@ -187,10 +187,10 @@ base:
         - elife-metrics
         - elife-metrics.uwsgi
 
-    'elife-metrics--prod--*':
+    'elife-metrics--prod--* or (G@project:elife-mstrics and G@environment:prod)':
         - elife.external-volume
 
-    'elife-alfred--*':
+    'elife-alfred--* or (G@project:elife-alfred)':
         - elife.swapspace
         - elife.java11
         - elife.nodejs16 # for 'npm' and npm releases
@@ -211,7 +211,7 @@ base:
         - elife.kubectl
         - elife.helm
 
-    'elife-libraries--*':
+    'elife-libraries--* or (G@project:elife-libraries)':
         - elife.java11
         - elife.php7
         - elife.composer
@@ -230,19 +230,19 @@ base:
         - elife.pypi
         - elife-libraries
 
-    'elife-libraries--ci--*':
+    'elife-libraries--ci--* or (G@project:elife-library and G@environment:ci)':
         # lsh@2023-04-04: todo
         #- elife.external-volume-srv
         - elife-libraries.builder
 
-    'elife-libraries--load--*':
+    'elife-libraries--load--* or (G@project:elife-library and G@environment:load)':
         - elife.spectrum
 
-    'elife-libraries--spectrum--*':
+    'elife-libraries--spectrum--* or (G@project:elife-library and G@environment:spectrum)':
         - elife.external-volume-srv
         - elife.spectrum
 
-    'containers--*':
+    'containers--* or (G@project:containers)':
         - elife.java11
         - elife.external-volume
         - elife.jenkins-scripts
@@ -259,7 +259,7 @@ base:
         - elife.helm
         - elife.pypi
 
-    'anonymous--*':
+    'anonymous--* or (G@project:anonymous)':
         - elife.base
         - elife.deploy-user
         - elife.hostname
@@ -275,7 +275,7 @@ base:
         - anonymous
         - elife.aws-cli
 
-    'search--*':
+    'search--* or (G@project:search)':
         - elife.php7
         - elife.composer
         #- elife.nginx
@@ -288,7 +288,7 @@ base:
         - search
 
     # the 'leader' because it has opensearch installed
-    'search--*--1':
+    'search--*--1 or (G@project:search and G@role:leader)':
         - elife.postgresql-12
         - elife.gearman
         - elife.java8
@@ -302,24 +302,24 @@ base:
     # you can test this on the salt-master with:
     # $ salt -C 'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*' --preview-target
     # - https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
-    'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
+    '(search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*) or (G@project:search and not G@environment:prod and not G@environment:end2end and not G@environment:continuumtest)':
         - api-dummy
         - search.api-dummy
         - elife.goaws
 
     # non-dev/non-ci leaders only
-    'search--end2end--1 or search--continuumtest--1 or search--prod--1':
+    'search--end2end--1 or search--continuumtest--1 or search--prod--1  or (G@project:search and (G@environment:prod or G@environment:end2end or G@environment:continuumtest) and G@role:leader)':
         - elife.multiservice
         - search.processes
 
-    'recommendations--*':
+    'recommendations--* or (G@project:recommendations)':
         - elife.docker-native
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
         - recommendations
 
-    'observer--*':
+    'observer--* or (G@project:observer)':
         - elife.uwsgi
         - elife.java8
         #- elife.nginx
@@ -330,10 +330,10 @@ base:
         - observer
         - observer.uwsgi
 
-    'observer--prod--*':
+    'observer--prod--* or (G@project:observer and G@environment:prod)':
         - observer.cron
 
-    'personalised-covers--*':
+    'personalised-covers--* or (G@project:personalised-covers)':
         - elife.swapspace
         - elife.php7
         - elife.composer
@@ -346,7 +346,7 @@ base:
         - personalised-covers.aws
         - personalised-covers
 
-    'personalised-covers--ci--*':
+    'personalised-covers--ci--* or (G@project:search and G@environment:ci)':
         - api-dummy
         #- api-dummy.nginx
         - api-dummy.caddy
@@ -355,7 +355,7 @@ base:
         - elife.sidecars
         - personalised-covers.localstack
 
-    'personalised-covers--pr-*':
+    'personalised-covers--pr-* or (G@project:personalised-covers and G@environment:pr)':
         - api-dummy
         #- api-dummy.nginx
         - api-dummy.caddy
@@ -364,7 +364,7 @@ base:
         - elife.sidecars
         - personalised-covers.localstack
 
-    'iiif--*':
+    'iiif--* or (G@project:iiif)':
         - elife.swapspace
         - elife.nginx
         - elife.external-volume
@@ -372,18 +372,18 @@ base:
         - iiif
         - iiif.loris-maintenance
 
-    'iiif--devchk--*':
+    'iiif--devchk--* or (G@project:iiif and G@environment:devchk)':
         - elife.java8
         - iiif.deviation-checker
 
-    'redirects--*':
+    'redirects--* or (G@project:redirects)':
         - elife.swapspace
         - elife.disable-nginx
         - elife.caddy
         - elife.webserver-error-pages
         - redirects
 
-    'profiles--*':
+    'profiles--* or (G@project:profiles)':
         - elife.postgresql-12
         - elife.uwsgi
         #- elife.nginx
@@ -397,7 +397,7 @@ base:
         - profiles.postgresql
         - profiles
 
-    'annotations--*':
+    'annotations--* or (G@project:annotations)':
         - elife
         #- elife.nginx
         - elife.disable-nginx
@@ -409,7 +409,7 @@ base:
         - annotations
         - annotations.containers
 
-    'digests--*':
+    'digests--* or (G@project:digests)':
         - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.uwsgi-params
@@ -422,11 +422,11 @@ base:
         - elife.docker-databases
         - digests
 
-    'bastion--*':
+    'bastion--* or (G@project:bastion)':
         - elife.swapspace
         - bastion
 
-    'bioprotocol--*':
+    'bioprotocol--* or (G@project:bioprotocol)':
         - elife.disable-nginx
         - elife.caddy
         - elife.postgresql-12
@@ -434,11 +434,11 @@ base:
         - elife.uwsgi
         - bioprotocol
 
-    'large-repo-wrangler--*':
+    'large-repo-wrangler--* or (G@project:large-repo-wrangler)':
         - elife.external-volume
         - large-repo-wrangler
 
-    'monitor--*':
+    'monitor--* or (G@project:monitor)':
         - elife.external-volume
         #- elife.nginx
         - elife.disable-nginx
