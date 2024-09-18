@@ -27,10 +27,12 @@ search:
     {% import_yaml "era-articles.yaml" as era_articles %}
     era_articles: {{ era_articles|yaml }}
     rds_articles: {{ era_articles|yaml }}
-    
+
     reviewed_preprints: {}
 
 elife:
+    php:
+        max_children: 16
     webserver:
         app: caddy
 
