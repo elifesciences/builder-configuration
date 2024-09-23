@@ -3,6 +3,7 @@ elife:
 
 journal:
     api_url: http://continuumtest--gateway.elife.internal
+    api_url_search_page: http://continuumtest--gateway.elife.internal
     api_url_public: https://continuumtest--gateway.elifesciences.org
     # api_key: # see builder-private
     oauth2_client_id: journal--continuumtestpreview

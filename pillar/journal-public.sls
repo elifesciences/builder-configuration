@@ -1,5 +1,6 @@
 journal:
     api_url: ''
+    api_url_search_page: ''
     api_url_public: ''
     # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org

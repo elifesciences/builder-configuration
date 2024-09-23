@@ -26,6 +26,7 @@ api_gateway:
 
 journal:
     api_url: {{ gateway_url_internal }}
+    api_url_search_page: https://prod--epp.elifesciences.org
     api_url_public: {{ gateway_url_public }}
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
