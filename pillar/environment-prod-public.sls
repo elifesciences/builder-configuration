@@ -60,8 +60,6 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-    #Remove this once it's ready to go live on production environments
-    peer_review_url:
         
 journal_cms:
     aws:
