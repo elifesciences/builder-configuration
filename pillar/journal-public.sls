@@ -14,6 +14,7 @@ journal:
     community_url: https://elife-container.pubpub.org/community
     privacy_notice_url: https://elife-container.pubpub.org/privacy-notice
     cookie_declaration_url: https://elife-container.pubpub.org/cookie-declaration
+    peer_review_url: https://elifesciences.org/about/peer-review
     default_host: null
 
     google_api_client:
