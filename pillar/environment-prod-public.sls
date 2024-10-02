@@ -60,6 +60,8 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
+    # Remove this url to go live on prod environment when siged off for it
+    learning_resources_url:
         
 journal_cms:
     aws:
