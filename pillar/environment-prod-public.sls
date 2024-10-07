@@ -4,7 +4,7 @@ elife:
 {% set journal_url = 'https://elifesciences.org' %}
 {% set journal_preview_url = 'https://preview--journal.elifesciences.org' %}
 {% set journal_cms_url = 'https://prod--journal-cms.elifesciences.org' %}
-{% set search_url = 'http://prod--search.elife.internal' %}
+{% set search_url = 'https://search.prod.elifesciences.org' %}
 {% set recommendations_url = 'http://prod--recommendations.elife.internal' %}
 {% set lax_url = 'https://prod--lax.elifesciences.org' %}
 {% set gateway_url_public = 'https://api.elifesciences.org' %}
@@ -26,6 +26,7 @@ api_gateway:
 
 journal:
     api_url: {{ gateway_url_internal }}
+    api_url_search_page: {{ gateway_url_internal }}
     api_url_public: {{ gateway_url_public }}
     side_by_side_view_url: https://lens.elifesciences.org
     observer_url: http://prod--observer.elife.internal
@@ -59,7 +60,7 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-
+    
 journal_cms:
     aws:
         queue: journal-cms--prod
@@ -89,16 +90,3 @@ lax:
     botlax:
         api:
             url: http://prod--gateway.elife.internal
-
-search:
-    api:
-        url: http://prod--gateway.elife.internal
-        requests_batch: 20
-
-    opensearch:
-        servers: http://prod--search--1.elife.internal:9201
-
-    gearman:
-        servers: prod--search--1.elife.internal
-
-    rate_limit_minimum_page: 21

@@ -78,10 +78,6 @@ base:
     'anonymous--*':
         - anonymous
 
-    'search--*':
-        - search-public
-        - search
-
     'recommendations--*':
         - recommendations
 
@@ -171,17 +167,14 @@ base:
 
     # per-project + per-environment overrides; order of this section is important.
 
+    'journal-cms--prod--*':
+        - journal-cms-prod
 
-    'search--end2end--*':
-        - search-end2end
+    'journal-cms--continuumtest--*':
+        - journal-cms-continuumtest
 
 
     # misc overrides.
-
-
-    # lsh@2023-12-15: temporary, remove along with search--rmgearman
-    'search--rmgearman--*':
-        - disable-loggly-logging
 
     # temporary
     'journal--pr-*--*':

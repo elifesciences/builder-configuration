@@ -83,7 +83,9 @@ base:
         - elife-bot.cron
 
     'lax--*':
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.uwsgi
         - elife.postgresql-12
         - elife.postgresql-appdb
@@ -118,8 +120,10 @@ base:
 
     'pattern-library--*':
         - elife.docker-native
-        - elife.nginx
-        - elife.nginx-upgrade-http
+        #- elife.nginx
+        #- elife.nginx-upgrade-http
+        - elife.disable-nginx
+        - elife.caddy
         - pattern-library
 
     'journal-cms--*':
@@ -273,43 +277,6 @@ base:
         - anonymous
         - elife.aws-cli
 
-    'search--*':
-        - elife.php7
-        - elife.composer
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.nginx-php7 # not nginx specific
-        - elife.gearman-client-php
-        - elife.aws-credentials
-        - elife.aws-cli
-        - search
-
-    # the 'leader' because it has opensearch installed
-    'search--*--1':
-        - elife.postgresql-12
-        - elife.gearman
-        - elife.java8
-        - elife.docker-native
-        - elife.swapspace
-        - search.opensearch
-        - search.gearman-persistence
-        - search.leader
-
-    # dev/ci only
-    # you can test this on the salt-master with:
-    # $ salt -C 'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*' --preview-target
-    # - https://docs.saltstack.com/en/latest/topics/targeting/compound.html#targeting-compound
-    'search--* and not search--end2end--* and not search--continuumtest--* and not search--prod--*':
-        - api-dummy
-        - search.api-dummy
-        - elife.goaws
-
-    # non-dev/non-ci leaders only
-    'search--end2end--1 or search--continuumtest--1 or search--prod--1':
-        - elife.multiservice
-        - search.processes
-
     'recommendations--*':
         - elife.docker-native
         #- elife.nginx
@@ -384,7 +351,9 @@ base:
     'profiles--*':
         - elife.postgresql-12
         - elife.uwsgi
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.aws-credentials
         - elife.aws-cli
         - elife.docker-native
@@ -436,5 +405,7 @@ base:
 
     'monitor--*':
         - elife.external-volume
-        - elife.nginx
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - monitor

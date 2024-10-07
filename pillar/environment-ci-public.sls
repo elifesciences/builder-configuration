@@ -14,18 +14,3 @@ journal_cms:
         all_articles_endpoint: {{ dummy_url }}/articles
         all_reviewed_preprints_endpoint: {{ dummy_url }}/reviewed-preprints
         all_digests_endpoint: {{ dummy_url }}/digests
-
-search:
-    api:
-        url: http://localhost:8080
-
-    aws:
-        endpoint: http://localhost:4100
-
-    opensearch:
-        logging: true
-        force_sync: true
-
-    debug: true
-    validate: true
-    ttl: 0

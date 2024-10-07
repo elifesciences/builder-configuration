@@ -1,5 +1,6 @@
 journal:
     api_url: ''
+    api_url_search_page: ''
     api_url_public: ''
     # api_key: # see builder-private
     side_by_side_view_url: https://lens.elifesciences.org
@@ -9,6 +10,11 @@ journal:
     preprint_url:
     about_url: https://elife-container.pubpub.org
     resources_url: https://elife-container.pubpub.org
+    media_policy_url: https://elife-container.pubpub.org 
+    community_url: https://elife-container.pubpub.org/community
+    privacy_notice_url: https://elife-container.pubpub.org/privacy-notice
+    cookie_declaration_url: https://elife-container.pubpub.org/cookie-declaration
+    learning_resources_url: https://elife-container.pubpub.org/learning-resources
     default_host: null
 
     google_api_client:

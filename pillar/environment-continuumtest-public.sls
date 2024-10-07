@@ -4,7 +4,7 @@ elife:
 {% set journal_url = 'https://continuumtest--journal.elifesciences.org' %}
 {% set journal_preview_url = 'https://continuumtestpreview--journal.elifesciences.org' %}
 {% set journal_cms_url = 'https://continuumtest--journal-cms.elifesciences.org' %}
-{% set search_url = 'http://continuumtest--search.elife.internal' %}
+{% set search_url = 'https://search.test.elifesciences.org' %}
 {% set recommendations_url = 'http://continuumtest--recommendations.elife.internal' %}
 {% set gateway_url_public = 'https://continuumtest--cdn-gateway.elifesciences.org' %}
 {% set gateway_url_internal = 'http://continuumtest--gateway.elife.internal' %}
@@ -21,6 +21,7 @@ elife:
 
 journal:
     api_url: {{ gateway_url_internal }}
+    api_url_search_page: {{ gateway_url_internal }}
     api_url_public: {{ gateway_url_public }}
     # not yet active
     side_by_side_view_url: https://continuumtest--lens.elifesciences.org
@@ -85,14 +86,3 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
-
-search:
-    api:
-        url: http://continuumtest--gateway.elife.internal
-        requests_batch: 20
-
-    opensearch:
-        servers: http://continuumtest--search.elife.internal:9201
-        logging: true
-
-    rate_limit_minimum_page: 21

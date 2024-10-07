@@ -21,6 +21,7 @@ elife:
 
 journal:
     api_url: {{ gateway_url_internal }}
+    api_url_search_page: {{ gateway_url_internal }}
     api_url_public: {{ gateway_url_public }}
     # not yet active
     side_by_side_view_url: https://end2end--lens.elifesciences.org
