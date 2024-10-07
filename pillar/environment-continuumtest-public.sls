@@ -86,14 +86,3 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
-
-search:
-    api:
-        url: http://continuumtest--gateway.elife.internal
-        requests_batch: 20
-
-    opensearch:
-        servers: http://continuumtest--search.elife.internal:9201
-        logging: true
-
-    rate_limit_minimum_page: 21
