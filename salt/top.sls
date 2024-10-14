@@ -288,7 +288,7 @@ base:
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
-        - elife.postgresql-13
+        - elife.postgresql-12
         - elife.postgresql-appdb
         - observer
         - observer.uwsgi
