@@ -282,7 +282,7 @@ base:
         - elife.caddy
         - recommendations
 
-    'observer--*':
+    'observer--* and not observer--ci--*':
         - elife.uwsgi
         - elife.java8
         #- elife.nginx
@@ -295,6 +295,17 @@ base:
 
     'observer--prod--*':
         - observer.cron
+
+    'observer--ci--*':
+        - elife.uwsgi
+        - elife.java8
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
+        - elife.postgresql-13
+        - elife.postgresql-appdb
+        - observer
+        - observer.uwsgi
 
     'personalised-covers--*':
         - elife.swapspace
