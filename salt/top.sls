@@ -296,7 +296,7 @@ base:
     'observer--prod--*':
         - observer.cron
 
-    'observer--ci--*':
+    'observer--ci--* and observer--end2end--*':
         - elife.uwsgi
         - elife.java8
         #- elife.nginx
