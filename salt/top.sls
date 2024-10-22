@@ -346,7 +346,7 @@ base:
         - elife.webserver-error-pages
         - redirects
 
-    'profiles--* and not profiles--continuumtest--*':
+    'profiles--* and not profiles--end2end--*':
         - elife.postgresql-12
         - elife.uwsgi
         #- elife.nginx
@@ -360,7 +360,7 @@ base:
         - profiles.postgresql
         - profiles
 
-    'profiles--continuumtest--*':
+    'profiles--end2end--*':
         - elife.postgresql-13
         - elife.uwsgi
         #- elife.nginx
