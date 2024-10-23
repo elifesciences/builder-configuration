@@ -346,21 +346,7 @@ base:
         - elife.webserver-error-pages
         - redirects
 
-    'profiles--* and not profiles--continuumtest--*':
-        - elife.postgresql-12
-        - elife.uwsgi
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.aws-credentials
-        - elife.aws-cli
-        - elife.docker-native
-        - elife.docker-databases
-        - elife.sidecars
-        - profiles.postgresql
-        - profiles
-
-    'profiles--continuumtest--*':
+    'profiles--*':
         - elife.postgresql-13
         - elife.uwsgi
         #- elife.nginx
