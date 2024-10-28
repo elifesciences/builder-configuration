@@ -42,7 +42,7 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-     'elife-dashboard--ci--*':
+    'elife-dashboard--ci--*':
         - elife.postgresql-13
         #- elife.nginx
         - elife.disable-nginx
