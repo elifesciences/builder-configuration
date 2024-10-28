@@ -30,7 +30,7 @@ base:
         - api-gateway.proxy
         - api-gateway.kong
 
-    'elife-dashboard--*':
+    'elife-dashboard--* and not elife-dashboard--ci--*':
         - elife.postgresql-12
         #- elife.nginx
         - elife.disable-nginx
@@ -41,6 +41,17 @@ base:
         - elife-dashboard.scheduler
         - elife.nodejs16
         #- elife-dashboard.dashboard2
+
+     'elife-dashboard--ci--*':
+        - elife.postgresql-13
+        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
+        - elife.uwsgi
+        - elife-dashboard
+        - elife-dashboard.uwsgi
+        - elife-dashboard.scheduler
+        - elife.nodejs16
 
     'elife-dashboard--end2end--*':
         - elife-dashboard.processes
