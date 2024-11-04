@@ -60,10 +60,6 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-    # remove these and update journal--prod when ready to go live
-    community_newsletter_url: 
-    elife_newsletter_url:
-    content_alerts_url:
 journal_cms:
     aws:
         queue: journal-cms--prod
