@@ -63,9 +63,6 @@ base:
         - journal-cms-public
         - journal-cms
 
-    'api-dummy--*':
-        - api-dummy
-
     'elife-metrics--*':
         - elife-metrics
 
