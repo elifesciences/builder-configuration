@@ -22,9 +22,6 @@ base:
         - elife-bot-public
         - elife-bot
 
-    'elife-bot--end2end--*':
-        - elife-bot-end2end
-
     'elife-bot--continuumtest--*':
         - elife-bot-continuumtest
 
@@ -104,14 +101,8 @@ base:
         - profiles-public
         - profiles
 
-    'profiles--end2end--*':
-        - profiles-end2end
-
     'annotations--*':
         - annotations
-
-    'annotations--end2end--*':
-        - annotations-end2end
 
     'digests--*':
         - digests
@@ -132,10 +123,6 @@ base:
     '*--ci--*':
         - environment-ci-public
         - environment-ci
-
-    '*--end2end--*':
-        - environment-end2end-public
-        - environment-end2end
 
     '*--demo--*':
         - environment-demo-public

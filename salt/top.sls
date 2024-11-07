@@ -42,9 +42,6 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-    'elife-dashboard--end2end--*':
-        - elife-dashboard.processes
-
     'elife-dashboard--continuumtest--*':
         - elife-dashboard.processes
 
@@ -61,16 +58,6 @@ base:
 
     'elife-bot--ci--*':
         - elife.vsftpd
-
-    'elife-bot--end2end--*':
-        - elife.nginx
-        - elife.vsftpd
-        - elife.vsftpd-nginx
-        - elife.multiservice
-        - elife-bot.processes
-        - elife.sidecars
-        - elife.mockserver
-        # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
 
     'elife-bot--continuumtest--*':
         - elife.multiservice
@@ -95,10 +82,6 @@ base:
         # interesting dependency. bot-lax-adaptor requires reporting
         - elife-reporting
         - lax.adaptors
-
-    'lax--end2end--*':
-        - elife.multiservice
-        - lax.processes
 
     'lax--continuumtest--*':
         - elife.multiservice
@@ -144,11 +127,6 @@ base:
     'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
-
-    'journal-cms--end2end--*':
-        - journal-cms.cron
-        - elife.multiservice
-        - journal-cms.processes
 
     'journal-cms--continuumtest--*':
         - journal-cms.cron
