@@ -339,20 +339,7 @@ base:
         - annotations
         - annotations.containers
 
-    'digests--* and not digests--continuumtest--*':
-        - elife.postgresql-12
-        - elife.postgresql-appdb
-        - elife.uwsgi-params
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.aws-credentials
-        - elife.aws-cli
-        - elife.docker-native
-        - elife.docker-databases
-        - digests
-
-    'digests--continuumtest--*':
+    'digests--*':
         - elife.postgresql-13
         - elife.postgresql-appdb
         - elife.uwsgi-params
