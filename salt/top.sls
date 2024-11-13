@@ -202,9 +202,6 @@ base:
         #- elife.external-volume-srv
         - elife-libraries.builder
 
-    'elife-libraries--load--*':
-        - elife.spectrum
-
     'containers--*':
         - elife.java11
         - elife.external-volume
