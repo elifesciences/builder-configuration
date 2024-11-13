@@ -116,13 +116,16 @@ base:
         - elife.external-volume-srv
         - elife.php7
         - elife.composer
-        - elife.nginx
+        #- elife.nginx
         - elife.nginx-php7
         - elife.mysql-client
         - elife.mysql-server
         - elife.redis-server
         - elife.aws-cli
         - journal-cms
+
+    'journal-cms--* and not journal-cms--pr*':
+        - elife.nginx
 
     'journal-cms--ci--*':
         - elife.docker-native
