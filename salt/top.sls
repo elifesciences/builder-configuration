@@ -127,6 +127,10 @@ base:
     'journal-cms--* and not journal-cms--pr*':
         - elife.nginx
 
+    'journal-cms--pr*':
+        - elife.disable-nginx
+        - elife.caddy
+
     'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
