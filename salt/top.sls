@@ -146,10 +146,6 @@ base:
         - journal-cms.processes
         - elife.postfix # queues then sends via AWS SES
         - elife.postfix-ses
-    
-    'journal-cms--ckeditor--*':
-        - elife.docker-native
-        - elife.goaws
 
     'elife-metrics--*':
         #- elife.nginx
