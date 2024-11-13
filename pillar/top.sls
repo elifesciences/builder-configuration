@@ -157,7 +157,8 @@ base:
     'journal-cms--continuumtest--*':
         - journal-cms-continuumtest
 
-
+    'journal-cms--pr-*':
+        - journal-cms-pr-public
     # misc overrides.
 
     # temporary
@@ -165,3 +166,4 @@ base:
         - environment-continuumtest-public
         - environment-continuumtest
         - journal-pr-public
+
