@@ -116,20 +116,14 @@ base:
         - elife.external-volume-srv
         - elife.php7
         - elife.composer
-        #- elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.nginx-php7
         - elife.mysql-client
         - elife.mysql-server
         - elife.redis-server
         - elife.aws-cli
         - journal-cms
-
-    'journal-cms--* and not journal-cms--pr-* and not journal-cms--continuumtest--*':
-        - elife.nginx
-
-    'journal-cms--pr-*':
-        - elife.disable-nginx
-        - elife.caddy
 
     'journal-cms--ci--*':
         - elife.docker-native
@@ -139,8 +133,6 @@ base:
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
-        - elife.disable-nginx
-        - elife.caddy
 
     'journal-cms--prod--*':
         - journal-cms.cron

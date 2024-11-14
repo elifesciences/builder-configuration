@@ -1,3 +1,0 @@
-elife:
-    webserver:
-        app: caddy
