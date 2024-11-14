@@ -124,7 +124,7 @@ base:
         - elife.aws-cli
         - journal-cms
 
-    'journal-cms--* and not journal-cms--pr-*':
+    'journal-cms--* and not journal-cms--pr-* and not journal-cms--continuumtest--*':
         - elife.nginx
 
     'journal-cms--pr-*':
@@ -139,6 +139,8 @@ base:
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
+        - elife.disable-nginx
+        - elife.caddy
 
     'journal-cms--prod--*':
         - journal-cms.cron
