@@ -124,10 +124,10 @@ base:
         - elife.aws-cli
         - journal-cms
 
-    'journal-cms--* and not journal-cms--pr*':
+    'journal-cms--* and not journal-cms--pr-*':
         - elife.nginx
 
-    'journal-cms--pr*':
+    'journal-cms--pr-*':
         - elife.disable-nginx
         - elife.caddy
 
