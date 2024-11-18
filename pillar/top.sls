@@ -81,15 +81,6 @@ base:
     'observer--*':
         - observer
 
-    'personalised-covers--*':
-        - personalised-covers
-
-    'personalised-covers--ci--*':
-        - personalised-covers-ci-public
-
-    'personalised-covers--pr-*':
-        - personalised-covers-ci-public
-
     'iiif--*':
         - iiif-public
         - iiif

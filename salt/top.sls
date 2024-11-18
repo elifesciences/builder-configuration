@@ -253,37 +253,6 @@ base:
     'observer--prod--*':
         - observer.cron
 
-    'personalised-covers--*':
-        - elife.swapspace
-        - elife.php7
-        - elife.composer
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.nginx-php7 # not nginx-specific
-        - elife.redis-server
-        - elife.nodejs16
-        - personalised-covers.aws
-        - personalised-covers
-
-    'personalised-covers--ci--*':
-        - api-dummy
-        #- api-dummy.nginx
-        - api-dummy.caddy
-        - elife.docker-native
-        - elife.aws-cli
-        - elife.sidecars
-        - personalised-covers.localstack
-
-    'personalised-covers--pr-*':
-        - api-dummy
-        #- api-dummy.nginx
-        - api-dummy.caddy
-        - elife.docker-native
-        - elife.aws-cli
-        - elife.sidecars
-        - personalised-covers.localstack
-
     'iiif--*':
         - elife.swapspace
         - elife.nginx
