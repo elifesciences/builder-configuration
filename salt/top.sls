@@ -255,7 +255,8 @@ base:
 
     'iiif--*':
         - elife.swapspace
-        - elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.external-volume
         - elife.docker-native
         - iiif
