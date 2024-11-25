@@ -150,10 +150,10 @@ base:
         - elife-metrics
         - elife-metrics.uwsgi
 
-    'elife-metrics--* and not elife-metrics--ci--*':
+    'elife-metrics--* and not elife-metrics--ci--* and not elife-metrics--continuumtest--*':
         - elife.postgresql-12
 
-    'elife-metrics--ci--*':
+    'elife-metrics--ci--* and elife-metrics--continuumtest--*':
         - elife.postgresql-13
 
     'elife-metrics--prod--*':
