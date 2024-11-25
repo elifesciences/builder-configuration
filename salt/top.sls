@@ -146,10 +146,15 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - elife.uwsgi
-        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife-metrics
         - elife-metrics.uwsgi
+
+    'elife-metrics--* and not elife-metrics--ci--*':
+        - elife.postgresql-12
+
+    'elife-metrics--ci--*':
+        - elife.postgresql-13
 
     'elife-metrics--prod--*':
         - elife.external-volume
