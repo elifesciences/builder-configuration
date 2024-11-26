@@ -262,7 +262,7 @@ base:
         - elife.swapspace
         - elife.external-volume
         - elife.docker-native
-        - elife-nginx
+        - elife.nginx
         - iiif
         - iiif.loris-maintenance
 
