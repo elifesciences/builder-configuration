@@ -260,11 +260,17 @@ base:
 
     'iiif--*':
         - elife.swapspace
-        - elife.nginx
         - elife.external-volume
         - elife.docker-native
         - iiif
         - iiif.loris-maintenance
+
+    'iiif--prod--* and not iiif--continuumtest--*':
+        - elife-nginx
+    
+    'iiif--continuumtest--*':
+        - elife.disable-nginx
+        - elife.caddy
 
     'iiif--devchk--*':
         - elife.java8
