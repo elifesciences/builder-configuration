@@ -262,15 +262,16 @@ base:
         - elife.swapspace
         - elife.external-volume
         - elife.docker-native
+        - elife-nginx
         - iiif
         - iiif.loris-maintenance
 
-    'iiif--prod--* and not iiif--continuumtest--* and not iiif--ci--*':
-        - elife-nginx
-    
-    'iiif--continuumtest--* or iiif--ci--*':
-        - elife.disable-nginx
-        - elife.caddy
+   # 'iiif--prod--* and not iiif--continuumtest--* and not iiif--ci--*':
+    #    - elife-nginx
+    #
+    #'iiif--continuumtest--* or iiif--ci--*':
+    #    - elife.disable-nginx
+     #   - elife.caddy
 
     'iiif--devchk--*':
         - elife.java8
