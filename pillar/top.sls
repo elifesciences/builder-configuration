@@ -85,9 +85,6 @@ base:
         - iiif-public
         - iiif
 
-    'iiif--continuumtest--* or iiif--ci--*':
-        - iiif-caddy
-
     'redirects--*':
         - redirects
         

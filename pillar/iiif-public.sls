@@ -1,5 +1,8 @@
 elife:
     webserver:
-        app: nginx
+        app: caddy
     uwsgi:
         username: loris
+iiif:
+    loris:
+        protocol: http-socket
