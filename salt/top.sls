@@ -267,6 +267,13 @@ base:
         - iiif
         - iiif.loris-maintenance
 
+    'iiif--* and not iiif--continuumtest--*':
+        - elife.disable-nginx
+        - elife.caddy
+
+    'iiif--continuumtest--*':
+        - elife.nginx
+
     'iiif--devchk--*':
         - elife.java8
         - iiif.deviation-checker

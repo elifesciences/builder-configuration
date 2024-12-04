@@ -85,9 +85,12 @@ base:
         - iiif-public
         - iiif
 
+    'iiif--continuumtest--*':
+        - iiif-nginx
+
     'redirects--*':
         - redirects
-        
+
     'profiles--*':
         - profiles-public
         - profiles
@@ -155,4 +158,3 @@ base:
         - environment-continuumtest-public
         - environment-continuumtest
         - journal-pr-public
-
