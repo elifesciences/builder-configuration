@@ -85,7 +85,7 @@ base:
         - iiif-public
         - iiif
 
-    'iiif--continuumtest--*':
+    'iiif--prod--*':
         - iiif-nginx
 
     'redirects--*':

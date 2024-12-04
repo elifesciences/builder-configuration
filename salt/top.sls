@@ -265,11 +265,11 @@ base:
         - iiif
         - iiif.loris-maintenance
 
-    'iiif--* and not iiif--continuumtest--*':
+    'iiif--* and not iiif--prod--*':
         - elife.disable-nginx
         - elife.caddy
 
-    'iiif--continuumtest--*':
+    'iiif--prod--*':
         - elife.nginx
 
     'iiif--devchk--*':
