@@ -74,7 +74,6 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - elife.uwsgi
-        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.external-volume
         - lax
@@ -83,9 +82,16 @@ base:
         - elife-reporting
         - lax.adaptors
 
+    'lax--* and not lax--ci--* or lax--continuumtest--*':
+        - elife.postgresql-12
+
+    'lax--ci--*':
+        - elife.postgresql-13
+
     'lax--continuumtest--*':
         - elife.multiservice
         - lax.processes
+        - elife.postgresql-13
 
     'lax--prod--*':
         - elife.multiservice
