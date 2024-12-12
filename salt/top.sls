@@ -74,7 +74,6 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - elife.uwsgi
-        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.external-volume
         - lax
@@ -82,6 +81,12 @@ base:
         # interesting dependency. bot-lax-adaptor requires reporting
         - elife-reporting
         - lax.adaptors
+
+    'lax--* and not lax--ci--*':
+        - elife.postgresql-12
+
+    'lax--ci--*':
+        - elife.postgresql-13
 
     'lax--continuumtest--*':
         - elife.multiservice
