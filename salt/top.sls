@@ -263,10 +263,15 @@ base:
         - elife.swapspace
         - elife.external-volume
         - elife.docker-native
-        - elife.disable-nginx
-        - elife.caddy
         - iiif
         - iiif.loris-maintenance
+
+    'iiif--* and not iiif--prod--*':
+        - elife.disable-nginx
+        - elife.caddy
+
+    'iiif--prod--*':
+        - elife.nginx
 
     'iiif--devchk--*':
         - elife.java8
