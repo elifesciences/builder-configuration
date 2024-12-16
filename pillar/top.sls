@@ -85,9 +85,6 @@ base:
         - iiif-public
         - iiif
 
-    'iiif--prod--*':
-        - iiif-nginx
-
     'redirects--*':
         - redirects
 
