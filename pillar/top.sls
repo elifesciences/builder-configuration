@@ -22,9 +22,6 @@ base:
         - elife-bot-public
         - elife-bot
 
-    'elife-bot--end2end--*':
-        - elife-bot-end2end
-
     'elife-bot--continuumtest--*':
         - elife-bot-continuumtest
 
@@ -63,9 +60,6 @@ base:
         - journal-cms-public
         - journal-cms
 
-    'api-dummy--*':
-        - api-dummy
-
     'elife-metrics--*':
         - elife-metrics
 
@@ -87,34 +81,22 @@ base:
     'observer--*':
         - observer
 
-    'personalised-covers--*':
-        - personalised-covers
-
-    'personalised-covers--ci--*':
-        - personalised-covers-ci-public
-
-    'personalised-covers--pr-*':
-        - personalised-covers-ci-public
-
     'iiif--*':
         - iiif-public
         - iiif
 
+    'iiif--prod--*':
+        - iiif-nginx
+
     'redirects--*':
         - redirects
-        
+
     'profiles--*':
         - profiles-public
         - profiles
 
-    'profiles--end2end--*':
-        - profiles-end2end
-
     'annotations--*':
         - annotations
-
-    'annotations--end2end--*':
-        - annotations-end2end
 
     'digests--*':
         - digests
@@ -135,10 +117,6 @@ base:
     '*--ci--*':
         - environment-ci-public
         - environment-ci
-
-    '*--end2end--*':
-        - environment-end2end-public
-        - environment-end2end
 
     '*--demo--*':
         - environment-demo-public
@@ -172,7 +150,6 @@ base:
 
     'journal-cms--continuumtest--*':
         - journal-cms-continuumtest
-
 
     # misc overrides.
 

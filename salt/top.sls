@@ -42,9 +42,6 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-    'elife-dashboard--end2end--*':
-        - elife-dashboard.processes
-
     'elife-dashboard--continuumtest--*':
         - elife-dashboard.processes
 
@@ -62,16 +59,6 @@ base:
     'elife-bot--ci--*':
         - elife.vsftpd
 
-    'elife-bot--end2end--*':
-        - elife.nginx
-        - elife.vsftpd
-        - elife.vsftpd-nginx
-        - elife.multiservice
-        - elife-bot.processes
-        - elife.sidecars
-        - elife.mockserver
-        # we don't run crons here as they fill up /tmp quickly with all the deposits of testing articles
-
     'elife-bot--continuumtest--*':
         - elife.multiservice
         - elife-bot.processes
@@ -87,18 +74,14 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - elife.uwsgi
-        - elife.postgresql-12
         - elife.postgresql-appdb
         - elife.external-volume
+        - elife.postgresql-13
         - lax
         - lax.uwsgi
         # interesting dependency. bot-lax-adaptor requires reporting
         - elife-reporting
         - lax.adaptors
-
-    'lax--end2end--*':
-        - elife.multiservice
-        - lax.processes
 
     'lax--continuumtest--*':
         - elife.multiservice
@@ -133,7 +116,8 @@ base:
         - elife.external-volume-srv
         - elife.php7
         - elife.composer
-        - elife.nginx
+        - elife.disable-nginx
+        - elife.caddy
         - elife.nginx-php7
         - elife.mysql-client
         - elife.mysql-server
@@ -144,11 +128,6 @@ base:
     'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
-
-    'journal-cms--end2end--*':
-        - journal-cms.cron
-        - elife.multiservice
-        - journal-cms.processes
 
     'journal-cms--continuumtest--*':
         - journal-cms.cron
@@ -161,28 +140,13 @@ base:
         - journal-cms.processes
         - elife.postfix # queues then sends via AWS SES
         - elife.postfix-ses
-    
-    'journal-cms--ckeditor--*':
-        - elife.docker-native
-        - elife.goaws
-
-    'api-dummy--*':
-        - elife.php7
-        - elife.composer
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.nginx-php7
-        - api-dummy
-        #- api-dummy.nginx
-        - api-dummy.caddy
 
     'elife-metrics--*':
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
         - elife.uwsgi
-        - elife.postgresql-12
+        - elife.postgresql-13
         - elife.postgresql-appdb
         - elife-metrics
         - elife-metrics.uwsgi
@@ -234,13 +198,6 @@ base:
         # lsh@2023-04-04: todo
         #- elife.external-volume-srv
         - elife-libraries.builder
-
-    'elife-libraries--load--*':
-        - elife.spectrum
-
-    'elife-libraries--spectrum--*':
-        - elife.external-volume-srv
-        - elife.spectrum
 
     'containers--*':
         - elife.java11
@@ -296,44 +253,19 @@ base:
     'observer--prod--*':
         - observer.cron
 
-    'personalised-covers--*':
-        - elife.swapspace
-        - elife.php7
-        - elife.composer
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.nginx-php7 # not nginx-specific
-        - elife.redis-server
-        - elife.nodejs16
-        - personalised-covers.aws
-        - personalised-covers
-
-    'personalised-covers--ci--*':
-        - api-dummy
-        #- api-dummy.nginx
-        - api-dummy.caddy
-        - elife.docker-native
-        - elife.aws-cli
-        - elife.sidecars
-        - personalised-covers.localstack
-
-    'personalised-covers--pr-*':
-        - api-dummy
-        #- api-dummy.nginx
-        - api-dummy.caddy
-        - elife.docker-native
-        - elife.aws-cli
-        - elife.sidecars
-        - personalised-covers.localstack
-
     'iiif--*':
         - elife.swapspace
-        - elife.nginx
         - elife.external-volume
         - elife.docker-native
         - iiif
         - iiif.loris-maintenance
+
+    'iiif--* and not iiif--prod--*':
+        - elife.disable-nginx
+        - elife.caddy
+
+    'iiif--prod--*':
+        - elife.nginx
 
     'iiif--devchk--*':
         - elife.java8
@@ -373,7 +305,7 @@ base:
         - annotations.containers
 
     'digests--*':
-        - elife.postgresql-12
+        - elife.postgresql-13
         - elife.postgresql-appdb
         - elife.uwsgi-params
         #- elife.nginx
