@@ -29,7 +29,6 @@ journal:
     #observer_url: http://continuumtest--observer.elife.internal
     # no trailing slashes. leave empty to prevent adding redirect rules.
     preprint_url: https://staging--epp.elifesciences.org
-    default_host: continuumtest--cdn-journal.elifesciences.org
     cb_id: 0a5c50d8-fcf9-47b1-8f4f-1eaadb13941b
     oauth2_client_id: journal--continuumtest
 

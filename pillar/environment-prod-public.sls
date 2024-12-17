@@ -60,7 +60,6 @@ journal:
     submit_url: https://reviewer.elifesciences.org/login
     submit_url_redirects:
         - .*\.elifesciences.org$
-    hubspot_url:
 journal_cms:
     aws:
         queue: journal-cms--prod
