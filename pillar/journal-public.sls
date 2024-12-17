@@ -15,7 +15,7 @@ journal:
     privacy_notice_url: https://elife-container.pubpub.org/privacy-notice
     cookie_declaration_url: https://elife-container.pubpub.org/cookie-declaration
     learning_resources_url: https://elife-container.pubpub.org/learning-resources
-    hubspot_url:
+    hubspot_url: https://connect.elifesciences.org
     default_host: null
 
     google_api_client:
