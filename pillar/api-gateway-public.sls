@@ -1,10 +1,10 @@
-# Defaults ad-hoc instances to continuumtest as 
+# Defaults ad-hoc instances to continuumtest as
 # - CI instances are almost always turned off or being deprecated
 # - CI instances shouldn't be accessed by another project
 # - Continuumtest should let the ad-hoc instance gateway serve test requests without hampering production
 {% set journal_cms_url = 'http://continuumtest--journal-cms.elife.internal' %}
 {% set search_url = 'https://search.test.elifesciences.org' %}
-{% set recommendations_url = 'http://continuumtest--recommendations.elife.internal' %}
+{% set recommendations_url = 'https://recommendations.test.elifesciences.org' %}
 {% set lax_url = 'https://continuumtest--lax.elifesciences.org' %}
 {% set metrics_url = 'http://continuumtest--metrics.elife.internal' %}
 {% set profiles_url = 'http://continuumtest--profiles.elife.internal' %}
@@ -30,7 +30,7 @@ api_gateway:
         port: 5432
         name: kong
         username: kong
-        # password: 
+        # password:
 
     # known API endpoints
     # https://getkong.org/docs/0.8.x/admin-api/#add-api
@@ -221,7 +221,7 @@ api_gateway:
         # user: key
         anonymous: public
         # some-elife-app: secretkey
-        # removing a consumer is a two-step process. 
+        # removing a consumer is a two-step process.
         # 1. consumer must be present in order to remove from groups. 'key' isn't used to do this.
         # 2. consumer can be removed
         elife-xpub: placeholder
