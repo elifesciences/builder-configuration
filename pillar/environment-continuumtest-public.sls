@@ -5,7 +5,7 @@ elife:
 {% set journal_preview_url = 'https://continuumtestpreview--journal.elifesciences.org' %}
 {% set journal_cms_url = 'https://continuumtest--journal-cms.elifesciences.org' %}
 {% set search_url = 'https://search.test.elifesciences.org' %}
-{% set recommendations_url = 'http://continuumtest--recommendations.elife.internal' %}
+{% set recommendations_url = 'https://recommendations.test.elifesciences.org' %}
 {% set gateway_url_public = 'https://continuumtest--cdn-gateway.elifesciences.org' %}
 {% set gateway_url_internal = 'http://continuumtest--gateway.elife.internal' %}
 {% set gateway_url_for_migration = 'https://prod--gateway.elifesciences.org' %}
