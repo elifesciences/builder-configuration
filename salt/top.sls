@@ -173,7 +173,6 @@ base:
         - elife-alfred.postfix
         - elife.hub
         - elife.kubectl
-        - elife.helm
 
     'elife-libraries--*':
         - elife.java11
@@ -213,7 +212,6 @@ base:
         - elife.vault-client
         - containers
         - elife.kubectl
-        - elife.helm
         - elife.pypi
 
     'anonymous--*':
