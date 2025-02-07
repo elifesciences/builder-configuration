@@ -155,3 +155,7 @@ base:
         - environment-continuumtest-public
         - environment-continuumtest
         - journal-pr-public
+
+    # Temporary override for https://github.com/elifesciences/issues/issues/9163
+    'profiles--continuumtest--*':
+        - caddy-auto-https
