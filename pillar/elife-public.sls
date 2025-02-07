@@ -31,7 +31,7 @@ elife:
         prune_days: 14
 
     sidecars:
-        # main image that will be used to extract labels 
+        # main image that will be used to extract labels
         # indicating metadata about the sidecars such as their own tags
         # main: elifesciences/annotations_cli
         containers: {}
@@ -56,3 +56,6 @@ elife:
 
     helm:
         username: elife
+
+    webserver:
+        auto_https: false
