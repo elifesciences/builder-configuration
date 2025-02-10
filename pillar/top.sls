@@ -107,6 +107,7 @@ base:
         - bastion
 
     'monitor--*':
+        - monitor-public
         - monitor
 
 
