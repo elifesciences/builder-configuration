@@ -5,17 +5,17 @@ profiles:
         authorize_uri: https://sandbox.orcid.org/oauth/authorize
         token_uri: https://sandbox.orcid.org/oauth/token
         # sandbox.orcid.org credentials
-        # client_id: 
-        # client_secret: 
-        # read_public_access_token: 
-        # webhook_access_token: 
-        # webhook_key: 
+        # client_id:
+        # client_secret:
+        # read_public_access_token:
+        # webhook_access_token:
+        # webhook_key:
     default_host: ci--profiles.elifesciences.org
     default_scheme: https
     db:
         name: profiles
         username: profiles
-        # password: 
+        # password:
         host: host.docker.internal #127.0.0.1
         port: 5432
     logging:
@@ -34,6 +34,8 @@ profiles:
 elife:
     webserver:
         app: caddy
+        auto_https: true
+
     aws: {}
         # `profiles` IAM user
         # access_key_id:
