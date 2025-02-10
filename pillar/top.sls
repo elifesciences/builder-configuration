@@ -54,6 +54,7 @@ base:
         - turn-off-daily-updates
 
     'pattern-library--*':
+        - pattern-library-public
         - pattern-library
 
     'journal-cms--*':
