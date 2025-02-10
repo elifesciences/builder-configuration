@@ -81,6 +81,7 @@ base:
         - statusbase
 
     'observer--*':
+        - observer-public
         - observer
 
     'iiif--*':
