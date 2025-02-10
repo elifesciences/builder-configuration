@@ -99,6 +99,7 @@ base:
         - digests
 
     'bioprotocol--*':
+        - bioprotocol-public
         - bioprotocol
 
     'bastion--*':
