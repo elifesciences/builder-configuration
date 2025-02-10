@@ -66,6 +66,7 @@ base:
         - elife-metrics
 
     'elife-dashboard--*':
+        - elife-dashboard-public
         - elife-dashboard
 
     'elife-reporting--*':
