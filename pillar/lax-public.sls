@@ -1,6 +1,6 @@
 lax:
     app:
-        # secret: 
+        # secret:
         allow_invalid_ajson: True
         reporting_bucket: elife-lax-reports
         cache_headers_ttl: 300
@@ -8,13 +8,13 @@ lax:
         users:
             api_gateway:
                 username: api-gateway
-                # password: 
+                # password:
 
     # deprecated. use elife.db.app and elife.postgresql-12
     db:
         name: lax
-        # username: 
-        # password: 
+        # username:
+        # password:
         host: 127.0.0.1
         port: 5432
 
@@ -40,6 +40,9 @@ lax:
             url:
 
 elife:
+    webserver:
+        app: caddy
+        auto_https: true
     db:
         app:
             name: lax
