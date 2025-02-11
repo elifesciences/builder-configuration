@@ -1,8 +1,8 @@
 journal_cms:
     db:
         name: elife_2_0
-        # user: 
-        # password: 
+        # user:
+        # password:
 
     logs:
         file_path: private://monolog/
@@ -15,8 +15,8 @@ journal_cms:
         preview_uri: null
 
     aws:
-        # access_key_id: 
-        # secret_access_key: 
+        # access_key_id:
+        # secret_access_key:
         region: us-east-1
         queue: journal-cms--ci
         endpoint: null
@@ -35,12 +35,12 @@ journal_cms:
         all_reviewed_preprints_endpoint: null
         all_digests_endpoint: null
         article_fragments_endpoint: null
-        # auth_unpublished: 
+        # auth_unpublished:
 
     users:
         alfred:
             email: alfred@elifesciences.org
-            # password: 
+            # password:
             role: administrator
 
     consumer_groups_filter:
@@ -56,6 +56,8 @@ journal_cms:
 elife:
     webserver:
         app: caddy
+        auto_https: true
+
     php:
         memory_limit: 128M
         upload_max_filesize: 32M
