@@ -12,6 +12,7 @@ base:
 
     'master-server--*':
         - elife.certificates
+        - elife.caddy
         - master-server
         - master-server.vault
         - master-server.salt-vault
