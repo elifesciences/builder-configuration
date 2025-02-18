@@ -10,5 +10,5 @@ elife:
                     - "2222:22"
                 enabled: true
     php:
-        version: 7.4
+        version: '7.4'
         fpm: true
