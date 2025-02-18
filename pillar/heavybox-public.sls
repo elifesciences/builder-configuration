@@ -12,3 +12,4 @@ elife:
     php:
         version: '7.4'
         fpm: true
+        extra_extensions: []
