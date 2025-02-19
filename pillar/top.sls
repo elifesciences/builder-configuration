@@ -30,6 +30,7 @@ base:
         - alfred
 
     'elife-libraries--*':
+        - elife-libraries-public
         - elife-libraries
         - pypi
 

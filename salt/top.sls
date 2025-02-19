@@ -177,7 +177,7 @@ base:
 
     'elife-libraries--*':
         - elife.java11
-        - elife.php7
+        - elife.php
         - elife.composer
         - elife.nodejs16
         - elife.aws-credentials
