@@ -59,3 +59,5 @@ elife:
 
     webserver:
         auto_https: false
+
+    php: {}
