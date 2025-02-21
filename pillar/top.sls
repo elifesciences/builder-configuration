@@ -73,9 +73,6 @@ base:
     'elife-reporting--*':
         - elife-reporting
 
-    'anonymous--*':
-        - anonymous
-
     'recommendations--*':
         - recommendations
 

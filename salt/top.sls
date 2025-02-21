@@ -215,22 +215,6 @@ base:
         - elife.kubectl
         - elife.pypi
 
-    'anonymous--*':
-        - elife.base
-        - elife.deploy-user
-        - elife.hostname
-        - elife.known-hosts
-        - elife.time-correction
-        - elife.security
-        - elife.logging
-        - elife.daily-system-updates
-        - elife.swapspace
-        - elife.php7
-        - elife.composer
-        - elife.yamldiff
-        - anonymous
-        - elife.aws-cli
-
     'recommendations--*':
         - elife.docker-native
         #- elife.nginx
