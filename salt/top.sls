@@ -317,3 +317,7 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - monitor
+
+    # enable caddy support for journal preview instances
+    'journal--*preview--*':
+        - elife.caddy

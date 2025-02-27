@@ -51,6 +51,10 @@ base:
     'journal--preview--*':
         - turn-off-daily-updates
 
+    # enable caddy support for journal preview instances
+    'journal--*preview--*':
+        - journal-caddy
+
     'journal--prod--*':
         - turn-off-daily-updates
 
