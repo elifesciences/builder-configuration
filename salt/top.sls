@@ -185,7 +185,7 @@ base:
         - elife.external-volume
         - elife.mysql-client
         - elife.mysql-server
-        - elife.postgresql-12
+        - elife.postgresql-13
         - elife.jenkins-node
         - elife.jenkins-scripts
         - elife.hub
