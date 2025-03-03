@@ -9,7 +9,6 @@ Contains non-sensitive Salt formulas configuration
 | ---------------- |:--------------:|:----------------------:|:-----:|:-------:|
 | `ci` | no | no | automated | only during test runs
 | `continuumtest` (deprecated), `staging` | yes | sandboxes only | manual, exploratory | always
-| `demo` | dummies | no | manual, demonstrative | always
 | `prod` | yes | yes | smoke only | always
 
 ## Naming convention
@@ -32,8 +31,8 @@ Commented-out values such as
 my_project:
     database:
         host: localhost
-        # user: 
-        # password: 
+        # user:
+        # password:
 ```
 
 are sensitive, and are configured in [builder-private](https://github.com/elifesciences/builder-private/tree/master/pillar) or [Vault](https://master-server.elifesciences.org:8200/ui/vault/secrets/secret/list/projects/) instead.
@@ -53,8 +52,8 @@ In case a dictionary does not have any public values to include here, it's safer
 ```
 my_project:
     database: {}
-        # user: 
-        # password: 
+        # user:
+        # password:
 ```
 
 Pillar merging will normally overwrite the `None` value with a dictionary, but a `None` will overwrite a dictionary coming from a file that gets included earlier like `elife.sls`.

@@ -123,10 +123,6 @@ base:
         - environment-ci-public
         - environment-ci
 
-    '*--demo--*':
-        - environment-demo-public
-        - environment-demo
-
     '*--continuumtest--*':
         - environment-continuumtest-public
         - environment-continuumtest
