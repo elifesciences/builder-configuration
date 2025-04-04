@@ -7,6 +7,7 @@
 {% set recommendations_url = 'https://recommendations.test.elifesciences.org' %}
 {% set lax_url = 'https://continuumtest--lax.elifesciences.org' %}
 {% set metrics_url = 'http://continuumtest--metrics.elife.internal' %}
+{% set data_hub_metrics_api_url = 'https://data-hub-metrics-api--stg.elifesciences.org' %}
 {% set profiles_url = 'http://continuumtest--profiles.elife.internal' %}
 {% set annotations_url = 'http://continuumtest--annotations.elife.internal' %}
 {% set digests_url = 'http://continuumtest--digests.elife.internal' %}
@@ -130,6 +131,11 @@ api_gateway:
             upstream_url: {{ metrics_url }}/api/v2
             uris: /metrics
             strip_uri: True
+
+        data_hub_metrics_api:
+            upstream_url: {{ data_hub_metrics_api_url }}
+            uris: /metrics/article/85111/citations/version/2
+            strip_uri: False
 
         oauth2:
             upstream_url: {{ profiles_url }}
