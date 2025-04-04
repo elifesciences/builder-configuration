@@ -24,7 +24,8 @@ api_gateway:
     admin: http://localhost:8001
 
     kong_container:
-        image_tag: latest
+        # kong v0.10.4
+        image_tag: de00bbfea8cb7a48f34787f3a1f229f564cd5078
 
     db:
         engine: postgres
