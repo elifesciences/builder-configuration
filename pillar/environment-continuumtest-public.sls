@@ -92,4 +92,5 @@ api_gateway:
     endpoints:
         data_hub_metrics_api:
             upstream_url: {{ data_hub_metrics_api_url }}
-            uris: /metrics/(article/[0-9]+/citations/version/[0-9]+)
+            uris: /metrics/article/85111/citations/version/2
+            strip_uri: False
