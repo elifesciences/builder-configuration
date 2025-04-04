@@ -15,6 +15,7 @@ elife:
 {% set annotations_url = 'http://continuumtest--annotations.elife.internal' %}
 {% set digests_url = 'http://continuumtest--digests.elife.internal' %}
 {% set iiif_url = 'https://continuumtest--cdn-iiif.elifesciences.org' %}
+{% set data_hub_metrics_api_url = 'https://data-hub-metrics-api--stg.elifesciences.org' %}
 
 {% set hypothesis_api = 'https://hypothes.is/api/' %}
 {% set hypothesis_authority = 'test.elifesciences.org' %}
@@ -86,3 +87,9 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
+
+api_gateway:
+    endpoints:
+        data_hub_metrics_api:
+            upstream_url: {{ data_hub_metrics_api_url }}
+            uris: /metrics/(article/[0-9]+/citations/version/[0-9]+)
