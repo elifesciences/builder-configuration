@@ -215,6 +215,7 @@ api_gateway:
     # APIs that once existed but should not exist any longer
     absent_endpoints:
         - bunyip
+        - data_hub_metrics_api
 
     # complex configuration involving credentials, see builder-private
     # endpoint_plugins:
