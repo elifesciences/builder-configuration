@@ -11,7 +11,6 @@ elife:
 {% set gateway_url_internal = 'http://prod--gateway.elife.internal' %}
 {% set gateway_url_for_migration = 'https://prod--gateway.elifesciences.org' %}
 {% set metrics_url = 'http://prod--metrics.elife.internal' %}
-{% set data_hub_metrics_api_url = 'https://data-hub-metrics-api.elifesciences.org' %}
 {% set profiles_url = 'http://prod--profiles.elife.internal' %}
 {% set annotations_url = 'http://prod--annotations.elife.internal' %}
 {% set digests_url = 'http://prod--digests.elife.internal' %}
@@ -24,10 +23,6 @@ api_gateway:
     kong_container:
         # 'latest' as of 2023-07-07
         image_tag: 8cab29b5ef0a37f50615cf984bf35a828bca7966
-
-    endpoints:
-        data_hub_metrics_api:
-            upstream_url: {{ data_hub_metrics_api_url }}
 
 journal:
     api_url: {{ gateway_url_internal }}
