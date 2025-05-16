@@ -56,6 +56,7 @@ base:
         - elife-bot.strip-coverletter
         - elife-bot
         - elife-bot.feeder
+        - elife.swapspace
 
     'elife-bot--ci--*':
         - elife.vsftpd
