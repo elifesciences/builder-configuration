@@ -22,7 +22,7 @@ base:
         # put common big and slow deps in here
 
     'api-gateway--*':
-        - elife.postgresql-12
+        - elife.postgresql-13
         - elife.docker-native
         - elife.disable-nginx
         - elife.caddy
