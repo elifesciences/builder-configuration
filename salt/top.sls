@@ -303,7 +303,7 @@ base:
     'bioprotocol--*':
         - elife.disable-nginx
         - elife.caddy
-        - elife.postgresql-12
+        - elife.postgresql-13
         - elife.postgresql-appdb
         - elife.uwsgi
         - bioprotocol
