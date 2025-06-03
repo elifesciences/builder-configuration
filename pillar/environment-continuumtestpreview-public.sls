@@ -2,9 +2,9 @@ elife:
     env: continuumtestpreview
 
 journal:
-    api_url: http://continuumtest--gateway.elife.internal
-    api_url_search_page: http://continuumtest--gateway.elife.internal
-    api_url_public: https://continuumtest--gateway.elifesciences.org
+    api_url: https://api.test.elifesciences.org
+    api_url_search_page: https://api.test.elifesciences.org
+    api_url_public: https://api.test.elifesciences.org
     # api_key: # see builder-private
     oauth2_client_id: journal--continuumtestpreview
     xpub_client_id: journal--continuumtestpreview
