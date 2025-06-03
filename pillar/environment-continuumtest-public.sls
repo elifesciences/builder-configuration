@@ -7,7 +7,7 @@ elife:
 {% set search_url = 'https://search.test.elifesciences.org' %}
 {% set recommendations_url = 'https://recommendations.test.elifesciences.org' %}
 {% set gateway_url_public = 'https://continuumtest--cdn-gateway.elifesciences.org' %}
-{% set gateway_url_internal = 'http://continuumtest--gateway.elife.internal' %}
+{% set gateway_url_internal = 'https://api.test.elifesciences.org' %}
 {% set gateway_url_for_migration = 'https://prod--gateway.elifesciences.org' %}
 {% set lax_url = 'https://continuumtest--lax.elifesciences.org' %}
 {% set metrics_url = 'http://continuumtest--metrics.elife.internal' %}
