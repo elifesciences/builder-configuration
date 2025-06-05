@@ -2,9 +2,9 @@ elife:
     env: preview
 
 journal:
-    api_url: http://prod--gateway.elife.internal
-    api_url_search_page: http://prod--gateway.elife.internal
-    api_url_public: https://prod--gateway.elifesciences.org
+    api_url: https://api.prod.elifesciences.org
+    api_url_search_page: https://api.prod.elifesciences.org
+    api_url_public: https://api.prod.elifesciences.org
     # no trailing slashes. leave empty to prevent adding redirect rules.
     preprint_url: https://prod--epp.elifesciences.org
     # api_key: # see builder-private
