@@ -8,8 +8,8 @@ elife:
 {% set recommendations_url = 'https://recommendations.prod.elifesciences.org' %}
 {% set lax_url = 'https://prod--lax.elifesciences.org' %}
 {% set gateway_url_public = 'https://api.elifesciences.org' %}
-{% set gateway_url_internal = 'http://prod--gateway.elife.internal' %}
-{% set gateway_url_for_migration = 'https://prod--gateway.elifesciences.org' %}
+{% set gateway_url_internal = 'https://api.prod.elifesciences.org' %}
+{% set gateway_url_for_migration = 'https://api.prod.elifesciences.org' %}
 {% set metrics_url = 'http://prod--metrics.elife.internal' %}
 {% set profiles_url = 'http://prod--profiles.elife.internal' %}
 {% set annotations_url = 'http://prod--annotations.elife.internal' %}
@@ -88,4 +88,4 @@ lax:
         cache_requests: False
     botlax:
         api:
-            url: http://prod--gateway.elife.internal
+            url: https://api.prod.elifesciences.org
