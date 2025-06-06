@@ -4,4 +4,4 @@ elife:
         auto_https: true
 
 observer:
-    api-url: api.prod.elifesciences.org
+    api_url: api.prod.elifesciences.org
