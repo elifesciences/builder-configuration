@@ -86,3 +86,6 @@ journal_cms:
 lax:
     glencoe:
         cache_requests: False
+
+bioprotocol:
+    api_url: {{ gateway_url_internal }}

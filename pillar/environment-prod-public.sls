@@ -89,3 +89,6 @@ lax:
     botlax:
         api:
             url: https://api.prod.elifesciences.org
+
+bioprotocol:
+    api_url: {{ gateway_url_internal }}
