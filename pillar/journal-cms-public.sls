@@ -63,5 +63,13 @@ elife:
         upload_max_filesize: 32M
         post_max_size: 32M
 
+        # Support for elife.php module
+        fpm: true
+        extra_extensions:
+            - redis
+            - igbinary
+            - uploadprogress
+            - sqlite3
+
     composer:
         version: 2.3.5
