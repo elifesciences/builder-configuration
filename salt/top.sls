@@ -116,20 +116,26 @@ base:
         - elife.apache-removal # lsh@2022-11-04: temporary, remove once apache2 purged
         - elife.external-volume
         - elife.external-volume-srv
-        - elife.php7
         - elife.composer
         - elife.disable-nginx
         - elife.caddy
-        - elife.nginx-php7
         - elife.mysql-client
         - elife.mysql-server
         - elife.redis-server
         - elife.aws-cli
         - journal-cms
 
+    # Support careful migration of PHP state, https://github.com/elifesciences/issues/issues/9141
+    'journal-cms--* and not journal-cms--ci--*':
+        - elife.php7
+        - elife.nginx-php7
+
     'journal-cms--ci--*':
         - elife.docker-native
         - elife.goaws
+
+        # Support careful migration of PHP state, https://github.com/elifesciences/issues/issues/9141
+        - elife.php
 
     'journal-cms--continuumtest--*':
         - journal-cms.cron
