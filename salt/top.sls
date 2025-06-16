@@ -126,7 +126,7 @@ base:
         - journal-cms
 
     # Support careful migration of PHP state, https://github.com/elifesciences/issues/issues/9141
-    'journal-cms--* and not journal-cms--ci--*':
+    'journal-cms--* and not journal-cms--ci--* and not journal-cms--continuumtest--*':
         - elife.php7
         - elife.nginx-php7
 
@@ -141,6 +141,9 @@ base:
         - journal-cms.cron
         - elife.multiservice
         - journal-cms.processes
+
+        # Support careful migration of PHP state, https://github.com/elifesciences/issues/issues/9141
+        - elife.php
 
     'journal-cms--prod--*':
         - journal-cms.cron
