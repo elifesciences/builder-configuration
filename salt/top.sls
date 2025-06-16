@@ -124,9 +124,6 @@ base:
         - elife.redis-server
         - elife.aws-cli
         - journal-cms
-
-    # Support careful migration of PHP state, https://github.com/elifesciences/issues/issues/9141
-    'journal-cms--*':
         - elife.php7
         - elife.nginx-php7
 
