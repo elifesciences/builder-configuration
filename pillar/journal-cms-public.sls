@@ -64,6 +64,7 @@ elife:
         post_max_size: 32M
 
         # Support for elife.php module
+        version: 7.4
         fpm: true
         extra_extensions:
             - redis
