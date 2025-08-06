@@ -23,7 +23,7 @@ elife:
         denied_masterless: {}
 
     composer:
-        version: 2.2
+        version: 2.2.25
 
     docker:
         # username:
