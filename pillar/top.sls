@@ -14,10 +14,6 @@ base:
         - environment-prod-public # exception to the rule. keep last
         - environment-prod # exception to the rule. keep last
 
-    'api-gateway--*':
-        - api-gateway-public
-        - api-gateway
-
     'elife-bot--*':
         - elife-bot-public
         - elife-bot

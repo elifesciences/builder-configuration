@@ -19,11 +19,6 @@ elife:
 {% set hypothesis_api = 'https://hypothes.is/api/' %}
 {% set hypothesis_authority = 'elifesciences.org' %}
 
-api_gateway:
-    kong_container:
-        # 'latest' as of 2023-07-07
-        image_tag: 8cab29b5ef0a37f50615cf984bf35a828bca7966
-
 journal:
     api_url: {{ gateway_url_internal }}
     api_url_search_page: {{ gateway_url_internal }}
