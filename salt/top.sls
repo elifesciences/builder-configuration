@@ -133,19 +133,6 @@ base:
         - elife.postfix # queues then sends via AWS SES
         - elife.postfix-ses
 
-    'elife-metrics--*':
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.uwsgi
-        - elife.postgresql-13
-        - elife.postgresql-appdb
-        - elife-metrics
-        - elife-metrics.uwsgi
-
-    'elife-metrics--prod--*':
-        - elife.external-volume
-
     'elife-alfred--*':
         - elife.swapspace
         - elife.java11

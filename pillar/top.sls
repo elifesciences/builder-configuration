@@ -62,9 +62,6 @@ base:
         - journal-cms-public
         - journal-cms
 
-    'elife-metrics--*':
-        - elife-metrics-public
-        - elife-metrics
 
     'elife-dashboard--*':
         - elife-dashboard-public
