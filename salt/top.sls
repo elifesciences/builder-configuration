@@ -260,19 +260,6 @@ base:
         - annotations
         - annotations.containers
 
-    'digests--*':
-        - elife.postgresql-13
-        - elife.postgresql-appdb
-        - elife.uwsgi-params
-        #- elife.nginx
-        - elife.disable-nginx
-        - elife.caddy
-        - elife.aws-credentials
-        - elife.aws-cli
-        - elife.docker-native
-        - elife.docker-databases
-        - digests
-
     'bastion--*':
         - elife.swapspace
         - bastion

@@ -94,9 +94,6 @@ base:
     'annotations--*':
         - annotations
 
-    'digests--*':
-        - digests
-
     'bioprotocol--*':
         - bioprotocol-public
         - bioprotocol
