@@ -149,3 +149,6 @@ base:
         - environment-continuumtest-public
         - environment-continuumtest
         - journal-pr-public
+
+    'heavybox--builder-base-formula-pr-457*':
+        - caddy-next
