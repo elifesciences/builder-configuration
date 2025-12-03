@@ -25,6 +25,8 @@ elife:
     composer:
         version: 2.2.25
 
+    caddy: {}
+
     docker:
         # username:
         # password:
