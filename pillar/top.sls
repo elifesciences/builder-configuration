@@ -152,10 +152,17 @@ base:
 
     # Caddy version migration https://github.com/elifesciences/issues/issues/9448
     #
-    # Put the next version of Caddy on CI instances
+    # Put the next version of Caddy on CI and PR instances
     'lax--ci--*':
         - caddy-next
     'bioprotocol--ci--*':
         - caddy-next
     'observer--ci--*':
+        - caddy-next
+
+    'lax--pr--*':
+        - caddy-next
+    'bioprotocol--pr--*':
+        - caddy-next
+    'observer--pr--*':
         - caddy-next
