@@ -150,5 +150,12 @@ base:
         - environment-continuumtest
         - journal-pr-public
 
-    'heavybox--builder-base-formula-pr-457*':
+    # Caddy version migration https://github.com/elifesciences/issues/issues/9448
+    #
+    # Put the next version of Caddy on CI instances
+    'lax--ci--*':
+        - caddy-next
+    'bioprotocol--ci--*':
+        - caddy-next
+    'observer--ci--*':
         - caddy-next
