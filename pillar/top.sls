@@ -174,3 +174,6 @@ base:
 
     'observer--prod--*':
         - caddy-next
+
+    'lax--continuumtest--*':
+        - caddy-next
