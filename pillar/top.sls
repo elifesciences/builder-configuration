@@ -169,3 +169,5 @@ base:
 
     'bioprotocol--continuumtest--*':
         - caddy-next
+    'bioprotocol--prod--*':
+        - caddy-next
