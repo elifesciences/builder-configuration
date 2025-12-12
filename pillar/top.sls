@@ -171,3 +171,6 @@ base:
         - caddy-next
     'bioprotocol--prod--*':
         - caddy-next
+
+    'observer--prod--*':
+        - caddy-next
