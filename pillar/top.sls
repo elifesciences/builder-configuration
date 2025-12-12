@@ -166,3 +166,6 @@ base:
         - caddy-next
     'observer--pr-*':
         - caddy-next
+
+    'bioprotocol--continuumtest--*':
+        - caddy-next
