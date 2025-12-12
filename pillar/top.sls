@@ -160,9 +160,9 @@ base:
     'observer--ci--*':
         - caddy-next
 
-    'lax--pr--*':
+    'lax--pr-*':
         - caddy-next
-    'bioprotocol--pr--*':
+    'bioprotocol--pr-*':
         - caddy-next
-    'observer--pr--*':
+    'observer--pr-*':
         - caddy-next
