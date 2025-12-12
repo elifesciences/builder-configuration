@@ -177,3 +177,5 @@ base:
 
     'lax--continuumtest--*':
         - caddy-next
+    'lax--prod--*':
+        - caddy-next
