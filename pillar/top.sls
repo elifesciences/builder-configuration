@@ -39,6 +39,8 @@ base:
         - lax-public
         - lax
         - elife-reporting
+        # Caddy version migration https://github.com/elifesciences/issues/issues/9448
+        - caddy-next
 
     'journal--*':
         - journal-public
@@ -79,6 +81,8 @@ base:
     'observer--*':
         - observer-public
         - observer
+        # Caddy version migration https://github.com/elifesciences/issues/issues/9448
+        - caddy-next
 
     'iiif--*':
         - iiif-public
@@ -97,6 +101,8 @@ base:
     'bioprotocol--*':
         - bioprotocol-public
         - bioprotocol
+        # Caddy version migration https://github.com/elifesciences/issues/issues/9448
+        - caddy-next
 
     'bastion--*':
         - bastion
@@ -149,33 +155,3 @@ base:
         - environment-continuumtest-public
         - environment-continuumtest
         - journal-pr-public
-
-    # Caddy version migration https://github.com/elifesciences/issues/issues/9448
-    #
-    # Put the next version of Caddy on CI and PR instances
-    'lax--ci--*':
-        - caddy-next
-    'bioprotocol--ci--*':
-        - caddy-next
-    'observer--ci--*':
-        - caddy-next
-
-    'lax--pr-*':
-        - caddy-next
-    'bioprotocol--pr-*':
-        - caddy-next
-    'observer--pr-*':
-        - caddy-next
-
-    'bioprotocol--continuumtest--*':
-        - caddy-next
-    'bioprotocol--prod--*':
-        - caddy-next
-
-    'observer--prod--*':
-        - caddy-next
-
-    'lax--continuumtest--*':
-        - caddy-next
-    'lax--prod--*':
-        - caddy-next
