@@ -163,7 +163,6 @@ base:
         - elife.external-volume
         - elife.mysql-client
         - elife.mysql-server
-        - elife.postgresql-13
         - elife.jenkins-node
         - elife.jenkins-scripts
         - elife.hub
@@ -172,10 +171,14 @@ base:
         - elife.pypi
         - elife-libraries
 
+    'elife-libraries--* and not elife-libraries--ci--*':
+        - elife.postgresql-13
+
     'elife-libraries--ci--*':
         # lsh@2023-04-04: todo
         #- elife.external-volume-srv
         - elife-libraries.builder
+        - elife.postgresql-14
 
     'containers--*':
         - elife.java11
