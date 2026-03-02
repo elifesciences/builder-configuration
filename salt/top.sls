@@ -36,7 +36,7 @@ base:
         - elife.postgresql-14
 
     'elife-dashboard--continuumtest--*':
-        - elife.postgresql-13
+        - elife.postgresql-14
         - elife-dashboard.processes
 
     'elife-dashboard--prod--*':
