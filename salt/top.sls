@@ -22,7 +22,6 @@ base:
         # put common big and slow deps in here
 
     'elife-dashboard--*':
-        - elife.postgresql-13
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
@@ -33,10 +32,15 @@ base:
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
+    'elife-dashboard--ci--*':
+        - elife.postgresql-14
+
     'elife-dashboard--continuumtest--*':
+        - elife.postgresql-13
         - elife-dashboard.processes
 
     'elife-dashboard--prod--*':
+        - elife.postgresql-13
         - elife-dashboard.processes
 
     'elife-bot--*':
