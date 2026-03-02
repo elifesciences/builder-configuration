@@ -270,12 +270,7 @@ base:
         - elife.postgresql-appdb
         - elife.uwsgi
         - bioprotocol
-    
-    'bioprotocol--ci--*':
         - elife.postgresql-14
-
-    'bioprotocol--* and not bioprotocol--ci--*':
-        - elife.postgresql-13
 
     'large-repo-wrangler--*':
         - elife.external-volume
