@@ -29,18 +29,14 @@ base:
         - elife-dashboard
         - elife-dashboard.uwsgi
         - elife-dashboard.scheduler
+        - elife.postgresql-14
         - elife.nodejs16
         #- elife-dashboard.dashboard2
 
-    'elife-dashboard--ci--*':
-        - elife.postgresql-14
-
     'elife-dashboard--continuumtest--*':
-        - elife.postgresql-14
         - elife-dashboard.processes
 
     'elife-dashboard--prod--*':
-        - elife.postgresql-13
         - elife-dashboard.processes
 
     'elife-bot--*':
