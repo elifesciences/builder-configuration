@@ -104,6 +104,9 @@ base:
         # Caddy version migration https://github.com/elifesciences/issues/issues/9448
         - caddy-next
 
+    'bioprotocol--ci--*':
+        - caddy-ci
+
     'bastion--*':
         - bastion
 
