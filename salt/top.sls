@@ -74,7 +74,7 @@ base:
         - elife-reporting
         - lax.adaptors
 
-    'lax--* and not lax--ci--*':
+    'lax--* and not lax--ci--* and not lax--continuumtest--*':
         - elife.postgresql-13
 
     'lax--ci--*':
@@ -83,6 +83,7 @@ base:
     'lax--continuumtest--*':
         - elife.multiservice
         - lax.processes
+        - elife.postgresql-14
 
     'lax--prod--*':
         - elife.multiservice
