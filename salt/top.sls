@@ -211,8 +211,12 @@ base:
         - observer
         - observer.uwsgi
 
+    'observer--ci--*':
+        - elife.postgresql-14
+
     'observer--prod--*':
         - observer.cron
+        - elife.postgresql-13
 
     'iiif--*':
         - elife.swapspace
