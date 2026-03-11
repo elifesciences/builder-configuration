@@ -206,17 +206,18 @@ base:
         #- elife.nginx
         - elife.disable-nginx
         - elife.caddy
-        - elife.postgresql-13
         - elife.postgresql-appdb
         - observer
         - observer.uwsgi
+    
+    'observer--* and not observer--ci--*':
+        - elife.postgresql-13
 
     'observer--ci--*':
         - elife.postgresql-14
 
     'observer--prod--*':
         - observer.cron
-        - elife.postgresql-13
 
     'iiif--*':
         - elife.swapspace
