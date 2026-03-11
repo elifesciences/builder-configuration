@@ -68,12 +68,17 @@ base:
         - elife.uwsgi
         - elife.postgresql-appdb
         - elife.external-volume
-        - elife.postgresql-13
         - lax
         - lax.uwsgi
         # interesting dependency. bot-lax-adaptor requires reporting
         - elife-reporting
         - lax.adaptors
+
+    'lax--* and not lax--ci--*':
+        - elife.postgresql-13
+
+    'lax--ci--*':
+        - elife.postgresql-14
 
     'lax--continuumtest--*':
         - elife.multiservice
