@@ -213,14 +213,9 @@ base:
         - elife.disable-nginx
         - elife.caddy
         - elife.postgresql-appdb
+        - elife.postgresql-14
         - observer
         - observer.uwsgi
-    
-    'observer--* and not observer--ci--*':
-        - elife.postgresql-13
-
-    'observer--ci--*':
-        - elife.postgresql-14
 
     'observer--prod--*':
         - observer.cron
