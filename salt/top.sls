@@ -243,15 +243,10 @@ base:
         - elife.aws-cli
         - elife.docker-native
         - elife.docker-databases
+        - elife.postgresql-14
         - elife.sidecars
         - profiles.postgresql
         - profiles
-
-    'profiles--* and not profiles--continuumtest--*':
-        - elife.postgresql-13
-
-    'profiles--continuumtest--*':
-        - elife.postgresql-14
 
     'annotations--*':
         - elife
