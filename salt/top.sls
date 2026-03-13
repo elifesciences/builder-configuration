@@ -235,7 +235,6 @@ base:
         - redirects
 
     'profiles--*':
-        - elife.postgresql-13
         - elife.uwsgi
         #- elife.nginx
         - elife.disable-nginx
@@ -247,6 +246,12 @@ base:
         - elife.sidecars
         - profiles.postgresql
         - profiles
+
+    'profiles--* and not profiles--continuumtest--*':
+        - elife.postgresql-13
+
+    'profiles--continuumtest--*':
+        - elife.postgresql-14
 
     'annotations--*':
         - elife
